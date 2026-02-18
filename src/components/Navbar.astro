@@ -1,0 +1,191 @@
+---
+const phone = "(682) 703-0033";
+import { Image } from "astro:assets";
+import logo from "../assets/logo.png";
+
+const currentPath = Astro.url.pathname;
+
+const isActive = (path) =>
+  currentPath === path
+    ? "nav-active text-brand-red" : ""
+
+    const linkClass = (path) =>
+  `nav-link hover:opacity-80 ${isActive(path)}`;
+---
+
+<header
+  id="siteHeader"
+  class="
+    bg-brand-navy text-white
+    sticky top-0 z-50 relative shadow-md
+    transition-transform duration-200 ease-in-out
+    overflow-visible
+  "
+>
+
+  <!-- NAV BAR -->
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-5">
+
+    <!-- Spacer (desktop only) -->
+    <div class="hidden md:block w-44"></div>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center gap-8 font-medium">
+      <a href="/" class={`nav-link ${isActive("/")}`}>Home</a>
+      <a href="/services" class={`nav-link ${isActive("/services")}`}>Services</a>
+      <a href="/about" class={`nav-link ${isActive("/about")}`}>About</a>
+      <a href="/reviews" class={`nav-link ${isActive("/reviews")}`}>Reviews</a>
+      <a href="/contact" class={`nav-link ${isActive("/contact")}`}>Contact</a>
+      <a href="/projects" class={linkClass("/projects")}>Projects</a>
+
+
+      <a
+        href={`tel:${phone}`}
+        class="bg-brand-red px-4 py-2 rounded-lg hover:opacity-90"
+      >
+        {phone}
+      </a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+<button id="menuBtn" class="md:hidden relative w-8 h-8 flex items-center justify-center">
+
+  <span id="bar1" class="absolute h-0.5 w-8 bg-white -translate-y-2 transition-all duration-200"></span>
+
+  <span id="bar2" class="absolute h-0.5 w-8 bg-white transition-all duration-200"></span>
+
+  <span id="bar3" class="absolute h-0.5 w-8 bg-white translate-y-2 transition-all duration-200"></span>
+
+</button>
+
+
+  </div>
+
+  <!-- HANGING LOGO -->
+<div
+  id="logoWrap"
+  class="
+    absolute top-full -translate-y-1/3 md:-translate-y-1/2
+    left-1/2 -translate-x-1/2
+    md:left-6 md:translate-x-0
+    transition-opacity duration-200
+    pointer-events-none
+  "
+>
+    <img
+      src={logo.src}
+      alt="West Fort Worth Handyman"
+      class="h-24 md:h-36 drop-shadow-xl"
+    />
+  </div>
+
+  <!-- BACKDROP OVERLAY -->
+<div
+  id="menuBackdrop"
+  class="
+    fixed inset-0
+    bg-black/30
+    backdrop-blur-sm
+    opacity-0 pointer-events-none
+    transition-opacity duration-200
+    md:hidden
+  "
+></div>
+
+ <!-- MOBILE MENU -->
+<div
+  id="mobileMenu"
+  class="
+    md:hidden
+    bg-brand-navy
+    px-6
+    overflow-hidden
+    max-h-0
+    opacity-0
+    -translate-y-2
+    transition-all duration-200 ease-in-out
+    relative z-50
+  "
+>
+  <div class="py-6 space-y-4">
+    <a href="/" class="block">Home</a>
+    <a href="/services" class="block">Services</a>
+    <a href="/about" class="block">About</a>
+    <a href="/reviews" class="block">Reviews</a>
+    <a href="/contact" class="block">Contact</a>
+
+    <a
+      href={`tel:${phone}`}
+      class="block bg-brand-red text-center py-3 rounded-lg"
+    >
+      {phone}
+    </a>
+  </div>
+</div>
+
+
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+  const backdrop = document.getElementById("menuBackdrop");
+  const logo = document.getElementById("logoWrap");
+
+  let open = false;
+
+  function openMenu() {
+    menu.classList.remove("max-h-0", "opacity-0", "-translate-y-2");
+    menu.classList.add("max-h-[400px]", "opacity-100", "translate-y-0");
+
+    backdrop.classList.remove("opacity-0", "pointer-events-none");
+    backdrop.classList.add("opacity-100");
+
+    logo?.classList.add("opacity-0");
+    open = true;
+  }
+
+  function closeMenu() {
+    menu.classList.add("max-h-0", "opacity-0", "-translate-y-2");
+    menu.classList.remove("max-h-[400px]", "opacity-100", "translate-y-0");
+
+    backdrop.classList.add("opacity-0", "pointer-events-none");
+    backdrop.classList.remove("opacity-100");
+
+    logo?.classList.remove("opacity-0");
+    open = false;
+  }
+
+  btn?.addEventListener("click", () => {
+    open ? closeMenu() : openMenu();
+  });
+
+  // click outside to close
+  backdrop?.addEventListener("click", closeMenu);
+</script>
+
+
+
+<script>
+  const header = document.getElementById("siteHeader");
+  const logo = document.getElementById("logoWrap");
+
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+
+    if (Math.abs(currentScroll - lastScrollY) < 5) return;
+
+    if (currentScroll > lastScrollY && currentScroll > 80) {
+      header.classList.add("-translate-y-full");
+      logo?.classList.add("opacity-0");
+    } else {
+      header.classList.remove("-translate-y-full");
+      logo?.classList.remove("opacity-0");
+    }
+
+    lastScrollY = currentScroll;
+  });
+</script>
+
+
+

@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/* Tailwind v4 theme system */
+@theme {
+  --color-brand-navy: #1F2A44;
+  --color-brand-red: #B22222;
+  --color-brand-offwhite: #F4F1EB;
+  --color-brand-gray: #5A5F6A;
+}
+
+
+@keyframes zoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+/* NAV LINK ANIMATED UNDERLINE */
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* underline */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--color-brand-red);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-active::after {
+  width: 100%;
+}
+
+/* hover animation */
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* active page underline */
+.nav-active::after {
+  width: 100%;
+}
+

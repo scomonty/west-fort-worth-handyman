@@ -1,0 +1,189 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import FAQ from "../components/FAQ.astro";
+---
+
+<BaseLayout
+  title="Flooring Installation in West Fort Worth | Laminate, Vinyl & Hardwood"
+  description="Professional laminate, vinyl, and hardwood flooring installation in West Fort Worth. Reliable service, fair pricing, and quality workmanship."
+>
+
+<Navbar />
+
+<!-- HERO -->
+<section class="bg-brand-navy text-white pt-40 pb-24 text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+      Flooring Installation in West Fort Worth
+    </h1>
+
+    <p class="text-lg text-gray-200">
+      Professional laminate, vinyl, and hardwood flooring installation
+      with reliable service and fair pricing.
+    </p>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="py-24 bg-brand-offwhite">
+  <div class="max-w-4xl mx-auto px-6 space-y-6 text-lg text-brand-gray">
+
+    <p>
+      West Fort Worth Handyman provides professional flooring installation
+      services for homeowners throughout West Fort Worth and surrounding areas.
+      Whether you're upgrading a single room or replacing flooring throughout
+      your home, we deliver clean installation and lasting results.
+    </p>
+
+    <p>
+      We install laminate flooring, luxury vinyl plank, and hardwood flooring
+      with careful preparation, precise installation, and attention to detail.
+    </p>
+
+  </div>
+</section>
+
+<!-- FLOORING TYPES -->
+<section class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-brand-navy text-center mb-16">
+      Flooring Installation Services
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="border rounded-xl p-8">
+        <h3 class="text-xl font-semibold text-brand-navy mb-4">
+          Laminate Flooring Installation
+        </h3>
+        <p class="text-brand-gray">
+          Durable and affordable laminate flooring installed with
+          precise fitting and professional finishing.
+        </p>
+      </div>
+
+      <div class="border rounded-xl p-8">
+        <h3 class="text-xl font-semibold text-brand-navy mb-4">
+          Vinyl Plank Flooring Installation
+        </h3>
+        <p class="text-brand-gray">
+          Waterproof luxury vinyl plank flooring ideal for kitchens,
+          bathrooms, and high-traffic areas.
+        </p>
+      </div>
+
+      <div class="border rounded-xl p-8">
+        <h3 class="text-xl font-semibold text-brand-navy mb-4">
+          Hardwood Flooring Installation
+        </h3>
+        <p class="text-brand-gray">
+          Quality hardwood flooring installation for a timeless
+          and durable finish.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="py-24 bg-brand-offwhite">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-center text-brand-navy mb-16">
+      Why Choose West Fort Worth Handyman
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-10 text-center">
+
+      <div>
+        <div class="text-4xl mb-4">✔</div>
+        <h3 class="font-semibold text-brand-navy mb-2">Quality Workmanship</h3>
+        <p class="text-brand-gray">
+          Clean installation with attention to detail.
+        </p>
+      </div>
+
+      <div>
+        <div class="text-4xl mb-4">✔</div>
+        <h3 class="font-semibold text-brand-navy mb-2">Fair Pricing</h3>
+        <p class="text-brand-gray">
+          Clear estimates and honest pricing.
+        </p>
+      </div>
+
+      <div>
+        <div class="text-4xl mb-4">✔</div>
+        <h3 class="font-semibold text-brand-navy mb-2">Local Service</h3>
+        <p class="text-brand-gray">
+          Serving West Fort Worth homeowners.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<FAQ
+  items={[
+    {
+      question: "How much does flooring installation cost?",
+      answer: "Flooring installation cost depends on material type, room size, and preparation required. Contact us for a free estimate for your project."
+    },
+    {
+      question: "How long does flooring installation take?",
+      answer: "Most flooring installations take one to three days depending on the size of the project and material selected."
+    },
+    {
+      question: "Do you install laminate, vinyl, and hardwood flooring?",
+      answer: "Yes. We install laminate flooring, luxury vinyl plank, and hardwood flooring throughout West Fort Worth."
+    },
+    {
+      question: "Do I need to remove old flooring first?",
+      answer: "We can remove existing flooring and prepare the surface for proper installation."
+    },
+    {
+      question: "Do you provide free estimates?",
+      answer: "Yes, we provide free estimates for flooring installation and home repair projects."
+    }
+  ]}
+/>
+
+
+<!-- CTA -->
+<section class="py-24 text-center bg-white">
+  <div class="max-w-3xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-brand-navy mb-4">
+      Get a Flooring Installation Estimate
+    </h2>
+
+    <p class="text-brand-gray mb-8">
+      Contact West Fort Worth Handyman today for reliable flooring installation
+      and a free estimate.
+    </p>
+
+    <div class="flex gap-4 justify-center flex-col sm:flex-row">
+      <a
+        href="/contact"
+        class="bg-brand-red text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90"
+      >
+        Request Estimate
+      </a>
+
+      <a
+        href="tel:8175551234"
+        class="border-2 border-brand-navy text-brand-navy px-8 py-4 rounded-lg font-semibold hover:bg-brand-navy hover:text-white"
+      >
+        Call Now
+      </a>
+    </div>
+
+  </div>
+</section>
+
+</BaseLayout>

@@ -1,0 +1,215 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import FAQ from "../components/FAQ.astro";
+import ServiceDetail from "../components/ServiceDetail.astro";
+---
+
+<BaseLayout
+  title="Handyman Services in West Fort Worth"
+  description="Affordable and reliable handyman services in West Fort Worth. Drywall repair, door repair, fixture installation, and home maintenance."
+>
+  <Navbar />
+
+  <!-- PAGE HERO -->
+  <section class="bg-brand-navy text-white pt-40 pb-24 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        Handyman Services in West Fort Worth
+      </h1>
+
+      <p class="text-lg text-gray-200">
+        Reliable home repairs, maintenance, and installation services for West
+        Fort Worth homeowners.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="py-24 bg-brand-offwhite">
+    <div class="max-w-6xl mx-auto px-6 space-y-16">
+      <!-- Interior Repairs -->
+      <div>
+        <h2 class="text-3xl font-bold text-brand-navy mb-6">
+          Interior Repairs
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow">
+            Drywall patching and repair
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            Door adjustments and repair
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            Trim and baseboard repair
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">Caulking and sealing</div>
+          <div class="bg-white p-6 rounded-lg shadow">Wall damage repair</div>
+        </div>
+      </div>
+
+      <!-- Installations -->
+      <div>
+        <h2 class="text-3xl font-bold text-brand-navy mb-6">Installations</h2>
+
+        <!-- Flooring Installation -->
+        <div class="mb-6">
+          <a
+            href="/flooring-installation-fort-worth"
+            class="text-xl font-semibold text-brand-navy mb-3 inline-flex items-center gap-2
+    hover:text-brand-red transition"
+          >
+            Flooring Installation →
+          </a>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow">
+              Laminate flooring installation
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow">
+              Vinyl plank flooring installation
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow">
+              Hardwood flooring installation
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow">
+              Flooring replacement and repair
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2
+            class="text-xl font-semibold text-brand-navy mb-3 inline-flex items-center gap-2"
+          >
+            Installation Services
+          </h2>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow">
+              <ServiceDetail
+                title="Light Fixture Installation"
+                description="Professional installation and replacement of light fixtures including ceiling lights, pendant lighting, and wall fixtures. Safe wiring and clean installation."
+                images={["/projects/light1.jpg", "/projects/light2.jpg"]}
+              />
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <ServiceDetail
+                title="Ceiling Fan Installation"
+                description="Ceiling fan installation and replacement for improved airflow and comfort. Secure mounting and proper electrical connection."
+                images={["/projects/fan1.jpg", "/projects/fan2.jpg"]}
+              />
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <ServiceDetail
+                title="Faucet Installation"
+                description="Kitchen and bathroom faucet installation and replacement including fixture upgrades and leak prevention."
+                images={["/projects/faucet1.jpg", "/projects/faucet2.jpg"]}
+              />
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <ServiceDetail
+                title="Shelving & Mounting"
+                description="Professional installation of wall shelving, TV mounting, picture hanging, and storage solutions. Secure mounting into studs or proper anchors for safe, level installation and a clean finished look."
+                images={["/projects/shelving1.png", "/projects/shelving2.jpg"]}
+              />
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              Bathroom hardware installation
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exterior Repairs -->
+      <div>
+        <h2 class="text-3xl font-bold text-brand-navy mb-6">
+          Exterior Repairs
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow">
+            Fence and gate repair
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">Minor siding repairs</div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            Weatherproofing and sealing
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">Exterior trim repair</div>
+        </div>
+      </div>
+
+      <!-- Plumbing -->
+      <div>
+        <h2 class="text-3xl font-bold text-brand-navy mb-6">
+          Minor Plumbing Services
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow">Faucet replacement</div>
+          <div class="bg-white p-6 rounded-lg shadow">Leak repairs</div>
+          <div class="bg-white p-6 rounded-lg shadow">Toilet repairs</div>
+          <div class="bg-white p-6 rounded-lg shadow">Fixture replacement</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 text-center bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-navy mb-4">
+        Need Help With a Repair?
+      </h2>
+
+      <p class="text-brand-gray mb-8">
+        Contact West Fort Worth Handyman today for reliable service and a fair
+        estimate.
+      </p>
+
+      <a
+        href="/contact"
+        class="bg-brand-red text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90"
+      >
+        Request an Estimate
+      </a>
+    </div>
+  </section>
+
+  <FAQ
+    items={[
+      {
+        question: "What handyman services do you offer?",
+        answer:
+          "We provide drywall repair, door and trim repair, fixture installation, flooring installation, fence repair, minor plumbing, and general home maintenance services throughout West Fort Worth.",
+      },
+      {
+        question: "Do you provide free estimates?",
+        answer:
+          "Yes. We provide free estimates for most home repair and installation projects. Contact us to discuss your needs.",
+      },
+      {
+        question: "What areas do you serve?",
+        answer:
+          "We serve West Fort Worth and surrounding areas including Benbrook, White Settlement, Lake Worth, Aledo, and nearby communities.",
+      },
+      {
+        question: "Are you insured?",
+        answer:
+          "Yes. We are fully insured and take care to protect your home during every project.",
+      },
+      {
+        question: "How quickly can you start a project?",
+        answer:
+          "Project start times depend on current scheduling and project size. Contact us for current availability.",
+      },
+      {
+        question: "Do you handle small repair jobs?",
+        answer:
+          "Yes. We specialize in small to mid-sized home repairs, maintenance, and installation projects.",
+      },
+    ]}
+  />
+</BaseLayout>

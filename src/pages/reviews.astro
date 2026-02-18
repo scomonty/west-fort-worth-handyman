@@ -1,0 +1,106 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<BaseLayout title="Customer Reviews | West Fort Worth Handyman">
+
+<Navbar />
+
+<!-- PAGE HERO -->
+<section class="bg-brand-navy text-white pt-40 pb-24 text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+      Customer Reviews
+    </h1>
+
+    <p class="text-lg text-gray-200">
+      Building our reputation one satisfied customer at a time.
+    </p>
+  </div>
+</section>
+
+<!-- REVIEWS SECTION -->
+<section class="py-24 bg-brand-offwhite">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+
+    <h2 class="text-3xl font-bold text-brand-navy mb-6">
+      We’re Just Getting Started
+    </h2>
+
+    <p class="text-lg text-brand-gray mb-10">
+      West Fort Worth Handyman is focused on providing dependable service,
+      quality workmanship, and honest pricing. As we complete more projects,
+      customer reviews will appear here.
+    </p>
+
+    <!-- Placeholder Card -->
+    <div class="bg-white p-10 rounded-xl shadow mb-12">
+      <div class="text-5xl mb-4">⭐</div>
+      <p class="text-brand-gray">
+        Your review could be the first one here.
+        We appreciate every customer who trusts us with their home.
+      </p>
+    </div>
+
+    <!-- CTA -->
+    <div class="space-y-4">
+      <h3 class="text-xl font-semibold text-brand-navy">
+        Had a great experience?
+      </h3>
+
+      <p class="text-brand-gray">
+        We’d love your feedback. Customer reviews help us grow and help
+        other homeowners choose a reliable handyman.
+      </p>
+
+      <!-- Replace with real Google review link later -->
+      <a
+        href="#"
+        class="inline-block bg-brand-red text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90"
+      >
+        Leave a Review
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FUTURE REVIEWS GRID -->
+<section class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-center text-brand-navy mb-16">
+      What Customers Are Saying
+    </h2>
+
+    <!-- Empty state -->
+    <div class="grid md:grid-cols-3 gap-8 opacity-50">
+
+      <div class="border rounded-lg p-6">
+        <div class="mb-3">⭐⭐⭐⭐⭐</div>
+        <p class="text-brand-gray">
+          Customer reviews will appear here.
+        </p>
+      </div>
+
+      <div class="border rounded-lg p-6">
+        <div class="mb-3">⭐⭐⭐⭐⭐</div>
+        <p class="text-brand-gray">
+          Customer reviews will appear here.
+        </p>
+      </div>
+
+      <div class="border rounded-lg p-6">
+        <div class="mb-3">⭐⭐⭐⭐⭐</div>
+        <p class="text-brand-gray">
+          Customer reviews will appear here.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</BaseLayout>

@@ -1,0 +1,73 @@
+---
+const { items = [] } = Astro.props;
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: items.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
+};
+---
+
+<section class="py-24 bg-brand-offwhite">
+
+  <div class="max-w-4xl mx-auto px-6">
+
+    <h2 class="text-3xl md:text-4xl font-bold text-brand-navy text-center mb-16">
+      Frequently Asked Questions
+    </h2>
+
+    <div class="space-y-4">
+
+      {items.map((item, i) => (
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+
+          <button
+            class="faq-toggle w-full text-left p-6 flex justify-between items-center font-semibold text-brand-navy"
+          >
+            {item.question}
+            <span class="text-2xl">+</span>
+          </button>
+
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 px-6">
+            <p class="pb-6 text-brand-gray">
+              {item.answer}
+            </p>
+          </div>
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+
+  <script type="application/ld+json">
+  {JSON.stringify(faqSchema)}
+</script>
+
+
+</section>
+
+<script>
+  document.querySelectorAll(".faq-toggle").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector("span");
+
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        icon.textContent = "+";
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        icon.textContent = "−";
+      }
+    });
+  });
+</script>
