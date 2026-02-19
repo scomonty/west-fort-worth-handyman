@@ -14,10 +14,8 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-
+site: "https://westfortworthhandyman.com",
   integrations: [sitemap()],
   output: "server",
   adapter: vercel()
 });
-
-site: "https://westfortworthhandyman.com"

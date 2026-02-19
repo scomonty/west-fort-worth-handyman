@@ -1,6 +1,13 @@
 import { Resend } from "resend";
 
 export default async function handler(req, res) {
+
+    const { name, email, phone, message, project_budget_reference_id } = req.body;
+
+// Honeypot check
+if (project_budget_reference_id) {
+  return res.status(200).json({ success: true });
+}
   // Only allow POST
   if (req.method !== "POST") {
     return res.status(405).send("Method not allowed");

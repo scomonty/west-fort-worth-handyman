@@ -20,6 +20,14 @@ import Navbar from "../components/Navbar.astro";
       </p>
 
       <form id="contactForm" class="space-y-6 bg-white p-8 rounded-xl shadow">
+        <!-- Honeypot spam field -->
+        <input
+          name="project_budget_reference_id"
+          type="text"
+          autocomplete="off"
+          tabindex="-1"
+          class="hidden"
+        />
         <input
           name="name"
           placeholder="Name"
