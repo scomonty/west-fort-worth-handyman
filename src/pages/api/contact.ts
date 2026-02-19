@@ -2,9 +2,10 @@ import type { APIRoute } from "astro";
 import { Resend } from "resend";
 
 export const POST: APIRoute = async ({ request }) => {
+    console.log("KEY EXISTS:", !!process.env.RESEND_API_KEY);
   const resend = new Resend(process.env.RESEND_API_KEY);
 
-  console.log("KEY EXISTS:", !!process.env.RESEND_API_KEY);
+
 
 
   if (!process.env.RESEND_API_KEY) {
