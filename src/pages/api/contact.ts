@@ -23,7 +23,6 @@ export async function POST({ request }) {
         <p><strong>Message:</strong> ${message}</p>
       `,
     });
-
     return new Response(JSON.stringify({ success: true }), { status: 200 });
   } catch (error) {
     return new Response(JSON.stringify({ error }), { status: 500 });
