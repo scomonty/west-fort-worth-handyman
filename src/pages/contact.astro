@@ -66,21 +66,25 @@ import Navbar from "../components/Navbar.astro";
     form?.addEventListener("submit", async (e) => {
       e.preventDefault();
 
-      const formData = new FormData(form);
-
       status.textContent = "Sending...";
 
-      const res = await fetch(`${window.location.origin}/api/contact`, {
+      const formData = new FormData(form);
+
+      const data = Object.fromEntries(formData.entries());
+
+      const res = await fetch("/api/contact", {
         method: "POST",
-        body: formData,
-        credentials: "same-origin",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
       });
 
       if (res.ok) {
         status.textContent = "Thanks! We'll contact you soon.";
         form.reset();
       } else {
-        status.textContent = "Something went wrong. Please try again.";
+        status.textContent = "Something went wrong.";
       }
     });
   </script>
