@@ -1,8 +1,9 @@
+import type { APIRoute } from "astro";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+export const POST: APIRoute = async ({ request }) => {
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST({ request }) {
   if (!process.env.RESEND_API_KEY) {
     return new Response("Missing API key", { status: 500 });
   }
@@ -28,7 +29,9 @@ export async function POST({ request }) {
       `,
     });
 
-    return new Response(JSON.stringify({ success: true }), { status: 200 });
+    return new Response(JSON.stringify({ success: true }), {
+      status: 200,
+    });
 
   } catch (error) {
     console.error("EMAIL ERROR:", error);
@@ -38,4 +41,4 @@ export async function POST({ request }) {
       { status: 500 }
     );
   }
-}
+};
