@@ -25,6 +25,14 @@ export async function POST({ request }) {
     });
     return new Response(JSON.stringify({ success: true }), { status: 200 });
   } catch (error) {
-    return new Response(JSON.stringify({ error }), { status: 500 });
-  }
+  console.error("EMAIL ERROR:", error);
+
+  return new Response(
+    JSON.stringify({
+      message: "Email failed",
+      error: error?.message || error,
+    }),
+    { status: 500 }
+  );
+}
 }
