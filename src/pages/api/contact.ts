@@ -4,6 +4,9 @@ import { Resend } from "resend";
 export const POST: APIRoute = async ({ request }) => {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
+  console.log("KEY EXISTS:", !!process.env.RESEND_API_KEY);
+
+
   if (!process.env.RESEND_API_KEY) {
     return new Response("Missing API key", { status: 500 });
   }
