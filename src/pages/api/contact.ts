@@ -2,15 +2,16 @@ import type { APIRoute } from "astro";
 import { Resend } from "resend";
 
 export const POST: APIRoute = async ({ request }) => {
-    console.log("KEY EXISTS:", !!process.env.RESEND_API_KEY);
-  const resend = new Resend(process.env.RESEND_API_KEY);
 
+  // ✅ Allow same-origin form posts (fixes Vercel 403)
+  const origin = request.headers.get("origin");
+  const host = request.headers.get("host");
 
-
-
-  if (!process.env.RESEND_API_KEY) {
-    return new Response("Missing API key", { status: 500 });
+  if (origin && !origin.includes(host)) {
+    return new Response("Forbidden", { status: 403 });
   }
+
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
   const data = await request.formData();
 
@@ -26,23 +27,17 @@ export const POST: APIRoute = async ({ request }) => {
       subject: "New Contact Form Submission",
       html: `
         <h2>New Lead</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Message:</strong> ${message}</p>
+        <p>Name: ${name}</p>
+        <p>Email: ${email}</p>
+        <p>Phone: ${phone}</p>
+        <p>Message: ${message}</p>
       `,
     });
 
-    return new Response(JSON.stringify({ success: true }), {
-      status: 200,
-    });
+    return new Response(JSON.stringify({ success: true }), { status: 200 });
 
   } catch (error) {
-    console.error("EMAIL ERROR:", error);
-
-    return new Response(
-      JSON.stringify({ error: error?.message || error }),
-      { status: 500 }
-    );
+    console.error(error);
+    return new Response(JSON.stringify({ error }), { status: 500 });
   }
 };
