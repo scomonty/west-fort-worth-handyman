@@ -13,6 +13,7 @@
     "@astrojs/vercel": "^9.0.4",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.17.1",
+    "formidable": "^3.5.4",
     "resend": "^6.9.2"
   },
   "devDependencies": {
