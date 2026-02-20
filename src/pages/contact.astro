@@ -56,44 +56,103 @@ import Navbar from "../components/Navbar.astro";
           rows="5"
           class="w-full border p-4 rounded"></textarea>
 
-        <button
-          class="w-full bg-brand-red text-white py-4 rounded-lg font-semibold"
-        >
-          Send Request
-        </button>
+        <div>
+          <label class="block mb-2 font-semibold">
+            Upload Photos (optional)
+          </label>
 
-        <p id="formStatus" class="text-center"></p>
+          <input
+            type="file"
+            id="photoUpload"
+            multiple
+            accept="image/*"
+            class="w-full border p-3 rounded"
+          />
+
+          <div id="uploadStatus" class="text-sm mt-2 text-gray-500"></div>
+
+          <!-- Hidden field to store uploaded URLs -->
+          <input type="hidden" name="photoUrls" id="photoUrls" />
+
+          <p class="text-sm text-gray-500 mt-1">
+            You can upload multiple photos.
+          </p>
+        </div>
       </form>
+
+      <button
+        class="w-full bg-brand-red text-white py-4 rounded-lg font-semibold"
+      >
+        Send Request
+      </button>
+
+      <p id="formStatus" class="text-center"></p>
     </div>
   </section>
-
-  <script>
-    const form = document.getElementById("contactForm");
-    const status = document.getElementById("formStatus");
-
-    form?.addEventListener("submit", async (e) => {
-      e.preventDefault();
-
-      status.textContent = "Sending...";
-
-      const formData = new FormData(form);
-
-      const data = Object.fromEntries(formData.entries());
-
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (res.ok) {
-        status.textContent = "Thanks! We'll contact you soon.";
-        form.reset();
-      } else {
-        status.textContent = "Something went wrong.";
-      }
-    });
-  </script>
 </BaseLayout>
+
+<script>
+  const form = document.getElementById("contactForm");
+  const status = document.getElementById("formStatus");
+  const uploadInput = document.getElementById("photoUpload");
+  const uploadStatus = document.getElementById("uploadStatus");
+  const photoUrlsField = document.getElementById("photoUrls");
+
+  const CLOUD_NAME = "dg7cstdp2";
+  const UPLOAD_PRESET = "handyman_uploads";
+
+  async function uploadImages(files) {
+    if (!files.length) return [];
+
+    uploadStatus.textContent = "Uploading photos...";
+
+    const uploads = [...files].map(async (file) => {
+      const data = new FormData();
+      data.append("file", file);
+      data.append("upload_preset", UPLOAD_PRESET);
+
+      const res = await fetch(
+        `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`,
+        {
+          method: "POST",
+          body: data,
+        },
+      );
+
+      const json = await res.json();
+      return json.secure_url;
+    });
+
+    const urls = await Promise.all(uploads);
+    uploadStatus.textContent = "Photos uploaded ✓";
+    return urls;
+  }
+
+  form?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    status.textContent = "Sending...";
+
+    let photoUrls = [];
+
+    if (uploadInput.files.length) {
+      photoUrls = await uploadImages(uploadInput.files);
+      photoUrlsField.value = JSON.stringify(photoUrls);
+    }
+
+    const formData = new FormData(form);
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      body: formData,
+    });
+
+    if (res.ok) {
+      status.textContent = "Thanks! We'll contact you soon.";
+      form.reset();
+      uploadStatus.textContent = "";
+    } else {
+      status.textContent = "Something went wrong.";
+    }
+  });
+</script>

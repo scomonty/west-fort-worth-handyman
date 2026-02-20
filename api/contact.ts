@@ -1,6 +1,9 @@
 import { Resend } from "resend";
 
 export default async function handler(req, res) {
+const photoUrls = req.body.photoUrls
+  ? JSON.parse(req.body.photoUrls)
+  : [];
 
     const { name, email, phone, message, project_budget_reference_id } = req.body;
 
@@ -23,12 +26,19 @@ if (project_budget_reference_id) {
       to: "scomonty@gmail.com",
       subject: "New Contact Form Submission",
       html: `
-        <h2>New Lead</h2>
-        <p>Name: ${name}</p>
-        <p>Email: ${email}</p>
-        <p>Phone: ${phone}</p>
-        <p>Message: ${message}</p>
-      `,
+  <h2>New Lead</h2>
+  <p>Name: ${name}</p>
+  <p>Email: ${email}</p>
+  <p>Phone: ${phone}</p>
+  <p>Message: ${message}</p>
+
+  ${
+    photoUrls.length
+      ? `<h3>Photos:</h3>
+         ${photoUrls.map(url => `<p><a href="${url}">${url}</a></p>`).join("")}`
+      : ""
+  }
+`,
     });
 
     return res.status(200).json({ success: true });
