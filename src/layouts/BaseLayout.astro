@@ -2,13 +2,13 @@
 import "../styles/global.css";
 import Footer from "../components/Footer.astro";
 
-const { 
-  title = "West Fort Worth Handyman",   
+const {
+  title = "West Fort Worth Handyman",
   description = "Reliable handyman services in Fort Worth. Home repair, drywall repair, laminate, vinyl, and hardwood flooring installation, fixture installation, and general maintenance.",
- } = Astro.props;
+} = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,138 +18,157 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content={title} />
-  <meta property="og:description" content={description} />
-  <meta property="og:type" content="website" />
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
 
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HomeAndConstructionBusiness",
-  "name": "West Fort Worth Handyman",
-  "areaServed": [
-    "West Fort Worth",
-    "Benbrook",
-    "White Settlement",
-    "Aledo",
-    "Lake Worth",
-    "River Oaks"
-  ],
-    "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Fort Worth",
-    "addressRegion": "TX",
-    "addressCountry": "US"
-  },
-  "telephone": "+1-682-703-0033"
-}
-</script>
+      {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "West Fort Worth Handyman",
+        "image": "https://westfortworthhandyman.com/logo.png",
+        "url": "https://westfortworthhandyman.com",
+        "telephone": "+1-682-703-0033",
+        "priceRange": "$$",
+        "areaServed": [
+          { "@type": "City", "name": "Fort Worth" },
+          { "@type": "City", "name": "Benbrook" },
+          { "@type": "City", "name": "White Settlement" },
+          { "@type": "City", "name": "Ridglea" },
+          { "@type": "City", "name": "Aledo" },
+          { "@type": "City", "name": "Lake Worth" },
+          { "@type": "City", "name": "Saginaw" },
+          { "@type": "City", "name": "Keller" },
+          { "@type": "City", "name": "North Richland Hills" },
+          { "@type": "City", "name": "Overton Woods" },
+          { "@type": "City", "name": "Overton Hills" },
+          { "@type": "City", "name": "Tanglewood" }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Fort Worth",
+          "addressRegion": "TX",
+          "addressCountry": "US"
+        },
+        "sameAs": ["https://www.instagram.com/westfortworthhandyman"],
+        "serviceType": [
+          "Handyman Services",
+          "Home Repairs",
+          "Drywall Repair",
+          "Door Repair",
+          "Flooring Installation",
+          "Fixture Installation",
+          "Shelving and Mounting",
+          "Home Maintenance"
+        ]
+      }
+    </script>
   </head>
 
   <body class="bg-[#F4F1EB] text-[#1F2A44]">
     <!-- PAGE LOAD PROGRESS BAR -->
-<div
-  id="page-progress"
-  class="
-    fixed top-0 left-0 h-1
+    <div
+      id="page-progress"
+      class="fixed top-0 left-0 h-1
     bg-brand-red shadow-[0_0_10px_rgba(178,34,34,0.8)]
     w-0
     z-[9999]
-    transition-all duration-300
-  "
-></div>
-     <div
-  id="page-transition"
-  class="transition-all duration-500 opacity-0 translate-y-2"
->
-    <slot />
-  </div>
-  <Footer />
+    transition-all duration-300"
+    >
+    </div>
+    <div
+      id="page-transition"
+      class="transition-all duration-500 opacity-0 translate-y-2"
+    >
+      <slot />
+    </div>
+    <Footer />
 
-  <script>
-  const progress = document.getElementById("page-progress");
+    <script>
+      const progress = document.getElementById("page-progress");
 
-  function startProgress() {
-    if (!progress) return;
+      function startProgress() {
+        if (!progress) return;
 
-    progress.style.width = "30%";
+        progress.style.width = "30%";
 
-    setTimeout(() => {
-      progress.style.width = "60%";
-    }, 100);
+        setTimeout(() => {
+          progress.style.width = "60%";
+        }, 100);
 
-    setTimeout(() => {
-      progress.style.width = "90%";
-    }, 300);
-  }
+        setTimeout(() => {
+          progress.style.width = "90%";
+        }, 300);
+      }
 
-  function finishProgress() {
-    if (!progress) return;
+      function finishProgress() {
+        if (!progress) return;
 
-    progress.style.width = "100%";
+        progress.style.width = "100%";
 
-    setTimeout(() => {
-      progress.style.width = "0%";
-    }, 300);
-  }
+        setTimeout(() => {
+          progress.style.width = "0%";
+        }, 300);
+      }
 
-  // start when clicking links
-  document.addEventListener("click", (e) => {
-    const link = e.target.closest("a");
-    if (!link) return;
+      // start when clicking links
+      document.addEventListener("click", (e) => {
+        const link = e.target.closest("a");
+        if (!link) return;
 
-    const url = link.getAttribute("href");
+        const url = link.getAttribute("href");
 
-    if (
-      !url ||
-      url.startsWith("#") ||
-      link.target === "_blank" ||
-      url.startsWith("http")
-    ) return;
+        if (
+          !url ||
+          url.startsWith("#") ||
+          link.target === "_blank" ||
+          url.startsWith("http")
+        )
+          return;
 
-    startProgress();
-  });
+        startProgress();
+      });
 
-  // finish when page loads
-  window.addEventListener("load", finishProgress);
-</script>
+      // finish when page loads
+      window.addEventListener("load", finishProgress);
+    </script>
 
+    <script>
+      // Fade in on page load
+      window.addEventListener("DOMContentLoaded", () => {
+        document
+          .getElementById("page-transition")
+          ?.classList.remove("opacity-0", "translate-y-2");
+      });
 
-  <script>
-  // Fade in on page load
-  window.addEventListener("DOMContentLoaded", () => {
-    document
-      .getElementById("page-transition")
-      ?.classList.remove("opacity-0", "translate-y-2");
-  });
+      // Fade out before navigation
+      document.addEventListener("click", (e) => {
+        const link = e.target.closest("a");
 
-  // Fade out before navigation
-  document.addEventListener("click", (e) => {
-    const link = e.target.closest("a");
+        if (!link) return;
 
-    if (!link) return;
+        const url = link.getAttribute("href");
 
-    const url = link.getAttribute("href");
+        // ignore external / anchors / new tab
+        if (
+          !url ||
+          url.startsWith("#") ||
+          link.target === "_blank" ||
+          url.startsWith("http")
+        )
+          return;
 
-    // ignore external / anchors / new tab
-    if (
-      !url ||
-      url.startsWith("#") ||
-      link.target === "_blank" ||
-      url.startsWith("http")
-    ) return;
+        e.preventDefault();
 
-    e.preventDefault();
+        const wrapper = document.getElementById("page-transition");
+        wrapper.classList.add("opacity-0");
 
-    const wrapper = document.getElementById("page-transition");
-    wrapper.classList.add("opacity-0");
-
-    setTimeout(() => {
-      window.location.href = url;
-    }, 250);
-  });
-</script>
-
+        setTimeout(() => {
+          window.location.href = url;
+        }, 250);
+      });
+    </script>
   </body>
 </html>
