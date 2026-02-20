@@ -78,15 +78,14 @@ import Navbar from "../components/Navbar.astro";
             You can upload multiple photos.
           </p>
         </div>
+        <button
+          class="w-full bg-brand-red text-white py-4 rounded-lg font-semibold"
+        >
+          Send Request
+        </button>
+
+        <p id="formStatus" class="text-center"></p>
       </form>
-
-      <button
-        class="w-full bg-brand-red text-white py-4 rounded-lg font-semibold"
-      >
-        Send Request
-      </button>
-
-      <p id="formStatus" class="text-center"></p>
     </div>
   </section>
 </BaseLayout>
