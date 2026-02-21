@@ -61,6 +61,13 @@ const linkClass = (path) => `nav-link hover:opacity-80 ${isActive(path)}`;
         class="absolute h-0.5 w-8 bg-white translate-y-2 transition-all duration-200"
       ></span>
     </button>
+    <div>
+      <img
+        src={logo.src}
+        alt="West Fort Worth Handyman"
+        class="h-[50px] drop-shadow-xl md:hidden"
+      />
+    </div>
   </div>
 
   <!-- HANGING LOGO -->
@@ -70,7 +77,9 @@ const linkClass = (path) => `nav-link hover:opacity-80 ${isActive(path)}`;
     left-1/2 -translate-x-1/2
     md:left-6 md:translate-x-0
     transition-opacity duration-200
-    pointer-events-none"
+    pointer-events-none
+    hidden
+    md:flex"
   >
     <img
       src={logo.src}
@@ -90,7 +99,10 @@ const linkClass = (path) => `nav-link hover:opacity-80 ${isActive(path)}`;
     md:hidden"
   >
   </div>
-  <a href={`tel:${phone}`} class="block bg-brand-red text-center py-3">
+  <a
+    href={`tel:${phone}`}
+    class="md:hidden block bg-brand-red text-center py-3"
+  >
     {phone}
   </a>
 
