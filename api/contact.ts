@@ -34,7 +34,7 @@ export default async function handler(req, res) {
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "West Fort Worth Handyman <hello@fortworthhandyman.com>",
       to: "scomonty@gmail.com",
       subject: "New Contact Request",
       html: `
