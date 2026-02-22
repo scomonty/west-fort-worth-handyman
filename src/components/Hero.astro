@@ -1,3 +1,7 @@
+---
+const phone = "6827030033";
+---
+
 <section class="relative pt-40 md:pt-48">
   <!-- Background Image -->
   <div
@@ -29,8 +33,7 @@
 
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <a
-        href="tel:6827030033"
-        data-astro-reload
+        onclick={`window.location.href='tel:${phone}'`}
         class="bg-brand-red
           px-8 py-4
           rounded-lg
