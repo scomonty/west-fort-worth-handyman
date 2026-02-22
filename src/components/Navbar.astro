@@ -1,5 +1,5 @@
 ---
-const phone = "(682) 703-0033";
+const phone = "+16827030033";
 import { Image } from "astro:assets";
 import logo from "../assets/logo.png";
 
@@ -35,7 +35,7 @@ const linkClass = (path) => `nav-link hover:opacity-80 ${isActive(path)}`;
       <a href="/projects" class={linkClass("/projects")}>Projects</a>
 
       <a
-        onclick={`window.location.href='tel:${phone}'`}
+        href={`tel:${phone}`}
         data-astro-reload
         class="bg-brand-red px-4 py-2 rounded-lg hover:opacity-90"
       >
