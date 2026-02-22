@@ -54,6 +54,7 @@ const linkClass = (path) => `nav-link hover:opacity-80 ${isActive(path)}`;
 
       <a
         href={`tel:${phone}`}
+        onclick="trackEvent('phone_click', { location: 'navbar' })"
         class="bg-brand-red px-4 py-2 rounded-lg hover:opacity-90"
       >
         (682)-703-0033
@@ -120,6 +121,7 @@ const linkClass = (path) => `nav-link hover:opacity-80 ${isActive(path)}`;
   <a
     data-astro-reload
     href={`tel:${phone}`}
+    onclick="trackEvent('phone_click', { location: 'navbar' })"
     class="md:hidden block bg-brand-red text-center py-3"
   >
     (682)-703-0033

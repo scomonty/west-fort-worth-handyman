@@ -124,6 +124,13 @@ import Navbar from "../components/Navbar.astro";
 
     const urls = await Promise.all(uploads);
     uploadStatus.textContent = "Photos uploaded ✓";
+
+    if (window.trackEvent) {
+      window.trackEvent("photo_upload", {
+        count: urls.length,
+      });
+    }
+
     return urls;
   }
 
@@ -147,6 +154,11 @@ import Navbar from "../components/Navbar.astro";
     });
 
     if (res.ok) {
+      if (window.trackEvent) {
+        window.trackEvent("form_submit", {
+          form_name: "contact_request",
+        });
+      }
       status.textContent = "Thanks! We'll contact you soon.";
       form.reset();
       uploadStatus.textContent = "";
