@@ -36,6 +36,7 @@ const linkClass = (path) => `nav-link hover:opacity-80 ${isActive(path)}`;
 
       <a
         href={`tel:${phone}`}
+        data-astro-reload
         class="bg-brand-red px-4 py-2 rounded-lg hover:opacity-90"
       >
         {phone}
@@ -100,6 +101,7 @@ const linkClass = (path) => `nav-link hover:opacity-80 ${isActive(path)}`;
   >
   </div>
   <a
+    data-astro-reload
     href={`tel:${phone}`}
     class="md:hidden block bg-brand-red text-center py-3"
   >
