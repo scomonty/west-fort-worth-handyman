@@ -25,14 +25,32 @@ const linkClass = (path) => `nav-link hover:opacity-80 ${isActive(path)}`;
 
     <!-- Desktop Navigation -->
     <nav class="hidden md:flex items-center gap-8 font-medium">
-      <a href="/" class={`nav-link ${isActive("/")}`}>Home</a>
-      <a href="/services" class={`nav-link ${isActive("/services")}`}
-        >Services</a
+      <a href="/" data-astro-prefetch class={`nav-link ${isActive("/")}`}
+        >Home</a
       >
-      <a href="/about" class={`nav-link ${isActive("/about")}`}>About</a>
-      <a href="/reviews" class={`nav-link ${isActive("/reviews")}`}>Reviews</a>
-      <a href="/contact" class={`nav-link ${isActive("/contact")}`}>Contact</a>
-      <a href="/projects" class={linkClass("/projects")}>Projects</a>
+      <a
+        href="/services"
+        data-astro-prefetch
+        class={`nav-link ${isActive("/services")}`}>Services</a
+      >
+      <a
+        href="/about"
+        data-astro-prefetch
+        class={`nav-link ${isActive("/about")}`}>About</a
+      >
+      <a
+        href="/reviews"
+        data-astro-prefetch
+        class={`nav-link ${isActive("/reviews")}`}>Reviews</a
+      >
+      <a
+        href="/contact"
+        data-astro-prefetch
+        class={`nav-link ${isActive("/contact")}`}>Contact</a
+      >
+      <a href="/projects" data-astro-prefetch class={linkClass("/projects")}
+        >Projects</a
+      >
 
       <a
         href={`tel:${phone}`}
@@ -122,30 +140,43 @@ const linkClass = (path) => `nav-link hover:opacity-80 ${isActive(path)}`;
   >
     <div class="py-6 space-y-4 flex flex-col">
       <div>
-        <a href="/" class={`flex nav-link ${isActive("/")}`}>Home</a>
-      </div>
-      <div>
-        <a href="/services" class={`flex nav-link ${isActive("/services")}`}
-          >Services</a
+        <a href="/" data-astro-prefetch class={`flex nav-link ${isActive("/")}`}
+          >Home</a
         >
       </div>
       <div>
-        <a href="/about" class={`nav-link block ${isActive("/about")}`}>About</a
+        <a
+          href="/services"
+          data-astro-prefetch
+          class={`flex nav-link ${isActive("/services")}`}>Services</a
         >
       </div>
       <div>
-        <a href="/reviews" class={`nav-link block ${isActive("/reviews")}`}
-          >Reviews</a
+        <a
+          href="/about"
+          data-astro-prefetch
+          class={`nav-link block ${isActive("/about")}`}>About</a
         >
       </div>
       <div>
-        <a href="/contact" class={`nav-link block ${isActive("/contact")}`}
-          >Contact</a
+        <a
+          href="/reviews"
+          data-astro-prefetchdata-astro-prefetch
+          class={`nav-link block ${isActive("/reviews")}`}>Reviews</a
         >
       </div>
       <div>
-        <a href="/projects" class={`block ${linkClass("/projects")}`}
-          >Projects</a
+        <a
+          href="/contact"
+          data-astro-prefetch
+          class={`nav-link block ${isActive("/contact")}`}>Contact</a
+        >
+      </div>
+      <div>
+        <a
+          href="/projects"
+          data-astro-prefetch
+          class={`block ${linkClass("/projects")}`}>Projects</a
         >
       </div>
     </div>
