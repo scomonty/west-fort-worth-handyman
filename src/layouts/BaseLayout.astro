@@ -29,8 +29,8 @@ const isProd = import.meta.env.PROD;
     <meta property="og:type" content="website" />
 
     <script is:inline>
-  console.log("PROD:", import.meta.env.PROD);
-  console.log("PUBLIC_GA_ID:", import.meta.env.PUBLIC_GA_ID);
+  console.log("PROD:", isProd);
+  console.log("PUBLIC_GA_ID:", GA_ID);
 </script>
 
 <!-- Google tag (gtag.js) -->
