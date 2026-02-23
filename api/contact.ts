@@ -20,6 +20,7 @@ export default async function handler(req, res) {
     const name = fields.name?.[0] || "";
     const email = fields.email?.[0] || "";
     const phone = fields.phone?.[0] || "";
+    const city = fields.city?.[0] || "";
     const message = fields.message?.[0] || "";
 
     const photoUrls = fields.photoUrls?.[0]
@@ -42,6 +43,7 @@ export default async function handler(req, res) {
         <p>Name: ${name}</p>
         <p>Email: ${email}</p>
         <p>Phone: ${phone}</p>
+        <p>City: ${city}</p>
         <p>Message: ${message}</p>
 
         ${

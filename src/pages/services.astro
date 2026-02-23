@@ -37,6 +37,10 @@ import ServiceDetail from "../components/ServiceDetail.astro";
         <div class="grid md:grid-cols-2 gap-6">
           <div class="bg-white p-6 rounded-lg shadow">
             Drywall patching and repair
+            <ServiceDetail
+              title="Drywall patching and repair"
+              images={["/projects/wall-repair1.jpg"]}
+            />
           </div>
           <div class="bg-white p-6 rounded-lg shadow">
             Door adjustments and repair
@@ -44,7 +48,12 @@ import ServiceDetail from "../components/ServiceDetail.astro";
           <div class="bg-white p-6 rounded-lg shadow">
             Trim and baseboard repair
           </div>
-          <div class="bg-white p-6 rounded-lg shadow">Caulking and sealing</div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <ServiceDetail
+              title="Caulking and sealing"
+              images={["/projects/caulking1.jpg"]}
+            />
+          </div>
           <div class="bg-white p-6 rounded-lg shadow">Wall damage repair</div>
         </div>
       </div>
@@ -92,14 +101,14 @@ import ServiceDetail from "../components/ServiceDetail.astro";
               <ServiceDetail
                 title="Light Fixture Installation"
                 description="Professional installation and replacement of light fixtures including ceiling lights, pendant lighting, and wall fixtures. Safe wiring and clean installation."
-                images={["/projects/light1.jpg", "/projects/light2.jpg"]}
+                images={["/projects/light-install1.jpg"]}
               />
             </div>
             <div class="bg-white p-6 rounded-lg shadow">
               <ServiceDetail
                 title="Ceiling Fan Installation"
                 description="Ceiling fan installation and replacement for improved airflow and comfort. Secure mounting and proper electrical connection."
-                images={["/projects/fan1.jpg", "/projects/fan2.jpg"]}
+                images={["/projects/fan-install1.jpg"]}
               />
             </div>
             <div class="bg-white p-6 rounded-lg shadow">
@@ -113,7 +122,7 @@ import ServiceDetail from "../components/ServiceDetail.astro";
               <ServiceDetail
                 title="Shelving & Mounting"
                 description="Professional installation of wall shelving, TV mounting, picture hanging, and storage solutions. Secure mounting into studs or proper anchors for safe, level installation and a clean finished look."
-                images={["/projects/shelving1.png", "/projects/shelving2.jpg"]}
+                images={["/projects/shelving1.png"]}
               />
             </div>
             <div class="bg-white p-6 rounded-lg shadow">
@@ -177,9 +186,6 @@ import ServiceDetail from "../components/ServiceDetail.astro";
           </div>
           <div class="bg-white p-6 rounded-lg shadow">
             Fixture and appliance installation assistance
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            Shelving and mounting
           </div>
         </div>
       </div>
