@@ -39,7 +39,15 @@ import ServiceDetail from "../components/ServiceDetail.astro";
             Drywall patching and repair
             <ServiceDetail
               title="Drywall patching and repair"
+              description="We provide professional drywall patching and repair to restore your walls and ceilings to a smooth, like-new finish."
               images={["/projects/wall-repair1.jpg"]}
+            />
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <ServiceDetail
+              title="Caulking and sealing"
+              description="We provide professional caulking and sealing to protect your home from water, air leaks, and everyday wear. We seal gaps around windows, doors, trim, and fixtures to improve energy efficiency, prevent moisture damage, and create clean, finished lines."
+              images={["/projects/caulking1.jpg"]}
             />
           </div>
           <div class="bg-white p-6 rounded-lg shadow">
@@ -47,12 +55,6 @@ import ServiceDetail from "../components/ServiceDetail.astro";
           </div>
           <div class="bg-white p-6 rounded-lg shadow">
             Trim and baseboard repair
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <ServiceDetail
-              title="Caulking and sealing"
-              images={["/projects/caulking1.jpg"]}
-            />
           </div>
           <div class="bg-white p-6 rounded-lg shadow">Wall damage repair</div>
         </div>
@@ -74,11 +76,24 @@ import ServiceDetail from "../components/ServiceDetail.astro";
 
           <div class="grid md:grid-cols-2 gap-6">
             <div class="bg-white p-6 rounded-lg shadow">
-              Laminate flooring installation
+              <ServiceDetail
+                title="Laminate flooring installation"
+                description="We provide professional laminate flooring installation that delivers a durable, stylish finish for any room in your home. From surface preparation to precise fitting and clean transitions, we ensure a smooth, long-lasting result that enhances the look and value of your space. Quality workmanship, efficient installation, and attention to detail every step of the way."
+                images={[
+                  "/projects/laminate1.jpg",
+                  "/projects/laminate2.jpg",
+                  "/projects/laminate3.jpg",
+                  "/projects/laminate4.jpg",
+                ]}
+              />
             </div>
 
             <div class="bg-white p-6 rounded-lg shadow">
-              Vinyl plank flooring installation
+              <ServiceDetail
+                title="Vinyl plank flooring installation"
+                description="We provide professional vinyl plank flooring installation for a durable, water-resistant, and modern finish. Our process includes proper surface preparation, precise installation, and seamless transitions to ensure long-lasting performance and a clean, polished look."
+                images={["/projects/vinyl1.jpg"]}
+              />
             </div>
 
             <div class="bg-white p-6 rounded-lg shadow">
