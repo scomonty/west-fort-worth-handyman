@@ -28,12 +28,6 @@ const isProd = import.meta.env.PROD;
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
 
-    <script define:vars={{ isProd, GA_ID }}
-     is:inline>
-  console.log("PROD:", isProd);
-  console.log("PUBLIC_GA_ID:", GA_ID);
-</script>
-
 <!-- Google tag (gtag.js) -->
 {isProd && GA_ID && (
   <>
