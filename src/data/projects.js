@@ -191,7 +191,51 @@ export const projects = [
 
   description:
     "Exterior repair project including siding restoration and rear door replacement to improve durability and curb appeal."
-},{
+},
+{
+  id: "laundry-relocation-stillwater",
+  slug: "custom-laundry-cabinet-washer-dryer-relocation-stillwater-ok",
+
+  title: "Custom Laundry Cabinet + Washer & Dryer Relocation",
+  city: "Fort Worth",
+  state: "TX",
+
+  before: "/beforeAfter/washerDryer-before.jpg",
+  after:
+    "/beforeAfter/washerDryer-after.jpg",
+
+  scope: "Interior Renovation",
+  completed: "2024",
+  featured: true,
+
+  services: [
+    "Custom Cabinetry",
+    "Laundry Room Installation",
+    "Washer & Dryer Relocation",
+    "Countertop Installation",
+    "Finish Carpentry",
+    "Flooring Installation",
+    "Interior Painting"
+  ],
+
+  highlights: [
+    "Designed and built custom laundry cabinet enclosure",
+    "Relocated washer and dryer to dedicated laundry space",
+    "Added built-in upper storage",
+    "Installed folding countertop workspace",
+    "Updated flooring and trim for clean finished look"
+  ],
+
+  challenge:
+    "Laundry appliances were positioned in a cramped kitchen layout with limited storage and no dedicated workspace.",
+
+  solution:
+    "Built a custom cabinet enclosure and relocated the washer and dryer to create a clean, organized, and fully functional laundry area.",
+
+  description:
+    "Custom-built laundry cabinet and washer/dryer relocation including cabinetry, countertop installation, flooring, and finish carpentry to create a professional, built-in look."
+},
+{
   id: "dining-update-stillwater",
   slug: "dining-area-flooring-paint-stillwater-ok",
 
