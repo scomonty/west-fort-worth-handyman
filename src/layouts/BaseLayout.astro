@@ -17,7 +17,6 @@ const isProd = import.meta.env.PROD;
   <head>
     <ClientRouter />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -42,13 +41,13 @@ const isProd = import.meta.env.PROD;
   </>
 )}
 
-<script type="application/ld+json" is:inline>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
 
     {
-      "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+      "@type": ["HomeAndConstructionBusiness"],
       "@id": "https://westfortworthhandyman.com/#business",
 
       "name": "West Fort Worth Handyman",
