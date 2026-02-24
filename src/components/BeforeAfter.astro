@@ -4,6 +4,26 @@ const { title, before, after, description, location } = Astro.props;
 const id = title.replace(/\s+/g, "-").toLowerCase();
 ---
 
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "@id": `${Astro.url.href}#${title.replace(/\s+/g, "-")}`,
+
+    name: title,
+    description: description,
+
+    creator: {
+      "@id": "https://westfortworthhandyman.com/#business",
+    },
+
+    locationCreated: location || "Fort Worth, Texas",
+
+    image: [before, after],
+  })}
+/>
+
 <div class="bg-white rounded-xl shadow p-6">
   <h3 class="text-xl font-bold mb-2">{title}</h3>
 
