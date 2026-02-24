@@ -1,18 +1,31 @@
 ---
 const { items = [] } = Astro.props;
 
+const cleanText = (text) =>
+  text
+    .replace(/<[^>]*>/g, "") // remove html
+    .replace(/\s+/g, " ")
+    .trim();
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: items.map((item) => ({
-    "@type": "Question",
-    name: item.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: item.answer,
-    },
-  })),
+  "@id": `${Astro.url.href}#faq`, // unique per page
+
+  mainEntity: items
+    .filter((item) => item.question && item.answer)
+    .map((item) => ({
+      "@type": "Question",
+      name: cleanText(item.question),
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: cleanText(item.answer),
+      },
+    })),
 };
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 ---
 
 <section class="py-24 bg-brand-offwhite">
