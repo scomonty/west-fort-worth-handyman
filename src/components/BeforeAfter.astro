@@ -1,0 +1,89 @@
+---
+const { title, before, after, description, location } = Astro.props;
+
+const id = title.replace(/\s+/g, "-").toLowerCase();
+---
+
+<div class="bg-white rounded-xl shadow p-6">
+  <h3 class="text-xl font-bold mb-2">{title}</h3>
+
+  {location && <p class="text-sm text-gray-500 mb-4">{location}</p>}
+
+  <div class="grid md:grid-cols-2 gap-4 mb-4">
+    <!-- BEFORE -->
+    <div>
+      <p class="text-sm font-semibold mb-2">Before</p>
+      <img
+        src={before}
+        alt={`${title} before`}
+        class="rounded-lg w-full h-64 object-cover cursor-pointer hover:opacity-90"
+        onclick={`openImageModal('${id}', '${before}')`}
+      />
+    </div>
+
+    <!-- AFTER -->
+    <div>
+      <p class="text-sm font-semibold mb-2">After</p>
+      <img
+        src={after}
+        alt={`${title} after`}
+        class="rounded-lg w-full h-64 object-cover cursor-pointer hover:opacity-90"
+        onclick={`openImageModal('${id}', '${after}')`}
+      />
+    </div>
+  </div>
+
+  <p class="text-brand-gray">{description}</p>
+
+  <!-- MODAL -->
+  <div
+    id={`${id}-modal`}
+    class="fixed inset-0 bg-black/80 flex items-center justify-center z-[9999] hidden"
+    onclick={`closeImageModal('${id}')`}
+  >
+    <div class="relative max-w-4xl w-full p-4">
+      <button
+        class="absolute -top-10 right-0 text-white text-3xl"
+        onclick={`closeImageModal('${id}')`}
+      >
+        ×
+      </button>
+
+      <img
+        id={`${id}-modal-img`}
+        class="w-full max-h-[80vh] object-contain rounded-lg"
+      />
+    </div>
+  </div>
+</div>
+
+<script>
+  window.openImageModal = (id, src) => {
+    const modal = document.getElementById(`${id}-modal`);
+    const img = document.getElementById(`${id}-modal-img`);
+
+    if (!modal || !img) return;
+
+    img.src = src;
+    modal.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+  };
+
+  window.closeImageModal = (id) => {
+    const modal = document.getElementById(`${id}-modal`);
+    if (!modal) return;
+
+    modal.classList.add("hidden");
+    document.body.style.overflow = "auto";
+  };
+
+  // ESC key support
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      document.querySelectorAll("[id$='-modal']").forEach((m) => {
+        m.classList.add("hidden");
+      });
+      document.body.style.overflow = "auto";
+    }
+  });
+</script>
