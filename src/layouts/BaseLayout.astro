@@ -233,41 +233,27 @@ const isProd = import.meta.env.PROD;
       window.addEventListener("load", finishProgress);
     </script>
 
-    <script>
-      // Fade in on page load
-      window.addEventListener("DOMContentLoaded", () => {
-        document
-          .getElementById("page-transition")
-          ?.classList.remove("opacity-0", "translate-y-2");
-      });
+<script>
+  const wrapperId = "page-transition";
 
-      // Fade out before navigation
-      document.addEventListener("click", (e) => {
-        const link = e.target.closest("a");
+  function showPage() {
+    document
+      .getElementById(wrapperId)
+      ?.classList.remove("opacity-0", "translate-y-2");
+  }
 
-        if (!link) return;
+  function hidePage() {
+    document
+      .getElementById(wrapperId)
+      ?.classList.add("opacity-0", "translate-y-2");
+  }
 
-        const url = link.getAttribute("href");
+  // first load + navigation + back button
+  document.addEventListener("astro:page-load", showPage);
 
-        // ignore external / anchors / new tab
-        if (
-          !url ||
-          url.startsWith("#") ||
-          link.target === "_blank" ||
-          url.startsWith("http")
-        )
-          return;
-
-        e.preventDefault();
-
-        const wrapper = document.getElementById("page-transition");
-        wrapper.classList.add("opacity-0");
-
-        setTimeout(() => {
-          window.location.href = url;
-        }, 250);
-      });
-    </script>
+  // before Astro swaps pages
+  document.addEventListener("astro:before-swap", hidePage);
+</script>
 
     <script>
   window.trackEvent = function(name, params = {}) {
