@@ -1,8 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Navbar from "../components/Navbar.astro";
+import BeforeAfterGrid from "../containers/BeforeAfterGrid.astro";
 
-/* Replace these with your real photos later */
 const projects = [
   {
     src: "/projects/flooring1.jpg",
@@ -50,6 +50,7 @@ const projects = [
       </p>
     </div>
   </section>
+  <BeforeAfterGrid offset={4} showHeader={false} />
 
   <!-- GALLERY -->
   <section class="py-24 bg-brand-offwhite">

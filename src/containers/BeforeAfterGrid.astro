@@ -1,0 +1,45 @@
+---
+import BeforeAfter from "../components/BeforeAfter.astro";
+import { projects } from "../data/projects";
+
+const {
+  limit = null, // number of items to show
+  offset = 0, // skip first N items
+  showViewMore = false,
+  showHeader = true,
+  viewMoreHref = "/projects",
+} = Astro.props;
+
+// slice logic
+const visibleProjects = limit
+  ? projects.slice(offset, offset + limit)
+  : projects.slice(offset);
+---
+
+<section class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col">
+    {
+      showHeader && (
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Recent Projects in Fort Worth and Surrounding Area
+        </h2>
+      )
+    }
+
+    <div class="grid md:grid-cols-2 gap-8">
+      {visibleProjects.map((project) => <BeforeAfter {...project} />)}
+    </div>
+    {
+      showViewMore && (
+        <div class="flex flex-row justify-center">
+          <a
+            href={viewMoreHref}
+            class="flex mt-8 px-8 py-4 bg-brand-red text-white font-semibold rounded-xl shadow hover:opacity-90 transition"
+          >
+            View More Before & After Projects →
+          </a>
+        </div>
+      )
+    }
+  </div>
+</section>
