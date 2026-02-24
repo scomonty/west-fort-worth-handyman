@@ -5,6 +5,7 @@ import Hero from "../components/Hero.astro";
 import ServicesPreview from "../components/ServiesPreview.astro";
 import WhyChoose from "../components/WhyChooseUs.astro";
 import ServiceArea from "../components/ServiceArea.astro";
+import FAQ from "../components/FAQ.astro";
 
 const phone = "(682) 703-0033";
 ---
@@ -13,11 +14,38 @@ const phone = "(682) 703-0033";
   title="Handyman Services in West Fort Worth"
   description="Affordable and reliable handyman services in West Fort Worth. Drywall repair, door repair, fixture installation, and home maintenance."
 >
-
-<Navbar />
-<Hero />
-<ServicesPreview />
-<WhyChoose />
-<ServiceArea />
-
+  <Navbar />
+  <Hero />
+  <ServicesPreview />
+  <WhyChoose />
+  <ServiceArea />
+  <FAQ
+    items={[
+      {
+        question: "What handyman services do you offer?",
+        answer:
+          "We provide professional handyman services in Fort Worth, TX including drywall repair and patching, door and trim repair, fixture installation, vinyl plank and laminate flooring installation, fence repair, caulking and sealing, minor plumbing, and general home maintenance. We handle small home repairs and improvement projects for homeowners throughout West Fort Worth and nearby areas.",
+      },
+      {
+        question: "Do you provide free estimates?",
+        answer:
+          "Yes. We provide free estimates for most handyman and home repair projects in Fort Worth and surrounding areas. Contact us to discuss your project and get a clear, upfront quote.",
+      },
+      {
+        question: "What areas do you serve?",
+        answer:
+          "We provide handyman services throughout Fort Worth, TX including West Fort Worth, Benbrook, White Settlement, Ridglea, Ridglea Hills, Aledo, Lake Worth, Saginaw, Keller, Overton, Tanglewood, and nearby communities. Contact us to confirm service in your area.",
+      },
+      {
+        question: "Are you insured?",
+        answer:
+          "Yes. West Fort Worth Handyman is fully insured and takes care to protect your home and property during every repair or installation project.",
+      },
+      {
+        question: "How quickly can you start a project?",
+        answer:
+          "Project start times depend on our current schedule and the size of the project. We respond quickly to service requests and work to schedule handyman services as soon as possible. Contact us for current availability.",
+      },
+    ]}
+  />
 </BaseLayout>
