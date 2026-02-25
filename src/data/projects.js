@@ -117,42 +117,42 @@ export const projects = [
     "Complete kitchen renovation updating cabinetry, surfaces, lighting, and finishes for a modern, highly functional layout."
 },
 {
-  id: "rear-exterior-repair-texas",
-  slug: "rear-exterior-repair-texas",
+  id: "front-exterior-refresh-fort-worth",
+  slug: "exterior-paint-custom-shutters-fort-worth",
 
-  title: "Exterior Siding & Door Update",
-  city: "Texas",
-  state: "",
+  title: "Exterior Paint & Custom Shutters",
+  city: "Fort Worth",
+  state: "TX",
 
-  before: "/beforeAfter/backhouse-before.jpg",
-  after: "/beforeAfter/backhouse-after.jpg",
+  before: "/beforeAfter/fronthouse-before.jpg",
+  after: "/beforeAfter/fronthouse-after.jpg",
 
-  scope: "Exterior Repair",
+  scope: "Full Exterior Refresh",
   completed: "2025",
-  featured: false,
+  featured: true,
 
   services: [
-    "Exterior Repair",
-    "Siding Repair",
-    "Door Installation",
-    "Painting"
+    "Exterior Painting",
+    "Custom Shutter Installation",
+    "Power Washing",
+    "Trim Work"
   ],
 
   highlights: [
-    "Repaired damaged siding",
-    "Installed new rear door",
-    "Improved weather protection",
-    "Enhanced durability and curb appeal"
+    "Power washed exterior surfaces",
+    "Updated exterior paint and trim",
+    "Built and installed custom shutters",
+    "Significantly improved curb appeal"
   ],
 
   challenge:
-    "Weather exposure had damaged siding and reduced exterior integrity.",
+    "Faded finishes and outdated trim reduced curb appeal.",
 
   solution:
-    "Repaired siding and replaced the rear door to improve durability and security.",
+    "Refreshed paint, trim, and added custom shutters for a modern exterior update.",
 
   description:
-    "Exterior repairs including siding restoration and rear door replacement to improve durability, security, and overall appearance."
+    "Full exterior refresh including paint, trim updates, and custom shutter installation to enhance curb appeal and modernize the home."
 },
 {
   id: "exterior-siding-door-west-fort-worth",

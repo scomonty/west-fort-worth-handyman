@@ -185,63 +185,66 @@ const linkClass = (path) => `nav-link hover:opacity-80 ${isActive(path)}`;
   </div>
 
   <script>
-    const btn = document.getElementById("menuBtn");
-    const menu = document.getElementById("mobileMenu");
-    const backdrop = document.getElementById("menuBackdrop");
-    const logo = document.getElementById("logoWrap");
+    document.addEventListener("astro:page-load", () => {
+      const btn = document.getElementById("menuBtn");
+      const menu = document.getElementById("mobileMenu");
+      const backdrop = document.getElementById("menuBackdrop");
+      const logo = document.getElementById("logoWrap");
 
-    let open = false;
+      let open = false;
 
-    function openMenu() {
-      menu.classList.remove("max-h-0", "opacity-0", "-translate-y-2");
-      menu.classList.add("max-h-[400px]", "opacity-100", "translate-y-0");
+      function openMenu() {
+        menu.classList.remove("max-h-0", "opacity-0", "-translate-y-2");
+        menu.classList.add("max-h-[400px]", "opacity-100", "translate-y-0");
 
-      backdrop.classList.remove("opacity-0", "pointer-events-none");
-      backdrop.classList.add("opacity-100");
+        backdrop.classList.remove("opacity-0", "pointer-events-none");
+        backdrop.classList.add("opacity-100");
 
-      logo?.classList.add("opacity-0");
-      open = true;
-    }
+        logo?.classList.add("opacity-0");
+        open = true;
+      }
 
-    function closeMenu() {
-      menu.classList.add("max-h-0", "opacity-0", "-translate-y-2");
-      menu.classList.remove("max-h-[400px]", "opacity-100", "translate-y-0");
+      function closeMenu() {
+        menu.classList.add("max-h-0", "opacity-0", "-translate-y-2");
+        menu.classList.remove("max-h-[400px]", "opacity-100", "translate-y-0");
 
-      backdrop.classList.add("opacity-0", "pointer-events-none");
-      backdrop.classList.remove("opacity-100");
+        backdrop.classList.add("opacity-0", "pointer-events-none");
+        backdrop.classList.remove("opacity-100");
 
-      logo?.classList.remove("opacity-0");
-      open = false;
-    }
+        logo?.classList.remove("opacity-0");
+        open = false;
+      }
 
-    btn?.addEventListener("click", () => {
-      open ? closeMenu() : openMenu();
+      btn?.addEventListener("click", () => {
+        open ? closeMenu() : openMenu();
+      });
+
+      backdrop?.addEventListener("click", closeMenu);
     });
-
-    // click outside to close
-    backdrop?.addEventListener("click", closeMenu);
   </script>
 
   <script>
-    const header = document.getElementById("siteHeader");
-    const logo = document.getElementById("logoWrap");
+    document.addEventListener("astro:page-load", () => {
+      const header = document.getElementById("siteHeader");
+      const logo = document.getElementById("logoWrap");
 
-    let lastScrollY = window.scrollY;
+      let lastScrollY = window.scrollY;
 
-    window.addEventListener("scroll", () => {
-      const currentScroll = window.scrollY;
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.scrollY;
 
-      if (Math.abs(currentScroll - lastScrollY) < 5) return;
+        if (Math.abs(currentScroll - lastScrollY) < 5) return;
 
-      if (currentScroll > lastScrollY && currentScroll > 80) {
-        header.classList.add("-translate-y-full");
-        logo?.classList.add("opacity-0");
-      } else {
-        header.classList.remove("-translate-y-full");
-        logo?.classList.remove("opacity-0");
-      }
+        if (currentScroll > lastScrollY && currentScroll > 80) {
+          header.classList.add("-translate-y-full");
+          logo?.classList.add("opacity-0");
+        } else {
+          header.classList.remove("-translate-y-full");
+          logo?.classList.remove("opacity-0");
+        }
 
-      lastScrollY = currentScroll;
+        lastScrollY = currentScroll;
+      });
     });
   </script>
 </header>
