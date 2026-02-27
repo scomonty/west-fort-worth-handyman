@@ -11,6 +11,10 @@ const {
   services = [],
   highlights = [],
 } = Astro.props;
+
+const afterImages = Array.isArray(after) ? after : [after];
+
+const allImages = [before, ...afterImages];
 ---
 
 <script
@@ -60,18 +64,40 @@ const {
         src={before}
         alt={`${title} before`}
         class="rounded-lg w-full h-64 object-cover cursor-pointer hover:opacity-90"
-        onclick={`openImageModal('${id}', '${before}')`}
+        onclick={`openImageModal('${id}', '${JSON.stringify(allImages)}', 0)`}
       />
     </div>
 
+    <!-- AFTER -->
     <div>
       <p class="text-sm font-semibold mb-2">After</p>
+
+      <!-- show first image -->
       <img
-        src={after}
+        src={afterImages[0]}
         alt={`${title} after`}
         class="rounded-lg w-full h-64 object-cover cursor-pointer hover:opacity-90"
-        onclick={`openImageModal('${id}', '${after}')`}
+        onclick={`openImageModal('${id}', '${JSON.stringify(allImages)}', 1)`}
       />
+
+      <!-- show thumbnails if multiple -->
+      {
+        afterImages.length > 1 && (
+          <div class="flex gap-2 mt-2">
+            {afterImages.slice(1).map((img, index) => {
+              const realIndex = allImages.indexOf(img);
+
+              return (
+                <img
+                  src={img}
+                  class="w-16 h-16 object-cover rounded cursor-pointer hover:opacity-80"
+                  onclick={`openImageModal('${id}', '${JSON.stringify(allImages)}', ${realIndex})`}
+                />
+              );
+            })}
+          </div>
+        )
+      }
     </div>
   </div>
 
@@ -108,7 +134,10 @@ const {
     class="fixed inset-0 bg-black/80 flex items-center justify-center z-[9999] hidden"
     onclick={`closeImageModal('${id}')`}
   >
-    <div class="relative max-w-4xl w-full p-4">
+    <div
+      class="relative max-w-4xl w-full p-4"
+      onclick="event.stopPropagation()"
+    >
       <button
         class="absolute -top-10 right-0 text-white text-3xl"
         onclick={`closeImageModal('${id}')`}
@@ -120,37 +149,81 @@ const {
         id={`${id}-modal-img`}
         class="w-full max-h-[80vh] object-contain rounded-lg"
       />
+      <button
+        id={`${id}-prev`}
+        class="absolute left-0 top-1/2 text-white text-5xl px-4"
+        onclick={`prevModalImage('${id}')`}
+      >
+        ‹
+      </button>
+
+      <button
+        id={`${id}-next`}
+        class="absolute right-0 top-1/2 text-white text-5xl px-4"
+        onclick={`nextModalImage('${id}')`}
+      >
+        ›
+      </button>
     </div>
   </div>
 </div>
 
 <script>
-  window.openImageModal = (id, src) => {
+  window.modalState = {};
+
+  window.openImageModal = (id, images, startIndex = 0) => {
+    const parsedImages =
+      typeof images === "string" ? JSON.parse(images) : images;
+
     const modal = document.getElementById(`${id}-modal`);
     const img = document.getElementById(`${id}-modal-img`);
 
-    if (!modal || !img) return;
+    window.modalState[id] = {
+      images: parsedImages,
+      index: startIndex,
+    };
 
-    img.src = src;
+    img.src = parsedImages[startIndex];
     modal.classList.remove("hidden");
-    document.body.style.overflow = "hidden";
+
+    updateModalArrows(id);
   };
 
   window.closeImageModal = (id) => {
-    const modal = document.getElementById(`${id}-modal`);
-    if (!modal) return;
-
-    modal.classList.add("hidden");
-    document.body.style.overflow = "auto";
+    document.getElementById(`${id}-modal`).classList.add("hidden");
   };
 
-  // ESC key support
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      document.querySelectorAll("[id$='-modal']").forEach((m) => {
-        m.classList.add("hidden");
-      });
-      document.body.style.overflow = "auto";
-    }
-  });
+  window.nextModalImage = (id) => {
+    const state = window.modalState[id];
+    if (!state) return;
+
+    if (state.index < state.images.length - 1) state.index++;
+
+    document.getElementById(`${id}-modal-img`).src = state.images[state.index];
+
+    updateModalArrows(id);
+  };
+
+  window.prevModalImage = (id) => {
+    const state = window.modalState[id];
+    if (!state) return;
+
+    if (state.index > 0) state.index--;
+
+    document.getElementById(`${id}-modal-img`).src = state.images[state.index];
+
+    updateModalArrows(id);
+  };
+
+  function updateModalArrows(id) {
+    const state = window.modalState[id];
+    if (!state) return;
+
+    const prev = document.getElementById(`${id}-prev`);
+    const next = document.getElementById(`${id}-next`);
+
+    prev.style.display = state.index === 0 ? "none" : "block";
+    next.style.display =
+      state.index === state.images.length - 1 ? "none" : "block";
+  }
 </script>

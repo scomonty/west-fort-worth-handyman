@@ -201,8 +201,10 @@ export const projects = [
   state: "TX",
 
   before: "/beforeAfter/washerDryer-before.jpg",
-  after:
+  after:[
     "/beforeAfter/washerDryer-after.jpg",
+    "/beforeAfter/washerDryer-after-two.jpg"
+  ],
 
   scope: "Interior Renovation",
   completed: "2024",
