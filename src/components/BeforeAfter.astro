@@ -172,6 +172,7 @@ const allImages = [before, ...afterImages];
   window.modalState = {};
 
   window.openImageModal = (id, images, startIndex = 0) => {
+    document.body.style.overflow = "hidden";
     const parsedImages =
       typeof images === "string" ? JSON.parse(images) : images;
 
@@ -187,9 +188,12 @@ const allImages = [before, ...afterImages];
     modal.classList.remove("hidden");
 
     updateModalArrows(id);
+    addSwipeSupport(id);
   };
 
   window.closeImageModal = (id) => {
+    document.body.style.overflow = "";
+    document.body.style.overflow = "";
     document.getElementById(`${id}-modal`).classList.add("hidden");
   };
 
@@ -225,5 +229,41 @@ const allImages = [before, ...afterImages];
     prev.style.display = state.index === 0 ? "none" : "block";
     next.style.display =
       state.index === state.images.length - 1 ? "none" : "block";
+  }
+</script>
+
+<script>
+  function addSwipeSupport(id) {
+    const modal = document.getElementById(`${id}-modal`);
+    const img = document.getElementById(`${id}-modal-img`);
+
+    if (!img) return;
+
+    let startX = 0;
+    let endX = 0;
+
+    img.addEventListener("touchstart", (e) => {
+      startX = e.changedTouches[0].screenX;
+    });
+
+    img.addEventListener("touchend", (e) => {
+      endX = e.changedTouches[0].screenX;
+      handleSwipe(id);
+    });
+
+    function handleSwipe(id) {
+      const threshold = 50; // minimum swipe distance
+      const diff = startX - endX;
+
+      if (Math.abs(diff) < threshold) return;
+
+      if (diff > 0) {
+        // swipe left → next image
+        window.nextModalImage(id);
+      } else {
+        // swipe right → previous image
+        window.prevModalImage(id);
+      }
+    }
   }
 </script>
