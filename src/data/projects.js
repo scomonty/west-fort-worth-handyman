@@ -8,7 +8,9 @@ export const projects = [
   state: "TX",
 
   before: "/beforeAfter/fence-before.jpg",
-  after: "/beforeAfter/fence-after.jpg",
+  after: ["/beforeAfter/fence-after.jpg",
+    "/beforeAfter/fence-after-2.jpg"
+  ],
 
   scope: "Repair & Installation",
   completed: "2025",
@@ -125,7 +127,11 @@ export const projects = [
   state: "TX",
 
   before: "/beforeAfter/fronthouse-before.jpg",
-  after: "/beforeAfter/fronthouse-after.jpg",
+  after: [
+    "/beforeAfter/fronthouse-after-1.jpg",
+    "/beforeAfter/fronthouse-after-2.jpg",
+    "/beforeAfter/fronthouse-after-3.jpg"
+  ],
 
   scope: "Full Exterior Refresh",
   completed: "2025",
