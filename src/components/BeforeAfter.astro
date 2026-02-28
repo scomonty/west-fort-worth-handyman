@@ -151,7 +151,13 @@ const allImages = [before, ...afterImages];
       />
       <button
         id={`${id}-prev`}
-        class="absolute left-0 top-1/2 text-white text-5xl px-4"
+        class="absolute left-4 top-1/2 -translate-y-1/2
+         bg-black/60 backdrop-blur-sm
+         text-white text-4xl
+         w-14 h-14 rounded-full
+         flex items-center justify-center
+         hover:bg-black/80 hover:scale-110
+         transition shadow-lg cursor-pointer"
         onclick={`prevModalImage('${id}')`}
       >
         ‹
@@ -159,7 +165,13 @@ const allImages = [before, ...afterImages];
 
       <button
         id={`${id}-next`}
-        class="absolute right-0 top-1/2 text-white text-5xl px-4"
+        class="absolute right-4 top-1/2 -translate-y-1/2
+         bg-black/60 backdrop-blur-sm
+         text-white text-4xl
+         w-14 h-14 rounded-full
+         flex items-center justify-center
+         hover:bg-black/80 hover:scale-110
+         transition shadow-lg cursor-pointer"
         onclick={`nextModalImage('${id}')`}
       >
         ›
@@ -189,12 +201,18 @@ const allImages = [before, ...afterImages];
 
     updateModalArrows(id);
     addSwipeSupport(id);
+    addKeyboardSupport(id);
   };
 
   window.closeImageModal = (id) => {
     document.body.style.overflow = "";
     document.body.style.overflow = "";
     document.getElementById(`${id}-modal`).classList.add("hidden");
+
+    const state = window.modalState[id];
+    if (state?.keyHandler) {
+      document.removeEventListener("keydown", state.keyHandler);
+    }
   };
 
   window.nextModalImage = (id) => {
@@ -230,9 +248,7 @@ const allImages = [before, ...afterImages];
     next.style.display =
       state.index === state.images.length - 1 ? "none" : "block";
   }
-</script>
 
-<script>
   function addSwipeSupport(id) {
     const modal = document.getElementById(`${id}-modal`);
     const img = document.getElementById(`${id}-modal-img`);
@@ -265,5 +281,34 @@ const allImages = [before, ...afterImages];
         window.prevModalImage(id);
       }
     }
+  }
+
+  function addKeyboardSupport(id) {
+    function handleKey(e) {
+      const modal = document.getElementById(`${id}-modal`);
+
+      // Only work if modal is visible
+      if (!modal || modal.classList.contains("hidden")) return;
+
+      if (e.key === "ArrowRight") {
+        e.preventDefault();
+        window.nextModalImage(id);
+      }
+
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        window.prevModalImage(id);
+      }
+
+      if (e.key === "Escape") {
+        e.preventDefault();
+        window.closeImageModal(id);
+      }
+    }
+
+    // store handler so we can remove later
+    window.modalState[id].keyHandler = handleKey;
+
+    document.addEventListener("keydown", handleKey);
   }
 </script>
