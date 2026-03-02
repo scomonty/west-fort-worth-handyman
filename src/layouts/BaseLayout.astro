@@ -9,6 +9,7 @@ const {
 } = Astro.props;
 
 const GA_ID = "G-MSC62P8W91";
+// const ADS_ID = "AW-XXXXXXXXX";
 const isProd = import.meta.env.PROD;
 ---
 
@@ -32,11 +33,16 @@ const isProd = import.meta.env.PROD;
   <>
     <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
 
-    <script define:vars={{ GA_ID }}>
+    <script define:vars={{ GA_ID, ADS_ID }}>
       window.dataLayer = window.dataLayer || [];
       window.gtag = function(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
+      {/* GA4 */}
       gtag('config', GA_ID);
+
+      {/* Google Ads */}
+      gtag('config', ADS_ID);
     </script>
   </>
 )}

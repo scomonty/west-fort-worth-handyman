@@ -1,0 +1,82 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<BaseLayout
+  title="Thank You | West Fort Worth Handyman"
+  description="Thank you for contacting West Fort Worth Handyman. We’ve received your request and will be in touch shortly."
+>
+  <Navbar />
+
+  <!-- HERO -->
+  <section class="bg-brand-navy text-white pt-40 pb-24 text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        Thank You — Your Request Has Been Received
+      </h1>
+
+      <p class="text-lg text-gray-200">
+        We’ll review your project details and contact you shortly.
+      </p>
+    </div>
+  </section>
+
+  <!-- DETAILS SECTION -->
+  <section class="py-24 bg-brand-offwhite">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <div class="bg-white p-10 rounded-xl shadow">
+        <h2 class="text-2xl font-bold text-brand-navy mb-6">
+          What Happens Next?
+        </h2>
+
+        <div class="space-y-4 text-brand-gray text-lg">
+          <p>✔ We review your project details and photos.</p>
+          <p>✔ We may reach out with a few follow-up questions.</p>
+          <p>✔ You’ll receive scheduling and estimate information.</p>
+        </div>
+
+        <div class="mt-10">
+          <p class="mb-6">If your project is urgent, feel free to call:</p>
+
+          <a
+            href="tel:+16827030033"
+            class="inline-block bg-brand-red text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90"
+          >
+            Call (682) 703-0033
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BACK TO SERVICES -->
+  <section class="py-20 text-center bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-brand-navy mb-4">
+        Explore Our Services
+      </h2>
+
+      <p class="text-brand-gray mb-8">
+        See examples of drywall repair, flooring installation, fixture
+        installation, and more.
+      </p>
+
+      <a
+        href="/services"
+        class="bg-brand-red text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90"
+      >
+        View Services
+      </a>
+    </div>
+  </section>
+
+  <!-- Google Ads Conversion Tracking -->
+  <script>
+    if (window.gtag) {
+      gtag("event", "conversion", {
+        send_to: "AW-XXXXXXXXX/CONVERSION_LABEL",
+      });
+    }
+  </script>
+</BaseLayout>

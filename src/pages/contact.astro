@@ -166,7 +166,7 @@ import Navbar from "../components/Navbar.astro";
           form_name: "contact_request",
         });
       }
-      status.textContent = "Thanks! We'll contact you soon.";
+      window.location.href = "/thank-you";
       form.reset();
       uploadStatus.textContent = "";
     } else {
