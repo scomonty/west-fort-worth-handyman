@@ -2,20 +2,13 @@
 import logo from "../assets/logo.png";
 ---
 
-<footer class="bg-brand-navy text-white">
-
+<footer class="bg-brand-navy text-white break-words overflow-hidden">
   <div class="max-w-6xl mx-auto px-6 py-16">
-
     <!-- GRID -->
     <div class="grid md:grid-cols-4 gap-10">
-
       <!-- BRAND -->
       <div>
-        <img
-          src={logo.src}
-          alt="West Fort Worth Handyman"
-          class="h-14 mb-4"
-        />
+        <img src={logo.src} alt="West Fort Worth Handyman" class="h-14 mb-4" />
 
         <p class="text-gray-300">
           Affordable and reliable home repair services in West Fort Worth.
@@ -27,11 +20,20 @@ import logo from "../assets/logo.png";
         <h3 class="font-semibold mb-4">Services</h3>
 
         <ul class="space-y-2 text-gray-300">
-          <li><a href="/services" class="hover:text-white">Drywall Repair</a></li>
-          <li><a href="/services" class="hover:text-white">Door & Trim Repair</a></li>
-          <li><a href="/services" class="hover:text-white">Fixture Installation</a></li>
+          <li>
+            <a href="/services" class="hover:text-white">Drywall Repair</a>
+          </li>
+          <li>
+            <a href="/services" class="hover:text-white">Door & Trim Repair</a>
+          </li>
+          <li>
+            <a href="/services" class="hover:text-white">Fixture Installation</a
+            >
+          </li>
           <li><a href="/services" class="hover:text-white">Fence Repair</a></li>
-          <li><a href="/services" class="hover:text-white">General Maintenance</a></li>
+          <li>
+            <a href="/services" class="hover:text-white">General Maintenance</a>
+          </li>
         </ul>
       </div>
 
@@ -54,17 +56,20 @@ import logo from "../assets/logo.png";
         <ul class="space-y-2 text-gray-300">
           <li>📍 Fort Worth, TX</li>
           <li>📞 (682) 703-0033</li>
-          <li>✉️ info@westfortworthhandyman.com</li>
+          <li>
+            ✉️ <a
+              href="mailto:info@westfortworthhandyman.com"
+              class="hover:underline break-all"
+              >info@westfortworthhandyman.com
+            </a>
+          </li>
         </ul>
       </div>
-
     </div>
-
   </div>
 
   <!-- BOTTOM BAR -->
   <div class="border-t border-white/20 text-center py-6 text-gray-400">
     © {new Date().getFullYear()} West Fort Worth Handyman. All rights reserved.
   </div>
-
 </footer>
