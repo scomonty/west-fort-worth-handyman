@@ -47,7 +47,9 @@ export const projects = [
     state: "TX",
 
     before: "/beforeAfter/hall-bath-before.jpg",
-    after: "/beforeAfter/hall-bath-after.jpg",
+    after: ["/beforeAfter/hall-bath-after.jpg",
+      "/beforeAfter/hall-bath-after-2.jpg"
+    ],
 
     scope: "Full Remodel",
     completed: "2025",
@@ -288,7 +290,10 @@ export const projects = [
   state: "TX",
 
   before: "/beforeAfter/hall-stillwater-before.jpg",
-  after: "/beforeAfter/hall-stillwater-after.jpg",
+  after: [
+    "/beforeAfter/hall-stillwater-after.jpg",
+        "/beforeAfter/living-stillwater-after-4.jpg"
+  ],
 
   scope: "Interior Renovation",
   completed: "2024",
@@ -326,7 +331,11 @@ export const projects = [
   state: "TX",
 
   before: "/beforeAfter/living-stillwater-before.jpg",
-  after: "/beforeAfter/living-stillwater-after.jpg",
+  after: [
+    "/beforeAfter/living-stillwater-after.jpg",
+    "/beforeAfter/living-stillwater-after-2.jpg",
+    "/beforeAfter/living-stillwater-after-3.jpg"
+  ],
 
   scope: "Interior Update",
   completed: "2024",
@@ -363,7 +372,11 @@ export const projects = [
   state: "TX",
 
   before: "/beforeAfter/master-bath-before.jpg",
-  after: "/beforeAfter/master-bath-after.jpg",
+  after: [
+    "/beforeAfter/master-bath-after.jpg",
+    "/beforeAfter/master-bath-after-2.jpg",
+    "/beforeAfter/master-bath-after-3.jpg"
+  ],
 
   scope: "Full Remodel",
   completed: "2024",

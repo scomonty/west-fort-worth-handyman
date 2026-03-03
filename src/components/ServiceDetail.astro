@@ -8,7 +8,7 @@ const {
 } = Astro.props;
 ---
 
-<section class="py-16 border-b border-gray-200">
+<section class="py-16 border-gray-200">
   <div class="grid md:grid-cols-2 gap-10 items-center">
     <!-- TEXT -->
     <div>
@@ -34,35 +34,37 @@ const {
     </div>
 
     <!-- IMAGE CAROUSEL -->
-    <div class="relative">
-      <img
-        src={images[0]}
-        data-images={JSON.stringify(images)}
-        class="w-full h-80 object-cover rounded-xl"
-        id={`${title}-img`}
-      />
+    {
+      images.length > 0 && (
+        <div class="relative">
+          <img
+            src={images[0]}
+            data-images={JSON.stringify(images)}
+            class="w-full h-80 object-cover rounded-xl"
+            id={`${title}-img`}
+          />
 
-      {/* controls */}
-      {
-        images.length > 1 && (
-          <>
-            <button
-              class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 px-3 py-1 rounded"
-              onclick={`prevSlide("${title}")`}
-            >
-              ←
-            </button>
+          {/* controls */}
+          {images.length > 1 && (
+            <>
+              <button
+                class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 px-3 py-1 rounded"
+                onclick={`prevSlide("${title}")`}
+              >
+                ←
+              </button>
 
-            <button
-              class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 px-3 py-1 rounded"
-              onclick={`nextSlide("${title}")`}
-            >
-              →
-            </button>
-          </>
-        )
-      }
-    </div>
+              <button
+                class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 px-3 py-1 rounded"
+                onclick={`nextSlide("${title}")`}
+              >
+                →
+              </button>
+            </>
+          )}
+        </div>
+      )
+    }
   </div>
 </section>
 
