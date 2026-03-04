@@ -18,6 +18,77 @@ const phone = "(682) 703-0033";
   <Navbar />
   <Hero />
   <ServicesPreview />
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <!-- Header -->
+      <div class="text-center mb-14">
+        <h2 class="text-3xl md:text-4xl font-bold text-brand-navy mb-4">
+          Simple, Reliable Service
+        </h2>
+
+        <p class="text-brand-gray max-w-2xl mx-auto">
+          Getting your home repairs done shouldn’t be complicated. Our process
+          is simple and straightforward.
+        </p>
+      </div>
+
+      <!-- Steps -->
+      <div class="grid md:grid-cols-3 gap-10 text-center">
+        <!-- Step 1 -->
+        <div class="p-6">
+          <div class="text-4xl font-bold text-brand-red mb-4">1</div>
+
+          <h3 class="text-xl font-semibold text-brand-navy mb-2">
+            Request an Estimate
+          </h3>
+
+          <p class="text-brand-gray">
+            Contact us by phone or through our website and tell us about the
+            repair or installation you need.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="p-6">
+          <div class="text-4xl font-bold text-brand-red mb-4">2</div>
+
+          <h3 class="text-xl font-semibold text-brand-navy mb-2">
+            Schedule the Work
+          </h3>
+
+          <p class="text-brand-gray">
+            We provide a clear estimate and schedule a convenient time to
+            complete the job.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="p-6">
+          <div class="text-4xl font-bold text-brand-red mb-4">3</div>
+
+          <h3 class="text-xl font-semibold text-brand-navy mb-2">
+            Get Quality Work Done
+          </h3>
+
+          <p class="text-brand-gray">
+            Your repair or installation is completed with careful attention to
+            detail and professional workmanship.
+          </p>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <p class="text-xl font-semibold text-brand-navy mb-2">
+          Ready to get started?
+        </p>
+        <a
+          href="/contact"
+          class="inline-block bg-brand-red text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90"
+        >
+          Request an Estimate
+        </a>
+      </div>
+    </div>
+  </section>
   <BeforeAfterGrid limit={4} showViewMore={true} />
   <WhyChoose />
   <ServiceArea />

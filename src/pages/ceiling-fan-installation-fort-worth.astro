@@ -1,0 +1,188 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import FAQ from "../components/FAQ.astro";
+
+const phone = "(682) 703-0033";
+---
+
+<BaseLayout
+  title="Ceiling Fan Installation Fort Worth TX | West Fort Worth Handyman"
+  description="Professional ceiling fan installation in Fort Worth. Fan replacement, new fan installation, wiring upgrades, and secure mounting."
+>
+  <Navbar />
+
+  <!-- HERO -->
+  <section class="bg-brand-navy text-white pt-40 pb-24 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        Ceiling Fan Installation in Fort Worth
+      </h1>
+
+      <p class="text-lg text-gray-200">
+        West Fort Worth Handyman provides professional ceiling fan installation
+        and replacement services throughout Fort Worth, TX. We install new
+        ceiling fans, replace outdated fixtures, and ensure secure mounting and
+        proper wiring.
+      </p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="py-20 bg-brand-offwhite">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-navy mb-6">
+        Professional Ceiling Fan Installation and Replacement
+      </h2>
+
+      <p class="text-brand-gray mb-6">
+        Ceiling fans improve airflow, increase comfort, and help reduce energy
+        costs in Fort Worth homes. Proper installation is important to ensure
+        the fan is securely mounted, balanced correctly, and wired safely.
+      </p>
+
+      <p class="text-brand-gray">
+        Whether you're installing a new fan, replacing an existing light
+        fixture, or upgrading to a modern fan with remote control or smart
+        features, West Fort Worth Handyman provides reliable installation with
+        careful attention to detail.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-navy mb-10">
+        Ceiling Fan Services
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">
+            New Ceiling Fan Installation
+          </h3>
+          <p>
+            Install new ceiling fans in living rooms, bedrooms, patios, and
+            other areas to improve comfort and airflow throughout your home.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">Ceiling Fan Replacement</h3>
+          <p>
+            Replace outdated or broken fans with modern models that improve
+            efficiency, lighting, and overall room comfort.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">Fan Mounting and Balancing</h3>
+          <p>
+            Secure mounting and proper balancing to prevent wobbling and ensure
+            safe long-term operation.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">
+            Fan With Light Installation
+          </h3>
+          <p>
+            Install combination ceiling fan and lighting fixtures to improve
+            both airflow and room lighting.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">Remote and Smart Fan Setup</h3>
+          <p>
+            Setup ceiling fans with remote controls or smart home compatibility
+            for convenient operation.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">Fan Troubleshooting</h3>
+          <p>
+            Diagnose and repair common fan issues such as wobbling, noise, or
+            inconsistent operation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="py-24 bg-brand-offwhite">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-navy mb-6">
+        Why Choose West Fort Worth Handyman
+      </h2>
+
+      <ul class="space-y-4 text-brand-gray list-disc ml-6">
+        <li>Safe and secure ceiling fan installation</li>
+        <li>Proper mounting into ceiling joists or fan-rated boxes</li>
+        <li>Clean and professional workmanship</li>
+        <li>Reliable service throughout Fort Worth</li>
+        <li>Honest estimates and quality results</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 text-center bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-navy mb-4">
+        Need Ceiling Fan Installation in Fort Worth?
+      </h2>
+
+      <p class="text-brand-gray mb-8">
+        Contact West Fort Worth Handyman for professional ceiling fan
+        installation and replacement services.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="tel:+16827030033"
+          class="bg-brand-red text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90"
+        >
+          Call {phone}
+        </a>
+
+        <a
+          href="/contact"
+          class="border-2 border-brand-navy px-8 py-4 rounded-lg font-semibold"
+        >
+          Request Estimate
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <FAQ
+    items={[
+      {
+        question:
+          "Can you replace an existing light fixture with a ceiling fan?",
+        answer:
+          "Yes. We can remove existing light fixtures and install ceiling fans, ensuring proper mounting and wiring.",
+      },
+      {
+        question: "Do ceiling fans need special mounting boxes?",
+        answer:
+          "Yes. Ceiling fans must be mounted to fan-rated electrical boxes that support the weight and movement of the fan.",
+      },
+      {
+        question: "Can you fix a wobbling ceiling fan?",
+        answer:
+          "Yes. Wobbling fans can often be corrected by balancing the blades, tightening hardware, or adjusting the mounting.",
+      },
+      {
+        question: "Do you install smart ceiling fans?",
+        answer:
+          "Yes. We can install and configure ceiling fans that integrate with smart home systems or remote controls.",
+      },
+    ]}
+  />
+</BaseLayout>

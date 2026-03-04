@@ -1,0 +1,186 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import FAQ from "../components/FAQ.astro";
+
+const phone = "(682) 703-0033";
+---
+
+<BaseLayout
+  title="Fence and Gate Repair Fort Worth TX | West Fort Worth Handyman"
+  description="Professional fence and gate repair in Fort Worth including broken boards, leaning fences, gate repair, and hardware replacement."
+>
+  <Navbar />
+
+  <!-- HERO -->
+  <section class="bg-brand-navy text-white pt-40 pb-24 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        Fence and Gate Repair in Fort Worth
+      </h1>
+
+      <p class="text-lg text-gray-200">
+        West Fort Worth Handyman provides reliable fence and gate repair
+        services for homeowners throughout Fort Worth, TX. From broken fence
+        boards to sagging gates, we restore the strength and appearance of your
+        fence.
+      </p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="py-20 bg-brand-offwhite">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-navy mb-6">
+        Professional Fence Repair Services
+      </h2>
+
+      <p class="text-brand-gray mb-6">
+        Fences experience constant exposure to weather, soil movement, and
+        everyday wear. Over time boards can crack, posts may shift, and gates
+        can begin to sag or stop closing properly. Our fence repair services
+        restore stability, security, and appearance so your fence continues to
+        protect your property.
+      </p>
+
+      <p class="text-brand-gray">
+        Whether you need a few damaged boards replaced or repairs to a gate that
+        won’t latch, West Fort Worth Handyman provides dependable repairs with
+        attention to detail and quality workmanship.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-navy mb-10">
+        Fence and Gate Repair Services
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">Fence Board Replacement</h3>
+          <p>
+            Replace damaged or broken fence boards to restore the strength and
+            appearance of your fence.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">Gate Repair and Adjustment</h3>
+          <p>
+            Repair gates that sag, drag on the ground, or fail to close properly
+            by adjusting hinges and structural components.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">Fence Panel Repair</h3>
+          <p>
+            Repair sections of fencing that have been damaged by weather, wear,
+            or impact.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">Gate Hardware Replacement</h3>
+          <p>
+            Install or replace gate latches, hinges, and hardware for smooth and
+            secure operation.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">Fence Straightening</h3>
+          <p>
+            Correct leaning fence sections and restore alignment for improved
+            appearance and stability.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">
+            Fence Maintenance and Repairs
+          </h3>
+          <p>
+            General fence repairs to extend the life of your fence and keep your
+            property secure.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="py-24 bg-brand-offwhite">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-navy mb-6">
+        Why Choose West Fort Worth Handyman
+      </h2>
+
+      <ul class="space-y-4 text-brand-gray list-disc ml-6">
+        <li>Reliable fence repair for Fort Worth homeowners</li>
+        <li>Attention to detail on every repair</li>
+        <li>Honest estimates and fair pricing</li>
+        <li>Quality workmanship you can trust</li>
+        <li>Serving Fort Worth and surrounding communities</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 text-center bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-navy mb-4">
+        Need Fence or Gate Repair?
+      </h2>
+
+      <p class="text-brand-gray mb-8">
+        Contact West Fort Worth Handyman for dependable fence and gate repair
+        services throughout Fort Worth.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="tel:+16827030033"
+          class="bg-brand-red text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90"
+        >
+          Call {phone}
+        </a>
+
+        <a
+          href="/contact"
+          class="border-2 border-brand-navy px-8 py-4 rounded-lg font-semibold"
+        >
+          Request Estimate
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <FAQ
+    items={[
+      {
+        question: "Can you repair a leaning fence?",
+        answer:
+          "Yes. Leaning fences can often be corrected by reinforcing posts, replacing damaged boards, or repairing fence sections.",
+      },
+      {
+        question: "Can you fix a gate that won’t close?",
+        answer:
+          "Yes. We repair sagging gates by adjusting hinges, replacing hardware, and restoring proper alignment.",
+      },
+      {
+        question: "Do you replace broken fence boards?",
+        answer:
+          "Yes. We replace individual damaged boards and repair sections of fencing to restore appearance and strength.",
+      },
+      {
+        question: "Do you install new fences?",
+        answer:
+          "We focus on fence repairs and maintenance, helping homeowners restore and extend the life of existing fences.",
+      },
+    ]}
+  />
+</BaseLayout>

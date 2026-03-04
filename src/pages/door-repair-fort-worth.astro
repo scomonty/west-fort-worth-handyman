@@ -1,0 +1,190 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import FAQ from "../components/FAQ.astro";
+
+const phone = "(682) 703-0033";
+---
+
+<BaseLayout
+  title="Door Repair Fort Worth TX | West Fort Worth Handyman"
+  description="Professional door repair in Fort Worth including door alignment, hinge repair, door installation, frame repair, and hardware replacement."
+>
+  <Navbar />
+
+  <!-- HERO -->
+  <section class="bg-brand-navy text-white pt-40 pb-24 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        Door Repair Services in Fort Worth
+      </h1>
+
+      <p class="text-lg text-gray-200">
+        West Fort Worth Handyman provides reliable door repair and installation
+        services for homeowners throughout Fort Worth, TX. We fix doors that
+        stick, sag, won’t latch, or have damaged hardware.
+      </p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="py-20 bg-brand-offwhite">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-navy mb-6">
+        Professional Door Repair and Adjustment
+      </h2>
+
+      <p class="text-brand-gray mb-6">
+        Doors experience daily wear and tear and can develop issues over time.
+        Hinges loosen, frames shift, hardware wears out, and doors may begin
+        sticking or failing to close properly. Our door repair services restore
+        smooth operation, improve security, and ensure your doors close and
+        latch correctly.
+      </p>
+
+      <p class="text-brand-gray">
+        Whether you need a simple adjustment or a full door replacement, West
+        Fort Worth Handyman provides dependable repair services with careful
+        attention to detail.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-navy mb-10">
+        Common Door Repair Services
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">
+            Door Alignment and Adjustment
+          </h3>
+          <p>
+            Repair doors that rub, stick, or fail to close properly by adjusting
+            hinges, strike plates, and door frames.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">
+            Hinge Repair and Replacement
+          </h3>
+          <p>
+            Replace worn hinges and secure loose hardware to restore proper door
+            alignment and smooth movement.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">Door Hardware Installation</h3>
+          <p>
+            Install and replace door handles, knobs, locks, deadbolts, and other
+            hardware components.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">Door Frame Repair</h3>
+          <p>
+            Repair damaged door frames, loose jambs, and structural issues that
+            affect door performance.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">Interior Door Installation</h3>
+          <p>
+            Install or replace interior doors including bedroom, closet, and
+            bathroom doors for a clean and secure fit.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">
+            Weather Stripping Installation
+          </h3>
+          <p>
+            Improve insulation and reduce drafts by installing new weather
+            stripping around exterior doors.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="py-24 bg-brand-offwhite">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-navy mb-6">
+        Why Homeowners Choose West Fort Worth Handyman
+      </h2>
+
+      <ul class="space-y-4 text-brand-gray list-disc ml-6">
+        <li>Reliable and professional workmanship</li>
+        <li>Honest estimates and transparent pricing</li>
+        <li>Attention to detail on every repair</li>
+        <li>Fast and dependable service</li>
+        <li>Serving Fort Worth and surrounding communities</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 text-center bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-navy mb-4">
+        Need Door Repair in Fort Worth?
+      </h2>
+
+      <p class="text-brand-gray mb-8">
+        Contact West Fort Worth Handyman for reliable door repair and
+        installation services. We provide professional solutions to restore
+        smooth operation and security to your home.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="tel:+16827030033"
+          class="bg-brand-red text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90"
+        >
+          Call {phone}
+        </a>
+
+        <a
+          href="/contact"
+          class="border-2 border-brand-navy px-8 py-4 rounded-lg font-semibold"
+        >
+          Request Estimate
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <FAQ
+    items={[
+      {
+        question: "Why does my door stick or not close properly?",
+        answer:
+          "Doors often stick or fail to close properly due to loose hinges, frame shifting, humidity changes, or worn hardware. Adjustments and minor repairs usually restore smooth operation.",
+      },
+      {
+        question: "Can you fix a door that won’t latch?",
+        answer:
+          "Yes. Doors that won’t latch often require hinge adjustments, strike plate repositioning, or hardware replacement.",
+      },
+      {
+        question: "Do you install new interior doors?",
+        answer:
+          "Yes. We install and replace interior doors including bedroom, closet, and bathroom doors.",
+      },
+      {
+        question: "Do you repair damaged door frames?",
+        answer:
+          "Yes. We repair door frames and jambs to restore proper alignment and secure door operation.",
+      },
+    ]}
+  />
+</BaseLayout>

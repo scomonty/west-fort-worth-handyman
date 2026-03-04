@@ -1,0 +1,186 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import FAQ from "../components/FAQ.astro";
+
+const phone = "(682) 703-0033";
+---
+
+<BaseLayout
+  title="TV Mounting Fort Worth TX | West Fort Worth Handyman"
+  description="Professional TV mounting in Fort Worth including wall mounting, above-fireplace installation, wire concealment, and secure bracket installation."
+>
+  <Navbar />
+
+  <!-- HERO -->
+  <section class="bg-brand-navy text-white pt-40 pb-24 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        TV Mounting Services in Fort Worth
+      </h1>
+
+      <p class="text-lg text-gray-200">
+        West Fort Worth Handyman provides professional TV mounting services for
+        homeowners throughout Fort Worth, TX. We securely mount TVs to drywall,
+        studs, and masonry for a clean, safe installation.
+      </p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="py-20 bg-brand-offwhite">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-navy mb-6">
+        Professional TV Wall Mount Installation
+      </h2>
+
+      <p class="text-brand-gray mb-6">
+        Mounting a television properly requires secure attachment to wall studs,
+        correct bracket installation, and careful positioning for optimal
+        viewing height. Our TV mounting services ensure your television is
+        installed safely and looks clean and professional in your home.
+      </p>
+
+      <p class="text-brand-gray">
+        Whether you're mounting a new TV in the living room, bedroom, or above a
+        fireplace, we handle the installation from start to finish so you can
+        enjoy your setup without worrying about safety or alignment.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-navy mb-10">
+        TV Installation Services
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">Flat Screen TV Mounting</h3>
+          <p>
+            Secure installation of flat screen TVs on drywall or masonry walls
+            using professional mounting hardware and proper stud placement.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">
+            Above Fireplace TV Mounting
+          </h3>
+          <p>
+            Mount televisions above fireplaces with proper bracket selection and
+            positioning for safe viewing and stability.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">Wire and Cable Concealment</h3>
+          <p>
+            Hide cables and power cords for a clean look using cable channels or
+            wall pass-through solutions.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">
+            Soundbar and Accessory Mounting
+          </h3>
+          <p>
+            Install soundbars, streaming devices, and media accessories to
+            complete your home entertainment setup.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">TV Bracket Installation</h3>
+          <p>
+            Install fixed, tilting, or full-motion TV wall mounts depending on
+            your room layout and viewing preferences.
+          </p>
+        </div>
+
+        <div class="bg-brand-offwhite p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">TV Setup and Leveling</h3>
+          <p>
+            Ensure your television is mounted level, properly centered, and
+            securely attached for long-term safety.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="py-24 bg-brand-offwhite">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-navy mb-6">
+        Why Choose West Fort Worth Handyman for TV Mounting
+      </h2>
+
+      <ul class="space-y-4 text-brand-gray list-disc ml-6">
+        <li>Secure mounting directly into wall studs</li>
+        <li>Clean and professional installation</li>
+        <li>Accurate positioning and leveling</li>
+        <li>Experience mounting TVs of all sizes</li>
+        <li>Serving Fort Worth and surrounding communities</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 text-center bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-brand-navy mb-4">
+        Need TV Mounting in Fort Worth?
+      </h2>
+
+      <p class="text-brand-gray mb-8">
+        Contact West Fort Worth Handyman for professional TV mounting and home
+        entertainment installation services.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="tel:+16827030033"
+          class="bg-brand-red text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90"
+        >
+          Call {phone}
+        </a>
+
+        <a
+          href="/contact"
+          class="border-2 border-brand-navy px-8 py-4 rounded-lg font-semibold"
+        >
+          Request Estimate
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <FAQ
+    items={[
+      {
+        question: "Can you mount TVs on drywall?",
+        answer:
+          "Yes. TVs are mounted securely into wall studs behind drywall to ensure the television is safely supported.",
+      },
+      {
+        question: "Do I need to provide the wall mount?",
+        answer:
+          "You can provide your own mount or we can recommend the appropriate bracket depending on your TV size and installation location.",
+      },
+      {
+        question: "Can you hide TV cables in the wall?",
+        answer:
+          "Yes. We can conceal cables using cable management channels or wall pass-through solutions to keep your installation clean.",
+      },
+      {
+        question: "What size TVs can you mount?",
+        answer:
+          "We can mount most modern flat-screen TVs ranging from small bedroom TVs to large living room displays.",
+      },
+    ]}
+  />
+</BaseLayout>

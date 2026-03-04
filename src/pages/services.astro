@@ -15,27 +15,41 @@ import ServiceDetail from "../components/ServiceDetail.astro";
   <section class="bg-brand-navy text-white pt-40 pb-24 text-center">
     <div class="max-w-4xl mx-auto px-6">
       <h1 class="text-4xl md:text-5xl font-bold mb-6">
-        Handyman Services in West Fort Worth
+        Handyman Services in Fort Worth, TX
       </h1>
 
       <p class="text-lg text-gray-200">
         Reliable home repairs, maintenance, and installation services for West
         Fort Worth homeowners.
       </p>
+      <p class="mt-6">
+        Our handyman services in Fort Worth include drywall repair, flooring
+        installation, fixture installation, fence repair, smart home
+        installation, door repair, and general home maintenance.
+      </p>
     </div>
   </section>
 
   <!-- SERVICES -->
   <section class="py-24 bg-brand-offwhite">
-    <div class="max-w-6xl mx-auto px-6 space-y-16">
+    <div class="max-w-6xl mx-auto px-6 space-y-24">
       <!-- Interior Repairs -->
       <div>
         <h2 class="text-3xl font-bold text-brand-navy mb-6">
           Interior Repairs
         </h2>
+        <p class="text-brand-gray mb-6 max-w-3xl">
+          We provide professional interior home repairs for Fort Worth
+          homeowners including drywall repair, trim repair, door adjustments,
+          caulking, and wall damage repair. Our handyman services help restore
+          the appearance and functionality of your home quickly and reliably.
+        </p>
 
         <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-white p-6 rounded-lg shadow">
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200"
+          >
             <ServiceDetail
               title="Drywall patching and repair"
               description="We provide professional drywall patching and repair to restore your walls and ceilings to a smooth, like-new finish."
@@ -44,42 +58,72 @@ import ServiceDetail from "../components/ServiceDetail.astro";
               images={["/projects/wall-repair1.jpg"]}
             />
           </div>
-          <div class="bg-white p-6 rounded-lg shadow">
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200"
+          >
             <ServiceDetail
               title="Caulking and sealing"
               description="We provide professional caulking and sealing to protect your home from water, air leaks, and everyday wear. We seal gaps around windows, doors, trim, and fixtures to improve energy efficiency, prevent moisture damage, and create clean, finished lines."
               images={["/projects/caulking1.jpg"]}
             />
           </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            Door adjustments and repair
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200"
+          >
+            <ServiceDetail
+              title="Door repair and adjustment"
+              description="Professional door repair services including hinge adjustment, door alignment, hardware replacement, and interior door installation."
+              detailsUrl="/door-repair-fort-worth"
+              detailsLabel="Learn more about door repair in Fort Worth"
+              highlights={[
+                "Door alignment and adjustment",
+                "Hinge replacement",
+                "Door latch repair",
+                "Door frame adjustments",
+                "Interior door installation",
+              ]}
+            />
           </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            Trim and baseboard repair
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200"
+          >
+            <ServiceDetail
+              title="Trim and Baseboard Repair"
+              description="Professional trim and baseboard repair in Fort Worth including fixing loose molding, repairing cracked or damaged baseboards, replacing sections of trim, and securing trim that has separated from the wall. Clean repairs that restore a finished look to your home."
+              highlights={[
+                "Baseboard repair and replacement",
+                "Trim gap repairs",
+                "Loose molding repair",
+                "Cracked trim replacement",
+                "Clean finished edges",
+              ]}
+            />
           </div>
-          <div class="bg-white p-6 rounded-lg shadow">Wall damage repair</div>
         </div>
       </div>
 
       <!-- Installations -->
       <div>
-        <h2 class="text-3xl font-bold text-brand-navy mb-6">Installations</h2>
+        <h2 class="text-3xl font-bold text-brand-navy mb-6">
+          Flooring Installations
+        </h2>
 
         <!-- Flooring Installation -->
         <div class="mb-6">
-          <a
-            href="/flooring-installation-fort-worth"
-            class="text-xl font-semibold text-brand-navy mb-3 inline-flex items-center gap-2
-    hover:text-brand-red transition"
-          >
-            Flooring Installation →
-          </a>
-
           <div class="grid md:grid-cols-2 gap-6">
-            <div class="bg-white p-6 rounded-lg shadow">
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200
+h-full flex flex-col"
+            >
               <ServiceDetail
                 title="Laminate flooring installation"
                 description="We provide professional laminate flooring installation that delivers a durable, stylish finish for any room in your home. From surface preparation to precise fitting and clean transitions, we ensure a smooth, long-lasting result that enhances the look and value of your space. Quality workmanship, efficient installation, and attention to detail every step of the way."
+                detailsUrl="/flooring-installation-fort-worth"
+                detailsLabel="Learn more about flooring installation in Fort Worth"
                 images={[
                   "/projects/laminate1.jpg",
                   "/projects/laminate2.jpg",
@@ -89,7 +133,11 @@ import ServiceDetail from "../components/ServiceDetail.astro";
               />
             </div>
 
-            <div class="bg-white p-6 rounded-lg shadow">
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200
+h-full flex flex-col"
+            >
               <ServiceDetail
                 title="Vinyl plank flooring installation"
                 description="We provide professional vinyl plank flooring installation for a durable, water-resistant, and modern finish. Our process includes proper surface preparation, precise installation, and seamless transitions to ensure long-lasting performance and a clean, polished look."
@@ -97,51 +145,158 @@ import ServiceDetail from "../components/ServiceDetail.astro";
               />
             </div>
 
-            <div class="bg-white p-6 rounded-lg shadow">
-              Hardwood flooring installation
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200
+h-full flex flex-col"
+            >
+              <ServiceDetail title="Hardwood flooring installation" />
             </div>
 
-            <div class="bg-white p-6 rounded-lg shadow">
-              Flooring replacement and repair
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200
+h-full flex flex-col"
+            >
+              <ServiceDetail title="Flooring replacement and repair" />
             </div>
           </div>
         </div>
         <div>
-          <h2
-            class="text-xl font-semibold text-brand-navy mb-3 inline-flex items-center gap-2"
-          >
+          <h2 class="text-3xl font-bold text-brand-navy mb-6">
             Installation Services
           </h2>
           <div class="grid md:grid-cols-2 gap-6">
-            <div class="bg-white p-6 rounded-lg shadow">
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200
+h-full flex flex-col"
+            >
               <ServiceDetail
                 title="Light Fixture Installation"
                 description="Professional installation and replacement of light fixtures including ceiling lights, pendant lighting, and wall fixtures. Safe wiring and clean installation."
                 images={["/projects/light-install1.jpg"]}
               />
             </div>
-            <div class="bg-white p-6 rounded-lg shadow">
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200
+h-full flex flex-col"
+            >
               <ServiceDetail
                 title="Ceiling Fan Installation"
-                description="Ceiling fan installation and replacement for improved airflow and comfort. Secure mounting and proper electrical connection."
+                description="Professional ceiling fan installation and replacement including secure mounting, wiring, and fan balancing."
                 images={["/projects/fan-install1.jpg"]}
+                detailsUrl="/ceiling-fan-installation-fort-worth"
+                detailsLabel="Learn more about ceiling fan installation in Fort Worth"
               />
             </div>
-            <div class="bg-white p-6 rounded-lg shadow">
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200
+h-full flex flex-col"
+            >
               <ServiceDetail
                 title="Faucet Installation"
                 description="Kitchen and bathroom faucet installation and replacement including fixture upgrades and leak prevention."
               />
             </div>
-            <div class="bg-white p-6 rounded-lg shadow">
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200
+h-full flex flex-col"
+            >
               <ServiceDetail
                 title="Shelving & Mounting"
                 description="Professional installation of wall shelving, TV mounting, picture hanging, and storage solutions. Secure mounting into studs or proper anchors for safe, level installation and a clean finished look."
                 images={["/projects/shelving1.png"]}
               />
             </div>
-            <div class="bg-white p-6 rounded-lg shadow">
-              Bathroom hardware installation
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200
+h-full flex flex-col"
+            >
+              <ServiceDetail
+                title="Smart Home Device Installation"
+                description="Professional installation and setup of smart home devices including video doorbells, smart thermostats, smart locks, security cameras, smart lighting, and WiFi-enabled devices. We ensure proper installation, secure mounting, and reliable connection to your home network."
+                detailsUrl="/smart-home-installation-fort-worth"
+                detailsLabel="Learn more about smart home installation in Fort Worth"
+                images={["/projects/smart-home-1.jpg"]}
+              />
+            </div>
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200
+h-full flex flex-col"
+            >
+              <ServiceDetail
+                title="TV Mounting"
+                description="Professional TV wall mounting including bracket installation, stud mounting, cable concealment, and soundbar installation."
+                detailsUrl="/tv-mounting-fort-worth"
+                detailsLabel="Learn more about TV mounting in Fort Worth"
+                highlights={[
+                  "Flat screen TV mounting",
+                  "Mounting above fireplaces",
+                  "Stud-secured installations",
+                  "Cable concealment",
+                  "Soundbar mounting",
+                ]}
+              />
+            </div>
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200
+h-full flex flex-col"
+            >
+              <ServiceDetail
+                title="Bathroom Hardware Installation"
+                description="Bathroom hardware installation in Fort Worth including towel bars, toilet paper holders, robe hooks, mirrors, and wall-mounted accessories. Secure mounting and precise alignment for a clean, durable installation."
+                highlights={[
+                  "Towel bar installation",
+                  "Toilet paper holder installation",
+                  "Robe hook installation",
+                  "Bathroom mirror mounting",
+                  "Secure wall anchor installation",
+                ]}
+              />
+            </div>
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200
+h-full flex flex-col"
+            >
+              <ServiceDetail
+                title="Cabinet Hardware Installation"
+                description="Installation of cabinet pulls, knobs, and handles for kitchens, bathrooms, and built-in storage. Precise alignment and secure installation for a clean, professional finish."
+                highlights={[
+                  "Kitchen cabinet hardware installation",
+                  "Drawer pulls and cabinet knobs",
+                  "Hardware replacement and upgrades",
+                  "Even spacing and professional alignment",
+                  "Secure mounting for durable use",
+                ]}
+              />
+            </div>
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200
+h-full flex flex-col"
+            >
+              <ServiceDetail
+                title="Curtain Rod and Blind Installation"
+                description="Professional installation of curtain rods, window blinds, and window treatments. Secure mounting and proper alignment for smooth operation and a finished look."
+              />
+            </div>
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200
+h-full flex flex-col"
+            >
+              <ServiceDetail
+                title="Picture Hanging and Wall Mounting"
+                description="Secure installation of wall decor including large mirrors, artwork, shelves, and wall-mounted items. Proper anchors and stud mounting ensure safe and level installation."
+              />
             </div>
           </div>
         </div>
@@ -152,16 +307,61 @@ import ServiceDetail from "../components/ServiceDetail.astro";
         <h2 class="text-3xl font-bold text-brand-navy mb-6">
           Exterior Repairs
         </h2>
+        <p class="text-brand-gray mb-6 max-w-3xl">
+          Exterior repair services include fence repair, siding repairs, trim
+          repair, and weatherproofing to protect your home from damage and
+          maintain its appearance.
+        </p>
 
         <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-white p-6 rounded-lg shadow">
-            Fence and gate repair
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200"
+          >
+            <ServiceDetail
+              title="Fence and Gate Repair"
+              description="Repair broken fence boards, sagging gates, and damaged fence sections to restore strength and security."
+              detailsUrl="/fence-repair-fort-worth"
+              detailsLabel="Learn more about fence repair in Fort Worth"
+            />
           </div>
-          <div class="bg-white p-6 rounded-lg shadow">Minor siding repairs</div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            Weatherproofing and sealing
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200"
+          >
+            <ServiceDetail
+              title="Minor Siding Repair"
+              description="Repair damaged or loose siding to protect your home from moisture and weather exposure. We fix cracked panels, loose sections, and minor exterior siding damage to restore the appearance and durability of your home's exterior."
+              highlights={[
+                "Loose siding repair",
+                "Cracked siding replacement",
+                "Minor siding damage repair",
+                "Exterior trim and siding adjustments",
+                "Secure reattachment of siding panels",
+              ]}
+            />
           </div>
-          <div class="bg-white p-6 rounded-lg shadow">Exterior trim repair</div>
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200"
+          >
+            <ServiceDetail
+              title="Weatherproofing and sealing"
+              highlights={[
+                "Window and door draft sealing",
+                "Weather stripping installation",
+                "Exterior gap and crack sealing",
+                "Trim and siding gap sealing",
+                "Moisture and air leak prevention",
+              ]}
+            />
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200"
+          >
+            <ServiceDetail title="Exterior trim repair" />
+          </div>
         </div>
       </div>
 
@@ -170,12 +370,37 @@ import ServiceDetail from "../components/ServiceDetail.astro";
         <h2 class="text-3xl font-bold text-brand-navy mb-6">
           Minor Plumbing Services
         </h2>
+        <p class="text-brand-gray mb-6 max-w-3xl">
+          We provide minor plumbing repairs and fixture replacement including
+          faucets, toilets, and leak repairs for kitchens, bathrooms, and
+          utility rooms.
+        </p>
 
         <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-white p-6 rounded-lg shadow">Faucet replacement</div>
-          <div class="bg-white p-6 rounded-lg shadow">Leak repairs</div>
-          <div class="bg-white p-6 rounded-lg shadow">Toilet repairs</div>
-          <div class="bg-white p-6 rounded-lg shadow">Fixture replacement</div>
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200"
+          >
+            Faucet replacement
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200"
+          >
+            Leak repairs
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200"
+          >
+            Toilet repairs
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200"
+          >
+            Fixture replacement
+          </div>
         </div>
       </div>
 
@@ -193,13 +418,22 @@ import ServiceDetail from "../components/ServiceDetail.astro";
         </p>
 
         <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-white p-6 rounded-lg shadow">
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200"
+          >
             Help with DIY home projects
           </div>
-          <div class="bg-white p-6 rounded-lg shadow">
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200"
+          >
             Furniture assembly and installation
           </div>
-          <div class="bg-white p-6 rounded-lg shadow">
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100
+hover:shadow-lg hover:-translate-y-1 transition duration-200"
+          >
             Fixture and appliance installation assistance
           </div>
         </div>
