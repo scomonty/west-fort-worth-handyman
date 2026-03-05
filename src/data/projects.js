@@ -1,4 +1,43 @@
 export const projects = [
+  {
+  id: "front-door-trim-repaint-west-fort-worth",
+  slug: "front-door-trim-repaint-west-fort-worth",
+
+  title: "Front Door Trim Refresh",
+  city: "Fort Worth",
+  state: "TX",
+
+  before: "/beforeAfter/front-door-before.jpg",
+  after: ["/beforeAfter/front-door-after.jpg",
+    "/beforeAfter/front-door-after-2.jpg"
+  ],
+
+  scope: "Exterior Repair & Paint",
+  completed: "2026",
+  featured: false,
+
+  services: [
+    "Exterior Trim Repair",
+    "Caulking & Sealing",
+    "Exterior Painting"
+  ],
+
+  highlights: [
+    "Removed old cracked caulk",
+    "Applied fresh weatherproof caulking",
+    "Filled trim nail holes and imperfections",
+    "Repainted door trim for a clean finish"
+  ],
+
+  challenge:
+    "The existing caulking had deteriorated and nail holes and trim imperfections were visible, giving the entryway a worn appearance and reducing weather protection.",
+
+  solution:
+    "Removed the old caulk, filled nail holes and surface imperfections, applied new exterior-grade caulking, and repainted the trim to create a clean, durable finish.",
+
+  description:
+    "Refreshed the front door entry by replacing deteriorated caulking, repairing trim imperfections, and repainting the door frame. The updated trim provides better weather sealing and a sharper, more polished curb appeal."
+},
 {
   id: "fence-repair-west-fort-worth",
   slug: "fence-repair-gate-installation-west-fort-worth",
