@@ -72,11 +72,9 @@ import Navbar from "../components/Navbar.astro";
   </section>
 
   <!-- Google Ads Conversion Tracking -->
-  <script>
+  <script is:inline>
     if (window.gtag) {
-      gtag("event", "conversion", {
-        send_to: "AW-17970437111/CONVERSION_LABEL",
-      });
+      gtag("event", "conversion_event_submit_lead_form_1");
     }
   </script>
 </BaseLayout>
