@@ -1,5 +1,45 @@
 export const projects = [
   {
+  id: "ceiling-crack-repair-west-fort-worth",
+  slug: "ceiling-crack-repair-west-fort-worth",
+
+  title: "Ceiling Crack Repair & Texture Blend",
+  city: "Fort Worth",
+  state: "TX",
+
+  before: "/beforeAfter/ceiling-crack-before.jpg",
+  after: [
+    "/beforeAfter/ceiling-crack-after-1.jpg",
+    "/beforeAfter/ceiling-crack-after-2.jpg"
+  ],
+
+  scope: "Interior Drywall Repair",
+  completed: "2026",
+  featured: false,
+
+  services: [
+    "Drywall Crack Repair",
+    "Ceiling Texture Blending",
+    "Interior Ceiling Painting"
+  ],
+
+  highlights: [
+    "Repaired visible ceiling drywall crack",
+    "Reinforced and filled damaged drywall seam",
+    "Matched existing ceiling texture",
+    "Blended repair area with fresh ceiling paint"
+  ],
+
+  challenge:
+    "A visible drywall crack had formed along a ceiling seam between recessed lights, making the ceiling look damaged and drawing attention in an otherwise clean living space.",
+
+  solution:
+    "The cracked seam was properly opened, reinforced, and filled before applying multiple layers of compound. The area was then re-textured to match the existing ceiling finish and repainted to blend seamlessly with the surrounding surface.",
+
+  description:
+    "This Fort Worth home had a noticeable ceiling seam crack that disrupted the look of the living room. The repair involved reinforcing the drywall seam, applying new joint compound, carefully matching the existing ceiling texture, and repainting the area so the repair blends naturally with the rest of the ceiling."
+},
+  {
   id: "front-door-trim-repaint-west-fort-worth",
   slug: "front-door-trim-repaint-west-fort-worth",
 
