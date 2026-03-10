@@ -71,6 +71,7 @@ if (email) {
           We received your project request and will contact you soon to discuss
           details and provide an estimate.
         </p>
+        <p>If you'd like to add photos or more details, just reply to this email.</p>
 
         <p><strong>Your request:</strong></p>
 
