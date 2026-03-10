@@ -58,7 +58,7 @@ export default async function handler(req, res) {
     // Send confirmation email to customer
 if (email) {
   await resend.emails.send({
-    from: "West Fort Worth Handyman <hello@send.fortworthhandyman.com>",
+    from: "West Fort Worth Handyman <estimates@westfortworthhandyman.com>",
     to: email,
     subject: "We received your request",
     html: `
