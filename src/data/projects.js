@@ -1,5 +1,44 @@
 export const projects = [
   {
+  id: "window-trim-repair-west-fort-worth",
+  slug: "window-trim-repair-west-fort-worth",
+
+  title: "Window Trim Repair & Finish Restoration",
+  city: "Fort Worth",
+  state: "TX",
+
+  before: "/beforeAfter/window-trim-before.jpg",
+  after: [
+    "/beforeAfter/window-trim-after.jpg"
+  ],
+
+  scope: "Interior Trim Repair",
+  completed: "2026",
+  featured: false,
+
+  services: [
+    "Window Trim Repair",
+    "Wood Rot Repair",
+    "Interior Caulking & Painting"
+  ],
+
+  highlights: [
+    "Removed damaged and deteriorated trim section",
+    "Repaired exposed wood and structural area",
+    "Rebuilt and secured trim for a clean fit",
+    "Caulked and refinished trim for a seamless look"
+  ],
+
+  challenge:
+    "The lower section of the window trim had deteriorated and separated from the frame, exposing damaged wood and creating an unsightly gap near the sill.",
+
+  solution:
+    "The damaged area was repaired and rebuilt, the trim was properly secured back into place, and the joint was sealed and finished so the window trim once again sits cleanly against the frame.",
+
+  description:
+    "This Fort Worth home had damaged window trim where the lower section had deteriorated and separated from the frame. The repair involved rebuilding the damaged area, securing the trim back into place, sealing the joint, and restoring a clean finished appearance around the window."
+},
+  {
   id: "ceiling-crack-repair-west-fort-worth",
   slug: "ceiling-crack-repair-west-fort-worth",
 
