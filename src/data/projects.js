@@ -1,5 +1,44 @@
 export const projects = [
   {
+  id: "exterior-door-installation-west-fort-worth",
+  slug: "exterior-door-installation-west-fort-worth",
+
+  title: "Exterior Door Installation & Hardware Upgrade",
+  city: "Fort Worth",
+  state: "TX",
+
+  after: [
+    "/beforeAfter/exterior-door-install-after.jpg"
+  ],
+
+  scope: "Exterior Door Installation",
+  completed: "2026",
+  featured: false,
+
+  services: [
+    "Exterior Door Installation",
+    "Door Hardware Installation",
+    "Weather Sealing",
+    "Entry Door Replacement"
+  ],
+
+  highlights: [
+    "Installed new six-panel exterior entry door",
+    "Installed keypad deadbolt and modern lever handle",
+    "Aligned door within existing brick opening",
+    "Sealed frame for improved weather protection"
+  ],
+
+  challenge:
+    "The previous exterior door had aged hardware and was no longer providing the clean appearance and reliable function the homeowner wanted for their entryway.",
+
+  solution:
+    "A new six-panel exterior door was installed and aligned within the existing brick opening. Updated hardware including a keypad deadbolt and lever handle were installed, and the door frame was sealed to ensure proper operation and weather protection.",
+
+  description:
+    "This Fort Worth home received a new exterior six-panel entry door along with upgraded hardware including a keypad deadbolt and modern lever handle. The installation provides improved security, better weather sealing, and a clean finished look that complements the brick exterior."
+},
+  {
   id: "window-trim-repair-west-fort-worth",
   slug: "window-trim-repair-west-fort-worth",
 

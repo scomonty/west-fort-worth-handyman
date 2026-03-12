@@ -13,8 +13,7 @@ const {
 } = Astro.props;
 
 const afterImages = Array.isArray(after) ? after : [after];
-
-const allImages = [before, ...afterImages];
+const allImages = before ? [before, ...afterImages] : afterImages;
 ---
 
 <script
@@ -31,7 +30,7 @@ const allImages = [before, ...afterImages];
       "@id": "https://westfortworthhandyman.com/#business",
     },
 
-    image: [before, after],
+    image: before ? [before, ...afterImages] : afterImages,
   })}
 />
 
@@ -57,27 +56,35 @@ const allImages = [before, ...afterImages];
   }
 
   <!-- Images -->
-  <div class="grid md:grid-cols-2 gap-4 mb-4">
-    <div>
-      <p class="text-sm font-semibold mb-2">Before</p>
-      <img
-        src={before}
-        alt={`${title} before`}
-        class="rounded-lg w-full h-64 object-cover cursor-pointer hover:opacity-90"
-        onclick={`openImageModal('${id}', '${JSON.stringify(allImages)}', 0)`}
-      />
-    </div>
+  <div
+    class={`grid ${before ? "md:grid-cols-2" : "md:grid-cols-1"} gap-4 mb-4`}
+  >
+    {
+      before && (
+        <div>
+          <p class="text-sm font-semibold mb-2">Before</p>
+          <img
+            src={before}
+            alt={`${title} before`}
+            class="rounded-lg w-full h-64 object-cover cursor-pointer hover:opacity-90"
+            onclick={`openImageModal('${id}', '${JSON.stringify(allImages)}', 0)`}
+          />
+        </div>
+      )
+    }
 
     <!-- AFTER -->
     <div>
-      <p class="text-sm font-semibold mb-2">After</p>
+      <p class="text-sm font-semibold mb-2">
+        {before ? "After" : "Project Photos"}
+      </p>
 
       <!-- show first image -->
       <img
         src={afterImages[0]}
         alt={`${title} after`}
         class="rounded-lg w-full h-64 object-cover cursor-pointer hover:opacity-90"
-        onclick={`openImageModal('${id}', '${JSON.stringify(allImages)}', 1)`}
+        onclick={`openImageModal('${id}', '${JSON.stringify(allImages)}', ${before ? 1 : 0})`}
       />
 
       <!-- show thumbnails if multiple -->
