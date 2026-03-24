@@ -1,5 +1,46 @@
 export const projects = [
   {
+  id: "wall-art-hook-installation-west-fort-worth",
+  slug: "wall-art-hook-installation-west-fort-worth",
+
+  title: "Wall Art & Entryway Hook Installation",
+  city: "Fort Worth",
+  state: "TX",
+
+  after: [
+    "/beforeAfter/wall-art-hooks-after-2.jpg",
+    "/beforeAfter/wall-art-hooks-after.jpg"
+  ],
+
+  scope: "Wall Mounting & Hook Installation",
+  completed: "2026",
+  featured: false,
+
+  services: [
+    "Picture Hanging",
+    "Gallery Wall Installation",
+    "Wall Hook Installation",
+    "Drywall Anchoring"
+  ],
+
+  highlights: [
+    "Installed 4-piece gallery wall with even spacing and alignment",
+    "Leveled and secured all frames for a clean, professional look",
+    "Mounted multiple entryway hooks for daily use",
+    "Used proper anchors and stud mounting for durability",
+    "Improved functionality and organization of entryway space"
+  ],
+
+  challenge:
+    "The entryway wall was underutilized, with artwork and hooks needing proper placement. The homeowner wanted a clean, evenly spaced layout without the risk of uneven frames or weak mounting.",
+
+  solution:
+    "A balanced gallery wall layout was measured and installed with consistent spacing and precise leveling. Entryway hooks were securely mounted using appropriate anchors and stud placement where possible, ensuring long-term durability and daily usability.",
+
+  description:
+    "This Fort Worth home received a clean and functional entryway upgrade with a professionally installed gallery wall and secure coat hooks. The result is a well-organized space with evenly aligned wall art and sturdy mounting that holds up to everyday use while improving the overall look of the home."
+},
+  {
   id: "exterior-door-installation-west-fort-worth",
   slug: "exterior-door-installation-west-fort-worth",
 
