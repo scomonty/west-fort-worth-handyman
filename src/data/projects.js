@@ -1,5 +1,47 @@
 export const projects = [
   {
+  id: "sink-tip-out-tray-installation-west-fort-worth",
+  slug: "sink-tip-out-tray-installation-west-fort-worth",
+
+  title: "Sink Tip-Out Drawer (Flip-Out Tray) Installation",
+  city: "Fort Worth",
+  state: "TX",
+
+  after: [
+    "/beforeAfter/sink-tipout-after-1.jpg",
+    "/beforeAfter/sink-tipout-after-2.jpg",
+    "/beforeAfter/sink-tipout-after-3.jpg"
+  ],
+
+  scope: "Cabinet Modification & Tip-Out Tray Installation",
+  completed: "2026",
+  featured: false,
+
+  services: [
+    "Cabinet Modification",
+    "Tip-Out Tray Installation",
+    "Kitchen & Bathroom Upgrades",
+    "Hardware Installation"
+  ],
+
+  highlights: [
+    "Converted existing sink cabinet front into functional tip-out drawer",
+    "Installed dual flip-out trays for added storage",
+    "Re-mounted original cabinet face for seamless appearance",
+    "Installed soft-close hinges for smooth operation",
+    "Maximized unused space in front of sink"
+  ],
+
+  challenge:
+    "The space in front of the sink cabinet was unused, and the homeowner wanted a way to add storage without changing the look of the existing cabinetry. The cabinet face was fixed in place and not functional.",
+
+  solution:
+    "The existing cabinet face was carefully removed and converted into a functional tip-out drawer. Dual trays were installed behind the panel using specialized hinges, allowing the front to tilt outward while maintaining the original appearance. The result is added storage with a clean, factory-style finish.",
+
+  description:
+    "This Fort Worth kitchen upgrade added hidden storage by converting the existing sink cabinet front into a functional tip-out drawer. Dual trays provide convenient space for sponges and small items, while the original cabinet face was reinstalled for a seamless look. The finished result blends perfectly with the cabinetry while making better use of previously unused space."
+},
+  {
   id: "wall-art-hook-installation-west-fort-worth",
   slug: "wall-art-hook-installation-west-fort-worth",
 
