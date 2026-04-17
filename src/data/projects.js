@@ -1,5 +1,50 @@
 export const projects = [
   {
+  id: "drywall-repair-curtain-rod-picture-hanging-fort-worth",
+  slug: "drywall-repair-curtain-rod-picture-hanging-fort-worth",
+
+  title: "Drywall Repair, Curtain Rod Reinstallation & Picture Hanging",
+  city: "Fort Worth",
+  state: "TX",
+
+  before: "/beforeAfter/drywall-curtain-before-1.jpg",
+
+  after: [
+    "/beforeAfter/drywall-curtain-after-1.jpg",
+    "/beforeAfter/picture-hanging-after-1.jpg",
+    "/beforeAfter/picture-hanging-after-2.jpg",
+  ],
+
+  scope: "Drywall Repair & Interior Installation",
+  completed: "2026",
+  featured: false,
+
+  services: [
+    "Drywall Repair",
+    "Curtain Rod Installation",
+    "Wall Anchoring",
+    "Picture Hanging"
+  ],
+
+  highlights: [
+    "Repaired damaged drywall where curtain rod pulled out",
+    "Matched wall texture for a seamless finish",
+    "Reinstalled curtain rod with secure anchoring",
+    "Ensured proper placement and alignment of rod",
+    "Mounted artwork level and properly spaced",
+    "Restored wall to clean, finished appearance"
+  ],
+
+  challenge:
+    "The curtain rod had pulled out of the wall, leaving damaged drywall and exposed holes. The area needed proper repair before the rod could be securely reinstalled, and the homeowner also wanted artwork hung cleanly in the space.",
+
+  solution:
+    "The damaged drywall was repaired and textured to blend with the existing wall. Once fully restored, the curtain rod was reinstalled using proper anchoring to prevent future failure. Artwork was then mounted with careful placement and leveling to complete the space.",
+
+  description:
+    "This Fort Worth home required drywall repair after a curtain rod pulled out of the wall. The damaged area was patched and textured to match the surrounding surface, then the curtain rod was securely reinstalled. The project was finished with professional picture hanging, leaving the space clean, functional, and visually complete."
+},
+  {
   id: "sink-tip-out-tray-installation-west-fort-worth",
   slug: "sink-tip-out-tray-installation-west-fort-worth",
 
