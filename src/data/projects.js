@@ -1,5 +1,50 @@
 export const projects = [
   {
+  id: "cabinet-hardware-installation-kitchen-upgrade-crowley",
+  slug: "cabinet-hardware-installation-kitchen-upgrade-crowley",
+
+  title: "Kitchen Cabinet Hardware Installation & Upgrade",
+  city: "Crowley",
+  state: "TX",
+
+  before:
+    "/beforeAfter/cabinet-hardware-before-1.jpg",
+
+  after: [
+    "/beforeAfter/cabinet-hardware-after-1.jpg",
+    "/beforeAfter/cabinet-hardware-after-2.jpg",
+    "/beforeAfter/cabinet-hardware-after-3.jpg"
+  ],
+
+  scope: "Cabinet Hardware Installation",
+  completed: "2026",
+  featured: false,
+
+  services: [
+    "Cabinet Hardware Installation",
+    "Kitchen Upgrades",
+    "Handle & Pull Replacement",
+    "Precision Drilling & Alignment"
+  ],
+
+  highlights: [
+    "Installed new modern black cabinet pulls throughout kitchen",
+    "Measured and drilled for consistent placement across all doors and drawers",
+    "Ensured perfect alignment and spacing for clean, uniform look",
+    "Upgraded overall kitchen appearance without full remodel",
+    "Completed installation efficiently with minimal disruption"
+  ],
+
+  challenge:
+    "The kitchen cabinets lacked hardware, making them less functional and giving the space an unfinished appearance. Consistent placement and alignment were critical to achieving a clean, professional result.",
+
+  solution:
+    "All cabinet doors and drawers were carefully measured and drilled to ensure uniform hardware placement. Modern black pulls were installed throughout, creating a cohesive look while improving usability and overall kitchen aesthetics.",
+
+  description:
+    "This Crowley, TX kitchen was upgraded with new cabinet hardware, transforming the look and functionality of the space without a full renovation. Professionally installed pulls provide a clean, modern finish with consistent alignment across all cabinets, making a noticeable impact on the overall feel of the kitchen."
+},
+  {
   id: "drywall-repair-curtain-rod-picture-hanging-fort-worth",
   slug: "drywall-repair-curtain-rod-picture-hanging-fort-worth",
 
