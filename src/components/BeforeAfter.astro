@@ -90,7 +90,7 @@ const allImages = before ? [before, ...afterImages] : afterImages;
       <!-- show thumbnails if multiple -->
       {
         afterImages.length > 1 && (
-          <div class="flex gap-2 mt-2">
+          <div class="flex flex-wrap gap-2 mt-2">
             {afterImages.slice(1).map((img, index) => {
               const realIndex = allImages.indexOf(img);
 

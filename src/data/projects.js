@@ -1,5 +1,55 @@
 export const projects = [
   {
+  id: "exterior-trim-repair-fort-worth",
+  slug: "exterior-trim-repair-fort-worth",
+  title: "Exterior Trim Repair & Replacement",
+  city: "Fort Worth",
+  state: "TX",
+  category: "Exterior Repair",
+  description: "Repaired and replaced deteriorated exterior trim along the base of siding. Project included removal of rotted wood, installation of new trim boards, caulking, sealing, and paint finishing for a clean and weather-resistant result.",
+  challenge:
+    "Deteriorated and rotting trim along the base of the siding was allowing moisture intrusion and continued damage.",
+  solution:
+    "Removed all compromised material, installed new trim boards, properly sealed all seams, and finished with paint to protect and blend with the home.",
+  scope: "Exterior Trim Repair",
+  completed: "2026",
+    services: [
+    "Rotten wood removal",
+    "Exterior trim replacement",
+    "Caulking and sealing",
+    "Surface prep",
+    "Paint finishing"
+  ],
+  tags: [
+    "trim repair",
+    "wood rot repair",
+    "exterior maintenance",
+    "caulking",
+    "handyman services"
+  ],
+    highlights: [
+    "Removed and replaced rotted trim",
+    "Sealed gaps to prevent water intrusion",
+    "Matched existing paint for a clean finish",
+    "Improved durability and curb appeal"
+  ],
+    before: "/beforeAfter/TrimRepairBefore_4.jpg",
+    after: [
+      "/beforeAfter/TrimRepairAfter_9.jpg",
+      "beforeAfter/TrimRepairAfter_1.jpg",
+      "/beforeAfter/TrimRepairAfter_2.jpg",
+      "/beforeAfter/TrimRepairAfter_3.jpg",
+      "/beforeAfter/TrimRepairAfter_4.jpg",
+      "/beforeAfter/TrimRepairAfter_5.jpg",
+      "/beforeAfter/TrimRepairAfter_6.jpg",
+      "/beforeAfter/TrimRepairAfter_7.jpg",
+      "/beforeAfter/TrimRepairAfter_8.jpg",
+      "/beforeAfter/TrimRepairAfter_10.jpg",
+      "/beforeAfter/TrimRepairAfter_11.jpg",
+      "/beforeAfter/TrimRepairAfter_12.jpg"
+    ]
+},
+  {
   id: "cabinet-hardware-installation-kitchen-upgrade-crowley",
   slug: "cabinet-hardware-installation-kitchen-upgrade-crowley",
 
