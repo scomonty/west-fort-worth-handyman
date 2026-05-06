@@ -1,5 +1,49 @@
 export const projects = [
   {
+  id: "reverse-osmosis-install-fort-worth",
+  slug: "reverse-osmosis-install-fort-worth",
+  title: "Reverse Osmosis System Installation",
+  city: "Fort Worth",
+  state: "TX",
+  category: "Plumbing",
+  description: "Installed a Cloud reverse osmosis water filtration system under a kitchen sink, including drilling a new hole in the granite countertop for a dedicated filtered water faucet. Project included water supply connection, drain line installation, faucet mounting, and full system testing.",
+  challenge:
+    "The kitchen did not have an existing faucet hole available for the reverse osmosis dispenser, requiring a new hole to be carefully drilled through the granite countertop while working around limited cabinet space and existing plumbing.",
+  solution:
+    "Safely drilled and finished a new faucet hole in the granite countertop, installed the Cloud reverse osmosis system beneath the sink, connected water supply and drain lines, and tested the entire system for leaks and proper operation.",
+  scope: "Reverse Osmosis System Installation",
+  completed: "2026",
+  services: [
+    "Reverse osmosis system installation",
+    "Granite countertop drilling",
+    "Under-sink plumbing",
+    "Filtered water faucet installation",
+    "Water line connection",
+    "Drain saddle installation"
+  ],
+  tags: [
+    "reverse osmosis",
+    "water filtration",
+    "under sink filter",
+    "granite drilling",
+    "kitchen plumbing",
+    "handyman services"
+  ],
+  highlights: [
+    "Installed Cloud reverse osmosis filtration system",
+    "Drilled new faucet hole in granite countertop",
+    "Connected dedicated filtered water faucet",
+    "Integrated system with existing sink plumbing",
+    "Tested system for leaks and performance"
+  ],
+  before: "/beforeAfter/ROInstallBefore_1.jpg",
+  after: [
+    "/beforeAfter/ROInstallAfter_1.jpg",
+    "/beforeAfter/ROInstallAfter_2.jpg",
+    "/beforeAfter/ROInstallAfter_3.jpg"
+  ]
+},
+  {
   id: "exterior-trim-repair-fort-worth",
   slug: "exterior-trim-repair-fort-worth",
   title: "Exterior Trim Repair & Replacement",
