@@ -1,5 +1,59 @@
 export const projects = [
   {
+  id: "porch-swing-hanger-repair-fort-worth",
+  slug: "porch-swing-hanger-repair-fort-worth",
+
+  title: "Porch Swing Hanger Structural Repair",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Exterior Repair",
+
+  description:
+    "Repaired a damaged porch swing mounting location where the original hanger hardware had pulled through the soffit material and caused visible wood damage. Project included structural reinforcement, relocation and secure installation of swing hardware, ceiling repair, and repainting for a clean finished appearance.",
+
+  challenge:
+    "The existing porch swing hanger had torn through the ceiling material and surrounding wood, creating a safety concern and visible damage. The mounting point required reinforcement to safely support the swing load and restore the appearance of the porch ceiling.",
+
+  solution:
+    "Removed damaged material, reinforced the mounting area with proper structural backing, installed new securely anchored swing hardware, repaired surrounding ceiling damage, and patched and painted the area for a seamless finished appearance.",
+
+  scope: "Porch Swing Hanger Repair",
+  completed: "2026",
+
+  services: [
+    "Porch swing hanger repair",
+    "Structural reinforcement",
+    "Hardware installation",
+    "Wood repair",
+    "Ceiling patching",
+    "Exterior paint touch-up"
+  ],
+
+  tags: [
+    "porch swing repair",
+    "swing hanger repair",
+    "soffit repair",
+    "wood repair",
+    "porch ceiling repair",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Removed damaged swing mounting point",
+    "Added reinforcement for safer load support",
+    "Installed new secure hanger hardware",
+    "Patched damaged ceiling material",
+    "Painted repair area to match existing finish"
+  ],
+
+  before: "/beforeAfter/porchSwingRepairBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/porchSwingRepairAfter_1.jpg"
+  ]
+},
+  {
   id: "patio-power-washing-fort-worth",
   slug: "patio-power-washing-fort-worth",
 
