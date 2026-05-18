@@ -1,5 +1,60 @@
 export const projects = [
   {
+  id: "patio-power-washing-fort-worth",
+  slug: "patio-power-washing-fort-worth",
+
+  title: "Patio Power Washing",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Exterior Cleaning",
+
+  description:
+    "Deep cleaned a heavily stained backyard concrete patio using pressure washing techniques to remove years of dirt, algae, surface buildup, and discoloration. Restored the appearance of the concrete and improved the overall look of the outdoor living area.",
+
+  challenge:
+    "The concrete patio had accumulated years of dirt, mildew, and embedded staining that created uneven discoloration across the surface. Heavy buildup near the brick exterior required careful cleaning to avoid damaging surrounding areas.",
+
+  solution:
+    "Applied a thorough pressure washing process to lift embedded grime and restore the concrete surface. Focused attention on high-stain areas and edges along the brick and foundation to create a cleaner, more consistent appearance.",
+
+  scope: "Concrete Patio Cleaning",
+  completed: "2026",
+
+  services: [
+    "Pressure washing",
+    "Concrete cleaning",
+    "Patio restoration",
+    "Exterior surface cleaning",
+    "Mildew and dirt removal",
+    "Residential power washing"
+  ],
+
+  tags: [
+    "power washing",
+    "pressure washing",
+    "concrete cleaning",
+    "patio cleaning",
+    "exterior cleaning",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Removed years of dirt and buildup",
+    "Restored concrete appearance",
+    "Cleaned heavily stained sections",
+    "Improved patio curb appeal",
+    "Safe cleaning around brick exterior"
+  ],
+
+  before: "/beforeAfter/patioPowerWashBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/patioPowerWashAfter_1.jpg",
+    "/beforeAfter/patioPowerWashAfter_2.jpg"
+  ]
+},
+  {
   id: "reverse-osmosis-install-fort-worth",
   slug: "reverse-osmosis-install-fort-worth",
   title: "Reverse Osmosis System Installation",
