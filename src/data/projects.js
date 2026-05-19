@@ -1,5 +1,59 @@
 export const projects = [
   {
+  id: "bathroom-faucet-upgrade-fort-worth",
+  slug: "bathroom-faucet-upgrade-fort-worth",
+
+  title: "Bathroom Faucet Upgrade",
+  city: "Aledo",
+  state: "TX",
+
+  category: "Plumbing",
+
+  description:
+    "Upgraded an existing bathroom faucet and drain hardware by replacing outdated chrome fixtures with a modern brushed gold finish. Project included removal of old hardware, installation of new faucet components, drain assembly replacement, and final fitment checks for a clean updated look.",
+
+  challenge:
+    "The existing chrome faucet and drain hardware felt dated and did not match the updated style of the bathroom. The goal was to modernize the space with upgraded fixtures while maintaining a clean professional installation.",
+
+  solution:
+    "Removed the existing faucet and drain hardware, installed a new brushed gold faucet set with matching drain components, verified proper fit and operation, and completed final adjustments for a refreshed finished appearance.",
+
+  scope: "Bathroom Faucet Replacement",
+  completed: "2026",
+
+  services: [
+    "Bathroom faucet replacement",
+    "Drain hardware replacement",
+    "Fixture installation",
+    "Bathroom plumbing",
+    "Sink hardware upgrades",
+    "Finish and fitment adjustments"
+  ],
+
+  tags: [
+    "bathroom faucet",
+    "faucet replacement",
+    "sink upgrade",
+    "bathroom plumbing",
+    "fixture installation",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Removed outdated chrome faucet",
+    "Installed brushed gold fixture set",
+    "Replaced matching drain hardware",
+    "Improved overall bathroom appearance",
+    "Completed clean professional installation"
+  ],
+
+  before: "/beforeAfter/faucetBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/faucetAfter_1.jpg"
+  ]
+},
+  {
   id: "porch-swing-hanger-repair-fort-worth",
   slug: "porch-swing-hanger-repair-fort-worth",
 
