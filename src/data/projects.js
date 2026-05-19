@@ -53,6 +53,61 @@ export const projects = [
     "/beforeAfter/faucetAfter_1.jpg"
   ]
 },
+{
+  id: "fence-rail-repair-fort-worth",
+  slug: "fence-rail-repair-fort-worth",
+
+  title: "Fence Rail Repair",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Fence Repair",
+
+  description:
+    "Repaired a damaged wood privacy fence by removing cracked and failed horizontal support rails and replacing them with new pressure-treated lumber. Project restored structural support and extended the life of the existing fence without requiring full panel replacement.",
+
+  challenge:
+    "The original fence rails had cracked and deteriorated from age and weather exposure, causing sections of the fence to lose structural support and begin separating. Multiple rails had failed and needed replacement while preserving the existing fence panels.",
+
+  solution:
+    "Removed damaged fence rails, installed new pressure-treated support rails, securely fastened all existing pickets, and reinforced the fence structure to restore strength and stability.",
+
+  scope: "Fence Rail Replacement and Reinforcement",
+  completed: "2026",
+
+  services: [
+    "Fence repair",
+    "Fence rail replacement",
+    "Pressure-treated lumber installation",
+    "Fence reinforcement",
+    "Wood fence repair",
+    "Structural repairs"
+  ],
+
+  tags: [
+    "fence repair",
+    "wood fence repair",
+    "privacy fence",
+    "fence rail replacement",
+    "Fort Worth handyman",
+    "outdoor repair"
+  ],
+
+  highlights: [
+    "Removed cracked and broken fence rails",
+    "Installed new pressure-treated rails",
+    "Restored fence strength and support",
+    "Extended life of existing fence",
+    "Avoided full fence replacement cost"
+  ],
+
+  before: "/beforeAfter/fenceRepairBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/fenceRepairAfter_1.jpg",
+    "/beforeAfter/fenceRepairAfter_2.jpg"
+  ]
+},
   {
   id: "porch-swing-hanger-repair-fort-worth",
   slug: "porch-swing-hanger-repair-fort-worth",
