@@ -1,5 +1,62 @@
 export const projects = [
   {
+  id: "siding-rot-repair-fort-worth",
+  slug: "siding-rot-repair-fort-worth",
+
+  title: "Exterior Siding Rot Repair",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Exterior Repair",
+
+  description:
+    "Repaired deteriorated and rotted exterior siding near a rear entry area where previous patch attempts had failed and moisture intrusion caused visible damage. Project included removal of compromised material, rebuilding damaged sections, sealing, patching, and blending the repair into the existing exterior.",
+
+  challenge:
+    "The damaged area had multiple layers of previous patch material and underlying wood rot caused by prolonged moisture exposure. The repair required removing compromised material while rebuilding the siding profile and ensuring the area was properly sealed to prevent future water intrusion.",
+
+  solution:
+    "Removed rotted and damaged sections, rebuilt and reinforced the affected area, shaped repairs to match existing siding lines, sealed and caulked all joints, and completed paint touch-up for a clean finished appearance.",
+
+  scope: "Siding Rot Repair",
+  completed: "2026",
+
+  services: [
+    "Wood rot repair",
+    "Siding repair",
+    "Exterior patching",
+    "Caulking and sealing",
+    "Trim repair",
+    "Exterior paint touch-up"
+  ],
+
+  tags: [
+    "wood rot repair",
+    "siding repair",
+    "exterior repair",
+    "water damage repair",
+    "home maintenance",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Removed damaged and rotted siding material",
+    "Rebuilt and reinforced affected area",
+    "Matched existing siding profile",
+    "Sealed and caulked vulnerable joints",
+    "Completed paint-ready finish and touch-up"
+  ],
+
+  before: "/beforeAfter/sidingRotRepairBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/sidingRotRepairAfter_1.jpg",
+    "/beforeAfter/sidingRotRepairAfter_2.jpg",
+    "/beforeAfter/sidingRotRepairDuring_1.jpg",
+    "/beforeAfter/sidingRotRepairDuring_2.jpg"
+  ]
+},
+  {
   id: "bathroom-faucet-upgrade-fort-worth",
   slug: "bathroom-faucet-upgrade-fort-worth",
 
