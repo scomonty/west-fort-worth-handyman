@@ -1,5 +1,228 @@
 export const projects = [
   {
+  id: "closet-lighting-upgrade-fort-worth",
+  slug: "closet-lighting-upgrade-fort-worth",
+
+  title: "Closet LED Light Fixture Upgrade",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Electrical",
+
+  description:
+    "Upgraded outdated pull-chain closet light fixtures to modern low-profile LED ceiling lights. The project improved brightness, energy efficiency, and the overall appearance of multiple storage spaces while maintaining a clean, unobtrusive design.",
+
+  challenge:
+    "The existing closets were equipped with basic exposed-bulb fixtures that provided limited illumination and an unfinished appearance. The goal was to improve visibility and modernize the spaces without requiring major electrical modifications.",
+
+  solution:
+    "Removed the existing pull-chain fixtures, installed new integrated LED ceiling lights, verified proper operation, and ensured each fixture provided bright, even illumination throughout the closet spaces.",
+
+  scope: "Closet Lighting Upgrade",
+  completed: "2026",
+
+  services: [
+    "Light fixture replacement",
+    "LED lighting installation",
+    "Closet lighting upgrades",
+    "Electrical fixture installation",
+    "Residential lighting improvements",
+    "Energy-efficient lighting"
+  ],
+
+  tags: [
+    "LED lighting",
+    "light fixture replacement",
+    "closet lighting",
+    "electrical handyman",
+    "lighting upgrade",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Removed outdated pull-chain fixtures",
+    "Installed modern low-profile LED lights",
+    "Improved closet visibility",
+    "Enhanced appearance of storage spaces",
+    "Energy-efficient lighting solution",
+    "Completed without major electrical modifications"
+  ],
+
+  before: "/beforeAfter/closetLightingBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/closetLightingAfter_3.jpg",
+    "/beforeAfter/closetLightingAfter_2.jpg",
+    "/beforeAfter/closetLightingAfter_1.jpg"
+  ]
+},
+  {
+  id: "pool-equipment-enclosure-fort-worth",
+  slug: "pool-equipment-enclosure-fort-worth",
+
+  title: "Custom Pool Equipment Privacy Fence",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Fence Installation",
+
+  description:
+    "Built a custom horizontal-slat privacy enclosure to conceal pool equipment and utilities while improving the appearance of the backyard. The project included demolition of a damaged enclosure, construction of a new cedar privacy fence, installation of an access gate, and staining for long-term durability and a finished appearance.",
+
+  challenge:
+    "The existing enclosure had structural damage and was no longer providing an attractive or secure screen for the pool equipment. The replacement needed to withstand outdoor exposure, provide convenient maintenance access, and complement the home's existing exterior and landscaping.",
+
+  solution:
+    "Removed the damaged enclosure, installed new structural posts and framing, constructed a modern horizontal-slat cedar fence, added a secure access gate for equipment servicing, and applied stain to protect the wood while enhancing the overall appearance of the backyard.",
+
+  scope: "Pool Equipment Enclosure Construction",
+  completed: "2026",
+
+  services: [
+    "Fence construction",
+    "Privacy fence installation",
+    "Pool equipment enclosure",
+    "Custom gate installation",
+    "Cedar fence building",
+    "Fence staining"
+  ],
+
+  tags: [
+    "pool equipment enclosure",
+    "privacy fence",
+    "cedar fence",
+    "custom fence",
+    "backyard improvement",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Removed damaged existing enclosure",
+    "Built custom horizontal-slat cedar fence",
+    "Installed secure access gate",
+    "Concealed pool equipment and utilities",
+    "Applied protective stain finish",
+    "Improved backyard appearance and functionality"
+  ],
+
+  before: "/beforeAfter/poolEquipmentEnclosureBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/poolEquipmentEnclosureAfter_1.jpg",
+    "/beforeAfter/poolEquipmentEnclosureAfter_2.jpg",
+    "/beforeAfter/poolEquipmentEnclosureAfter_3.jpg"
+  ]
+},
+  {
+  id: "front-door-install-fort-worth",
+  slug: "front-door-install-fort-worth",
+
+  title: "Front Entry Door Replacement",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Door Installation",
+
+  description:
+    "Replaced an outdated painted front entry door with a new decorative glass-panel exterior door to improve curb appeal, natural light, and overall appearance of the home's entryway. Project included removal of the existing door, installation of the new unit, hardware installation, and final adjustments for proper operation.",
+
+  challenge:
+    "The homeowner wanted to modernize the appearance of the front entrance while maintaining a clean fit within the existing opening. The installation required careful removal of the existing door and precise fitting of the new prehung unit to ensure smooth operation, weather resistance, and a finished appearance.",
+
+  solution:
+    "Removed the existing entry door, installed a new decorative glass-panel exterior door, fitted new hardware, adjusted the frame and reveal for proper operation, sealed the installation, and completed final finishing details for a clean professional result.",
+
+  scope: "Front Door Replacement",
+  completed: "2026",
+
+  services: [
+    "Exterior door installation",
+    "Front door replacement",
+    "Door hardware installation",
+    "Weather sealing",
+    "Entryway upgrades",
+    "Finish carpentry adjustments"
+  ],
+
+  tags: [
+    "front door replacement",
+    "exterior door installation",
+    "entry door upgrade",
+    "curb appeal improvement",
+    "door installation",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Removed existing front entry door",
+    "Installed new decorative glass-panel door",
+    "Added updated entry hardware",
+    "Improved natural light at entrance",
+    "Enhanced curb appeal and home value"
+  ],
+
+  before: "/beforeAfter/entry-door-before.jpg",
+
+  after: [
+    "/beforeAfter/entry-door-after.jpg"
+  ]
+},
+{
+  id: "garage-ceiling-drywall-repair-fort-worth",
+  slug: "garage-ceiling-drywall-repair-fort-worth",
+
+  title: "Garage Ceiling Drywall Repair",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Drywall Repair",
+
+  description:
+    "Repaired damaged garage ceiling drywall following access work and previous water damage. The project included patching ceiling openings, reinforcing the repair area, finishing drywall seams, matching the existing ceiling texture, and preparing the surface for paint.",
+
+  challenge:
+    "The ceiling had multiple openings cut for access as well as visible signs of previous water intrusion. The repair required blending new drywall into the existing textured ceiling while minimizing visible transitions and restoring a uniform appearance.",
+
+  solution:
+    "Installed drywall patches, reinforced the repair area, taped and floated seams, applied texture to match the surrounding ceiling, and completed finishing work to create a clean, seamless repair ready for painting.",
+
+  scope: "Garage Ceiling Drywall Repair",
+  completed: "2026",
+
+  services: [
+    "Drywall patching",
+    "Ceiling drywall repair",
+    "Texture matching",
+    "Water damage repair",
+    "Joint taping and finishing",
+    "Paint-ready drywall finishing"
+  ],
+
+  tags: [
+    "drywall repair",
+    "ceiling repair",
+    "garage repair",
+    "water damage repair",
+    "texture matching",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Patched multiple ceiling openings",
+    "Blended repair into existing ceiling",
+    "Matched surrounding texture",
+    "Addressed previous water-damaged areas",
+    "Prepared surface for painting",
+    "Restored clean finished appearance"
+  ],
+
+  before: "/beforeAfter/garageDrywallRepairBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/garageDrywallRepairAfter_1.jpg"
+  ]
+},
+  {
   id: "siding-rot-repair-fort-worth",
   slug: "siding-rot-repair-fort-worth",
 
