@@ -1,5 +1,173 @@
 export const projects = [
   {
+  id: "brick-mortar-repair-fort-worth",
+  slug: "brick-mortar-repair-fort-worth",
+
+  title: "Brick & Mortar Repair at Garage Entry",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Masonry Repair",
+
+  description:
+    "Repaired deteriorated mortar and gaps at the base of a brick veneer garage entry where a previous repair attempt had been made using excessive caulk. The project involved removing failed material, rebuilding the damaged section with mortar, and restoring a clean, durable finish.",
+
+  challenge:
+    "A large void had developed at the base of the brick veneer near the garage entry. Rather than being repaired with mortar, the area had previously been filled with a heavy application of caulk that had failed and detracted from the appearance of the home. The repair required removing the improper patch and rebuilding the missing section using the appropriate masonry materials.",
+
+  solution:
+    "Removed the failed caulk repair, cleaned and prepared the damaged area, rebuilt the missing section with fresh mortar, and shaped the repair to blend with the surrounding masonry while improving durability and weather resistance.",
+
+  scope: "Brick & Mortar Repair",
+  completed: "2026",
+
+  services: [
+    "Mortar repair",
+    "Brick veneer repair",
+    "Masonry patching",
+    "Exterior gap repair",
+    "Caulk removal",
+    "Exterior maintenance"
+  ],
+
+  tags: [
+    "brick repair",
+    "mortar repair",
+    "masonry repair",
+    "brick veneer repair",
+    "exterior repair",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Removed failed caulk repair",
+    "Rebuilt missing mortar section",
+    "Improved weather resistance",
+    "Restored proper masonry appearance",
+    "Protected vulnerable exterior area",
+    "Provided a cleaner, professional finish"
+  ],
+
+  before: "/beforeAfter/brickMortarRepairBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/brickMortarRepairAfter_1.jpg",
+    "/beforeAfter/brickMortarRepairAfter_2.jpg"
+  ]
+},
+  {
+  id: "cedar-fence-staining-fort-worth",
+  slug: "cedar-fence-staining-fort-worth",
+
+  title: "New Cedar Fence Staining & Sealing",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Fence Staining",
+
+  description:
+    "Applied stain and sealer to a newly installed cedar privacy fence to enhance the natural wood grain and provide long-term protection from moisture, UV exposure, and weather. The project gave the fence a rich, finished appearance while helping preserve the wood for years to come.",
+
+  challenge:
+    "New cedar fencing is vulnerable to sun exposure, moisture absorption, and premature weathering if left untreated. The goal was to protect the fence early while maintaining the natural beauty and character of the cedar wood.",
+
+  solution:
+    "Applied a high-quality stain and sealer to the entire fence, ensuring even coverage and deep penetration into the wood. The finish enhanced the cedar's natural grain patterns while providing a protective barrier against the elements.",
+
+  scope: "Fence Staining & Sealing",
+  completed: "2026",
+
+  services: [
+    "Fence staining",
+    "Fence sealing",
+    "Cedar fence protection",
+    "Exterior wood finishing",
+    "Wood preservation",
+    "Fence maintenance"
+  ],
+
+  tags: [
+    "fence staining",
+    "fence sealing",
+    "cedar fence",
+    "wood stain",
+    "backyard improvement",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Protected newly installed cedar fence",
+    "Enhanced natural wood grain appearance",
+    "Applied UV and moisture protection",
+    "Achieved rich cedar-tone finish",
+    "Extended fence lifespan",
+    "Improved backyard appearance"
+  ],
+
+  before: "/beforeAfter/fenceStainingBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/fenceStainingAfter_2.jpg",
+    "/beforeAfter/fenceStainingAfter_1.jpg"
+  ]
+},
+  {
+  id: "bathroom-hardware-installation-fort-worth",
+  slug: "bathroom-hardware-installation-fort-worth",
+
+  title: "Bathroom Towel Bar & Hook Installation",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Bathroom Upgrades",
+
+  description:
+    "Installed new brushed nickel bathroom accessories, including towel hooks and a hand towel bar, to improve organization, functionality, and the overall appearance of the bathroom. The project provided dedicated towel storage while complementing the existing fixtures and finishes.",
+
+  challenge:
+    "The bathroom lacked convenient towel storage, resulting in towels being draped over the shower enclosure. The homeowner wanted a clean, modern solution that improved organization without requiring major modifications to the space.",
+
+  solution:
+    "Measured and installed matching brushed nickel towel hooks and a hand towel bar in optimal locations, ensuring secure mounting, proper alignment, and a cohesive appearance throughout the bathroom.",
+
+  scope: "Bathroom Hardware Installation",
+  completed: "2026",
+
+  services: [
+    "Towel bar installation",
+    "Towel hook installation",
+    "Bathroom hardware installation",
+    "Accessory mounting",
+    "Wall anchoring and fastening",
+    "Bathroom organization upgrades"
+  ],
+
+  tags: [
+    "towel bar installation",
+    "towel hook installation",
+    "bathroom hardware",
+    "bathroom upgrades",
+    "home maintenance",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Installed brushed nickel towel hooks",
+    "Installed matching hand towel bar",
+    "Improved bathroom organization",
+    "Created dedicated towel storage",
+    "Aligned hardware for a professional appearance",
+    "Matched existing bathroom finishes"
+  ],
+
+  after: [
+    "/beforeAfter/bathroomHardwareAfter_1.jpg",
+    "/beforeAfter/bathroomHardwareAfter_2.jpg",
+    "/beforeAfter/bathroomHardwareAfter_3.jpg",
+    "/beforeAfter/bathroomHardwareAfter_4.jpg"
+  ]
+},
+  {
   id: "closet-lighting-upgrade-fort-worth",
   slug: "closet-lighting-upgrade-fort-worth",
 
