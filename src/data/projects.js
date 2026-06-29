@@ -1,5 +1,305 @@
 export const projects = [
   {
+  id: "front-porch-deck-build-fort-worth",
+  slug: "front-porch-deck-build-fort-worth",
+
+  title: "Front Porch Deck Construction & Railing Installation",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Deck Construction",
+
+  description:
+    "Transformed an outdated front entry by removing an overgrown hedge planter and constructing a new elevated front porch deck with composite decking and aluminum railing. The new porch dramatically improved curb appeal, accessibility, and outdoor living space while creating a welcoming front entrance.",
+
+  challenge:
+    "The existing front entry featured a large raised brick planter filled with overgrown hedges that blocked the front window and limited usable porch space. The homeowner wanted to open up the front facade, improve the appearance of the home, and create a functional outdoor seating area that complemented the home's architecture.",
+
+  solution:
+    "Removed the existing hedge planter and constructed a new elevated front porch deck using composite decking materials. Installed new stairs, fascia, and black aluminum railing to provide a durable, low-maintenance outdoor space while significantly enhancing the home's curb appeal and functionality.",
+
+  scope: "Front Porch Deck Construction",
+  completed: "2026",
+
+  services: [
+    "Front porch construction",
+    "Deck construction",
+    "Composite decking installation",
+    "Aluminum railing installation",
+    "Front entry renovation",
+    "Exterior carpentry",
+    "Porch stair construction",
+    "Curb appeal improvements"
+  ],
+
+  tags: [
+    "deck builder Fort Worth",
+    "front porch deck",
+    "composite deck installation",
+    "porch construction",
+    "deck railing installation",
+    "front porch renovation",
+    "curb appeal improvement",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Removed overgrown hedge planter",
+    "Constructed new elevated front porch deck",
+    "Installed low-maintenance composite decking",
+    "Added black aluminum safety railing",
+    "Built new front porch steps",
+    "Significantly improved curb appeal",
+    "Created functional outdoor living space"
+  ],
+
+  before: "/beforeAfter/frontPorchDeckBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/frontPorchDeckAfter_1.jpg",
+    "/beforeAfter/frontPorchDeckAfter_2.jpg"
+  ]
+},
+  {
+  id: "home-assembly-and-installation-services-fort-worth",
+  slug: "home-assembly-and-installation-services-fort-worth",
+
+  title: "Furniture Assembly, Basketball Goal Assembly & Blind Installation",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Furniture Assembly",
+
+  description:
+    "Completed several home setup and assembly projects including assembly of a portable basketball goal, fabric storage chest, pedestal fan, and installation of a new roller shade. These projects improved organization, recreation, comfort, and privacy throughout the home.",
+
+  challenge:
+    "The homeowner needed assistance assembling multiple household and recreational items, along with installing a new window covering. Each project required careful assembly, proper adjustment, and secure installation to ensure safe operation and long-term reliability.",
+
+  solution:
+    "Assembled and adjusted a portable basketball goal, assembled a multi-drawer storage cabinet and pedestal fan, and installed a new roller shade. All items were assembled according to manufacturer specifications and tested to ensure proper functionality and safe use.",
+
+  scope: "Furniture Assembly and Home Installation Services",
+  completed: "2026",
+
+  services: [
+    "Furniture assembly",
+    "Basketball goal assembly",
+    "Sports equipment assembly",
+    "Storage cabinet assembly",
+    "Fan assembly",
+    "Blind installation",
+    "Roller shade installation",
+    "New homeowner setup services"
+  ],
+
+  tags: [
+    "basketball goal assembly",
+    "furniture assembly",
+    "sports equipment assembly",
+    "storage drawer assembly",
+    "fan assembly",
+    "blind installation",
+    "roller shade installation",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Assembled portable basketball goal",
+    "Installed new roller shade",
+    "Assembled storage cabinet",
+    "Assembled pedestal fan",
+    "Ensured safe and proper operation of all items",
+    "Helped homeowner complete move-in setup"
+  ],
+
+  after: [
+    "/beforeAfter/homeAssemblyAfter_1.jpg",
+    "/beforeAfter/homeAssemblyAfter_2.jpg",
+    "/beforeAfter/homeAssemblyAfter_3.jpg"
+  ]
+},
+  {
+  id: "lighting-and-bath-hardware-installation-fort-worth",
+  slug: "lighting-and-bath-hardware-installation-fort-worth",
+
+  title: "Light Fixture and Bathroom Hardware Updates",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Fixture Installation",
+
+  description:
+    "Updated multiple areas of the home with new lighting fixtures and bathroom accessories. The project included replacing exterior wall sconces, installing decorative interior light fixtures, upgrading flush mount lighting, and installing new towel racks and toilet paper holders to refresh the home's appearance and functionality.",
+
+  challenge:
+    "The homeowner wanted to modernize several areas throughout the home by replacing builder-grade fixtures and improving bathroom storage and convenience. The project involved installing multiple fixtures in different locations while ensuring proper mounting, alignment, and safe electrical connections.",
+
+  solution:
+    "Removed existing fixtures and hardware, installed new interior and exterior lighting, mounted decorative pendant and flush mount fixtures, and installed towel racks and toilet paper holders in bathrooms. Each installation was carefully aligned and securely fastened to provide a clean, professional appearance throughout the home.",
+
+  scope: "Light Fixture and Hardware Installation",
+  completed: "2026",
+
+  services: [
+    "Light fixture installation",
+    "Pendant light installation",
+    "Exterior light replacement",
+    "Flush mount light installation",
+    "Bathroom hardware installation",
+    "Towel rack installation",
+    "Toilet paper holder installation",
+    "Home updates and improvements"
+  ],
+
+  tags: [
+    "light fixture installation",
+    "lighting upgrades",
+    "pendant light installation",
+    "bathroom hardware installation",
+    "towel rack installation",
+    "toilet paper holder installation",
+    "exterior lighting",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Installed decorative pendant lighting",
+    "Upgraded exterior wall sconces",
+    "Installed new flush mount fixtures",
+    "Added bathroom towel storage",
+    "Installed new toilet paper holders",
+    "Modernized multiple areas throughout the home"
+  ],
+
+  after: [
+    "/beforeAfter/fixtureInstallationAfter_1.jpg",
+    "/beforeAfter/fixtureInstallationAfter_2.jpg",
+    "/beforeAfter/fixtureInstallationAfter_3.jpg",
+    "/beforeAfter/fixtureInstallationAfter_4.jpg",
+    "/beforeAfter/fixtureInstallationAfter_5.jpg",
+    "/beforeAfter/fixtureInstallationAfter_6.jpg",
+    "/beforeAfter/fixtureInstallationAfter_7.jpg",
+    "/beforeAfter/fixtureInstallationAfter_8.jpg",
+    "/beforeAfter/fixtureInstallationAfter_9.jpg",
+    "/beforeAfter/fixtureInstallationAfter_10.jpg",
+    "/beforeAfter/fixtureInstallationAfter_11.jpg",
+    "/beforeAfter/fixtureInstallationAfter_12.jpg"
+  ]
+},
+  {
+  id: "laundry-room-drywall-repair-fort-worth",
+  slug: "laundry-room-drywall-repair-fort-worth",
+
+  title: "Laundry Room Drywall Repair After Plumbing Work",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Drywall Repair",
+
+  description:
+    "Repaired and restored damaged drywall in a laundry room after plumbing repairs required multiple wall openings. The project included patching large openings, blending repairs with the existing wall texture, and preparing the area for a clean, finished appearance.",
+
+  challenge:
+    "Several large sections of drywall had been removed to access plumbing lines behind the washing machine. The wall contained multiple openings of varying sizes, including areas around the washer connection box and drain line. The repairs needed to be structurally sound while matching the existing orange peel texture for a seamless appearance.",
+
+  solution:
+    "Installed new drywall patches to close all wall openings, secured and finished the repairs with tape and joint compound, matched the existing wall texture, and blended the repaired areas into the surrounding wall surface. The completed repairs restored both the appearance and functionality of the laundry room.",
+
+  scope: "Laundry Room Drywall Repair",
+  completed: "2026",
+
+  services: [
+    "Drywall repair",
+    "Drywall patching",
+    "Texture matching",
+    "Orange peel texture repair",
+    "Wall restoration",
+    "Laundry room repairs"
+  ],
+
+  tags: [
+    "drywall repair",
+    "drywall patch",
+    "texture matching",
+    "laundry room repair",
+    "wall repair",
+    "sheetrock repair",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Patched multiple large drywall openings",
+    "Restored walls after plumbing access",
+    "Matched existing wall texture",
+    "Created a seamless finished appearance",
+    "Improved appearance of laundry room",
+    "Prepared walls for long-term durability"
+  ],
+
+  before: "/beforeAfter/laundryRoomDrywallRepairBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/laundryRoomDrywallRepairAfter_1.jpg"
+  ]
+},
+  {
+  id: "attic-ladder-direction-change-fort-worth",
+  slug: "attic-ladder-direction-change-fort-worth",
+
+  title: "Attic Ladder Reorientation for Safe Access",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Attic Ladder Installation",
+
+  description:
+    "Modified and reoriented an existing attic pull-down ladder to improve safety and accessibility. The original ladder opened toward the roof slope, making it difficult and unsafe to climb into the attic. The ladder was repositioned to provide proper clearance and safe access to the attic space.",
+
+  challenge:
+    "The existing attic ladder had been installed facing directly into the roof line, leaving very limited headroom at the top of the ladder. Homeowners were forced to duck and maneuver around roof framing while climbing, creating a significant safety hazard and making attic access difficult and inconvenient.",
+
+  solution:
+    "Removed and reconfigured the attic ladder installation so the ladder opens in the correct direction, providing adequate headroom and a safer climbing path into the attic. Adjusted the framing and reinstalled the ladder to ensure smooth operation, improved accessibility, and safer entry into the attic space.",
+
+  scope: "Attic Ladder Reorientation",
+  completed: "2026",
+
+  services: [
+    "Attic ladder installation",
+    "Attic ladder modification",
+    "Attic access improvements",
+    "Carpentry services",
+    "Framing modifications",
+    "Home safety improvements"
+  ],
+
+  tags: [
+    "attic ladder repair",
+    "attic ladder installation",
+    "attic ladder replacement",
+    "attic access",
+    "carpentry repair",
+    "home safety",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Corrected unsafe ladder orientation",
+    "Improved attic accessibility",
+    "Provided proper headroom clearance",
+    "Enhanced homeowner safety",
+    "Modified framing for proper installation",
+    "Ensured smooth ladder operation"
+  ],
+
+  before: "/beforeAfter/atticLadderDirectionChangeBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/atticLadderDirectionChangeAfter_1.jpg"
+  ]
+},
+  {
   id: "brick-mortar-repair-fort-worth",
   slug: "brick-mortar-repair-fort-worth",
 
