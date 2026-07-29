@@ -1,5 +1,310 @@
 export const projects = [
   {
+  id: "home-safety-organization-upgrades-fort-worth",
+  slug: "home-safety-organization-upgrades-fort-worth",
+
+  title: "Home Safety & Organization Upgrades",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "General Handyman",
+
+  description:
+    "Completed multiple home improvement projects during a single service visit, including mounting a decorative coat rack, installing a child safety handrail on the staircase, adding an extra security lock to an exterior door, and installing a solar panel for a Ring security camera. These small upgrades improved the home's organization, safety, security, and convenience.",
+
+  challenge:
+    "The homeowner had several small projects that had been put off but would make everyday life easier and safer once completed. Rather than hiring multiple contractors, they wanted one handyman to complete everything during a single visit with professional installation and attention to detail.",
+
+  solution:
+    "Installed each item securely and according to manufacturer recommendations. The coat rack was mounted into wall framing for strength, the child handrail was properly fastened to wall studs, an additional door security lock was installed for improved home security, and a solar panel was mounted and positioned to provide continuous charging for the Ring security camera.",
+
+  scope: "Multiple Home Improvement Projects",
+  completed: "2026",
+
+  services: [
+    "Coat rack installation",
+    "Child safety handrail installation",
+    "Door hardware installation",
+    "Home security upgrades",
+    "Ring camera solar panel installation",
+    "Wall mounting",
+    "General handyman services",
+    "Home maintenance"
+  ],
+
+  tags: [
+    "handyman Fort Worth",
+    "coat rack installation",
+    "child handrail installation",
+    "door lock installation",
+    "Ring camera installation",
+    "home safety improvements",
+    "wall mounting services",
+    "West Fort Worth Handyman"
+  ],
+
+  highlights: [
+    "Mounted decorative wall coat rack",
+    "Installed child safety stair handrail",
+    "Added secondary security lock to exterior door",
+    "Installed solar panel for Ring security camera",
+    "Completed multiple projects in one visit",
+    "Improved home safety and organization",
+    "Professional installation throughout"
+  ],
+
+  after: [
+    "/beforeAfter/homeUpgradesAfter_1.jpg",
+    "/beforeAfter/homeUpgradesAfter_2.jpg",
+    "/beforeAfter/homeUpgradesAfter_3.jpg",
+    "/beforeAfter/homeUpgradesAfter_4.jpg"
+  ]
+},
+  {
+  id: "garage-trim-restoration-fort-worth",
+  slug: "garage-trim-restoration-fort-worth",
+
+  title: "Garage Door Trim Restoration & Staining",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Exterior Carpentry",
+
+  description:
+    "Restored weathered garage door trim by sanding away peeling finish, repairing damaged areas, and applying a rich exterior stain. The refreshed trim dramatically improved the home's curb appeal while protecting the wood from future weather exposure.",
+
+  challenge:
+    "Years of sun and weather had caused the wood trim surrounding both garage doors to fade, peel, and deteriorate. The trim looked worn and aged, taking away from the overall appearance of the home's exterior. The homeowner wanted to restore the natural wood look without replacing the existing trim.",
+
+  solution:
+    "Prepared the existing wood by scraping loose finish, sanding the surface smooth, and cleaning the trim before applying a high-quality exterior stain. Multiple garage door openings were restored to provide a uniform, refreshed appearance while protecting the wood from future UV and moisture damage.",
+
+  scope: "Garage Door Trim Restoration",
+  completed: "2026",
+
+  services: [
+    "Garage door trim restoration",
+    "Exterior wood staining",
+    "Exterior trim refinishing",
+    "Wood trim sanding",
+    "Exterior carpentry",
+    "Wood restoration",
+    "Exterior home maintenance",
+    "Curb appeal improvements"
+  ],
+
+  tags: [
+    "garage trim repair Fort Worth",
+    "garage door trim staining",
+    "wood trim restoration",
+    "exterior wood staining",
+    "garage door wood trim",
+    "exterior carpentry",
+    "curb appeal improvements",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Removed peeling finish from existing trim",
+    "Sanded and prepared weathered wood",
+    "Applied rich exterior stain",
+    "Restored natural wood appearance",
+    "Improved curb appeal",
+    "Protected wood from UV and moisture",
+    "Completed both garage door openings"
+  ],
+
+  before: "/beforeAfter/garageTrimBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/garageTrimAfter_1.jpg",
+    "/beforeAfter/garageTrimAfter_2.jpg",
+    "/beforeAfter/garageTrimAfter_3.jpg"
+  ]
+},
+  {
+  id: "exterior-base-trim-installation-fort-worth",
+  slug: "exterior-base-trim-installation-fort-worth",
+
+  title: "Exterior Base Trim Installation",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Exterior Carpentry",
+
+  description:
+    "Installed new exterior base trim along the bottom of the home's siding where the wall meets the concrete slab. The new trim created a clean, finished appearance while helping protect the lower edge of the siding from moisture and everyday wear.",
+
+  challenge:
+    "The bottom of the exterior walls lacked a finished trim board, leaving an exposed transition between the siding and concrete slab. The unfinished appearance reduced curb appeal and left the lower edge of the siding more susceptible to moisture, debris, and accidental damage.",
+
+  solution:
+    "Measured, cut, and installed new exterior-grade trim boards around the base of the wall and entryway. All trim was securely fastened, caulked where needed, and prepared for painting to create a clean architectural transition and improve long-term durability.",
+
+  scope: "Exterior Base Trim Installation",
+  completed: "2026",
+
+  services: [
+    "Exterior trim installation",
+    "Base trim installation",
+    "Exterior finish carpentry",
+    "Door surround trim",
+    "Exterior caulking",
+    "Exterior wood trim installation",
+    "Home exterior finishing",
+    "Exterior home maintenance"
+  ],
+
+  tags: [
+    "exterior trim installation Fort Worth",
+    "base trim installation",
+    "house trim repair",
+    "finish carpentry",
+    "exterior carpentry",
+    "door trim installation",
+    "home exterior improvements",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Installed new exterior base trim",
+    "Created clean transition between siding and concrete",
+    "Enhanced curb appeal",
+    "Improved moisture protection",
+    "Professionally fitted around entryway",
+    "Prepared trim for paint",
+    "Completed clean exterior finish"
+  ],
+
+  before: "/beforeAfter/exteriorBaseTrimBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/exteriorBaseTrimAfter_1.jpg",
+    "/beforeAfter/exteriorBaseTrimAfter_2.jpg"
+  ]
+},
+  {
+  id: "window-trim-replacement-fort-worth",
+  slug: "window-trim-replacement-fort-worth",
+
+  title: "Exterior Window Trim Replacement",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Exterior Carpentry",
+
+  description:
+    "Replaced a damaged exterior window header trim board that had begun to rot and deteriorate from prolonged weather exposure. The new trim restored the home's appearance while protecting the window opening from future moisture intrusion.",
+
+  challenge:
+    "The upper trim board above the window had significant wood rot and deterioration, leaving the window trim vulnerable to water damage and reducing the home's curb appeal. The damaged board needed to be removed and replaced before the problem spread to surrounding trim or framing.",
+
+  solution:
+    "Carefully removed the deteriorated trim board and installed a new exterior-grade replacement. The new trim was properly fastened, sealed, and prepared for painting to provide long-lasting protection against the elements while restoring a clean, finished appearance.",
+
+  scope: "Exterior Window Trim Repair",
+  completed: "2026",
+
+  services: [
+    "Exterior trim replacement",
+    "Window trim repair",
+    "Rotten wood replacement",
+    "Exterior carpentry",
+    "Finish carpentry",
+    "Exterior caulking",
+    "Wood rot repair",
+    "Exterior home maintenance"
+  ],
+
+  tags: [
+    "window trim repair Fort Worth",
+    "exterior trim replacement",
+    "rotted wood repair",
+    "fascia and trim repair",
+    "wood rot repair",
+    "finish carpentry",
+    "exterior home repair",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Removed rotted trim board",
+    "Installed new exterior-grade trim",
+    "Improved weather protection",
+    "Restored clean exterior appearance",
+    "Prepared trim for paint",
+    "Prevented further moisture damage",
+    "Extended the life of the window exterior"
+  ],
+
+  before: "/beforeAfter/windowTrimBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/windowTrimAfter_1.jpg"
+  ]
+},
+  {
+  id: "chain-link-fence-post-repair-fort-worth",
+  slug: "chain-link-fence-post-repair-fort-worth",
+
+  title: "Chain Link Fence Post & Gate Repair",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Fence Repair",
+
+  description:
+    "Repaired a failing chain link fence gate by installing a new heavy-duty galvanized support post with a surface-mounted concrete base. The repair restored stability to the gate, prevented the post from falling over, and ensured the homeowner's dog could no longer escape the yard.",
+
+  challenge:
+    "The original gate support post had become unstable and repeatedly fell over, causing the chain link gate to sag and leaving gaps large enough for the homeowner's dog to escape multiple times. The homeowner needed a durable repair without replacing the entire fence.",
+
+  solution:
+    "Installed a new galvanized steel fence post using a heavy-duty surface-mounted post base securely anchored into the existing concrete. The new post provided a solid mounting point for the gate hinges, restored proper gate alignment, and eliminated the instability that caused the gate to fail.",
+
+  scope: "Fence Post & Gate Repair",
+  completed: "2026",
+
+  services: [
+    "Chain link fence repair",
+    "Fence post replacement",
+    "Gate repair",
+    "Fence gate alignment",
+    "Concrete anchor installation",
+    "Surface-mounted fence post installation",
+    "Pet containment repairs",
+    "General fence maintenance"
+  ],
+
+  tags: [
+    "fence repair Fort Worth",
+    "chain link fence repair",
+    "gate repair",
+    "fence post replacement",
+    "chain link gate repair",
+    "pet fence repair",
+    "handyman Fort Worth",
+    "West Fort Worth Handyman"
+  ],
+
+  highlights: [
+    "Removed failing gate support",
+    "Installed new galvanized steel fence post",
+    "Anchored heavy-duty surface mount into concrete",
+    "Realigned chain link gate",
+    "Restored secure gate operation",
+    "Prevented homeowner's dog from escaping",
+    "Avoided the cost of full fence replacement"
+  ],
+
+  before: "/beforeAfter/fencePostRepairBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/fencePostRepairAfter_1.jpg",
+    "/beforeAfter/fencePostRepairAfter_2.jpg"
+  ]
+},
+  {
   id: "front-porch-deck-build-fort-worth",
   slug: "front-porch-deck-build-fort-worth",
 
