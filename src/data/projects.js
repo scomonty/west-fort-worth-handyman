@@ -1,5 +1,60 @@
 export const projects = [
   {
+  id: "front-door-refresh-fort-worth",
+  slug: "front-door-refresh-fort-worth",
+
+  title: "Front Door Refresh & Paint",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Exterior Painting",
+
+  description:
+    "Refreshed a worn front entry door by removing peeling paint, preparing the surface, and applying a fresh coat of exterior paint for a clean, welcoming appearance.",
+
+  challenge:
+    "The front door had peeling paint, surface wear, and years of accumulated dirt that made the home's entry look dated. Proper preparation was needed to achieve a smooth, long-lasting finish.",
+
+  solution:
+    "Scraped away loose paint, sanded and prepared the surface, cleaned the door, filled imperfections where needed, and applied fresh exterior paint to restore a crisp, uniform appearance.",
+
+  scope: "Front Door Painting",
+  completed: "2026",
+
+  services: [
+    "Exterior door painting",
+    "Paint preparation",
+    "Scraping loose paint",
+    "Surface sanding",
+    "Minor surface repairs",
+    "Home exterior maintenance"
+  ],
+
+  tags: [
+    "front door painting",
+    "door refresh",
+    "exterior painting",
+    "paint prep",
+    "home maintenance",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Removed peeling paint",
+    "Prepared surface for proper adhesion",
+    "Applied fresh exterior finish",
+    "Improved curb appeal",
+    "Clean, professional appearance",
+    "Extended the life of the door"
+  ],
+
+  before: "/beforeAfter/frontDoorRefreshBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/frontDoorRefreshAfter_1.jpg"
+  ]
+},
+  {
   id: "home-safety-organization-upgrades-fort-worth",
   slug: "home-safety-organization-upgrades-fort-worth",
 
