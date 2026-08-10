@@ -1,4 +1,61 @@
 export const projects = [
+{
+  id: "fence-gate-repair-fort-worth",
+  slug: "fence-gate-repair-fort-worth",
+
+  title: "Wood Fence Gate Repair & Rebuild",
+  city: "Fort Worth",
+  state: "TX",
+
+  category: "Fence Repair",
+
+  description:
+    "Repaired and rebuilt a deteriorated wood fence gate by replacing damaged boards, rebuilding the gate structure, and reinforcing the framing for a stronger, more functional gate.",
+
+  challenge:
+    "The existing gate had deteriorated and damaged boards, a weakened structure, and areas that were no longer providing a solid, secure gate.",
+
+  solution:
+    "Removed the damaged gate boards, rebuilt the gate using new cedar boards and reinforced framing, and reinstalled the existing decorative hinges and hardware to create a sturdy, functional replacement.",
+
+  scope: "Wood Fence Gate Repair & Rebuild",
+  completed: "2026",
+
+  services: [
+    "Fence gate repair",
+    "Wood gate rebuilding",
+    "Cedar board replacement",
+    "Gate framing",
+    "Gate reinforcement",
+    "Fence hardware installation"
+  ],
+
+  tags: [
+    "fence gate repair",
+    "wood gate repair",
+    "fence repair",
+    "cedar gate",
+    "gate rebuild",
+    "Fort Worth handyman"
+  ],
+
+  highlights: [
+    "Removed damaged and deteriorated boards",
+    "Built a new gate structure",
+    "Installed new cedar fence boards",
+    "Reinforced the gate framing",
+    "Reused existing decorative hardware",
+    "Restored a sturdy, functional gate"
+  ],
+
+  before: "/beforeAfter/fenceGateRepairBefore_1.jpg",
+
+  after: [
+    "/beforeAfter/fenceGateRepairAfter_1.jpg",
+    "/beforeAfter/fenceGateRepairAfter_2.jpg",
+    "/beforeAfter/fenceGateRepairAfter_3.jpg"
+  ]
+},
   {
   id: "front-door-refresh-fort-worth",
   slug: "front-door-refresh-fort-worth",
