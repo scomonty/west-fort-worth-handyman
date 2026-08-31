@@ -1,4 +1,97 @@
 export const projects = [
+  {
+
+  id: "attic-ladder-leg-repair-fort-worth",
+
+  slug: "attic-ladder-leg-repair-fort-worth",
+
+  title: "Attic Ladder Leg Repair & Extension",
+
+  city: "Fort Worth",
+
+  state: "TX",
+
+  category: "Attic Ladder Repair",
+
+  description:
+
+    "Repaired and modified an attic ladder that was no longer safely reaching the floor by fabricating and installing custom bottom leg extensions, avoiding the need to replace the entire ladder.",
+
+  challenge:
+
+    "The existing attic ladder legs did not reach the floor properly, leaving the ladder unstable. A previous repair that had been used to extend the legs had also failed on one side, and the customer was prepared to replace the entire ladder.",
+
+  solution:
+
+    "Recommended repairing the existing ladder rather than replacing it. Fabricated custom replacement bottom leg sections, extending both sides so the ladder would properly reach and sit securely on the floor. Reinforced the connections to provide a stronger and safer repair.",
+
+  scope: "Attic Ladder Leg Repair & Extension",
+
+  completed: "2026",
+
+  services: [
+
+    "Attic ladder repair",
+
+    "Attic ladder leg extension",
+
+    "Custom wood fabrication",
+
+    "Ladder reinforcement",
+
+    "Structural repair",
+
+    "Attic access ladder repair"
+
+  ],
+
+  tags: [
+
+    "attic ladder repair",
+
+    "attic ladder leg repair",
+
+    "attic ladder extension",
+
+    "fold down attic ladder",
+
+    "ladder repair",
+
+    "custom wood fabrication",
+
+    "Fort Worth handyman"
+
+  ],
+
+  highlights: [
+
+    "Avoided unnecessary replacement of the entire attic ladder",
+
+    "Removed the failed previous leg repair",
+
+    "Fabricated custom bottom leg extensions",
+
+    "Extended both ladder legs to properly reach the floor",
+
+    "Reinforced the repaired connections",
+
+    "Restored a stable and safer ladder setup",
+
+    "Saved the customer the cost of replacing the entire ladder"
+
+  ],
+
+  before: "/beforeAfter/atticLadderRepairBefore_1.jpg",
+
+  after: [
+
+    "/beforeAfter/atticLadderRepairAfter_1.jpg",
+
+    "/beforeAfter/atticLadderRepairAfter_2.jpg"
+
+  ]
+
+},
 {
   id: "fence-gate-repair-fort-worth",
   slug: "fence-gate-repair-fort-worth",
