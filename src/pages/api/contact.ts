@@ -19,6 +19,7 @@ export const POST: APIRoute = async ({ request }) => {
   const email = data.get("email");
   const phone = data.get("phone");
   const message = data.get("message");
+  const preferredContact = data.get("preferredContact");
 
   try {
     await resend.emails.send({
@@ -31,6 +32,7 @@ export const POST: APIRoute = async ({ request }) => {
         <p>Email: ${email}</p>
         <p>Phone: ${phone}</p>
         <p>Message: ${message}</p>
+        <p>Preferred Contact: ${preferredContact}</p>
       `,
     });
 

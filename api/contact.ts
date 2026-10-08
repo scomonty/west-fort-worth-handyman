@@ -21,6 +21,7 @@ export default async function handler(req, res) {
     const email = fields.email?.[0] || "";
     const phone = fields.phone?.[0] || "";
     const city = fields.city?.[0] || "";
+    const preferredContact = fields.preferredContact?.[0] || "Not specified";
     const message = fields.message?.[0] || "";
 
     const photoUrls = fields.photoUrls?.[0]
@@ -44,6 +45,7 @@ export default async function handler(req, res) {
         <p>Email: ${email}</p>
         <p>Phone: ${phone}</p>
         <p>City: ${city}</p>
+        <p>Preferred Contact: ${preferredContact}</p>
         <p>Message: ${message}</p>
 
         ${
