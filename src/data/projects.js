@@ -1,5 +1,120 @@
 export const projects = [
   {
+  id: "custom-laundry-storage-cabinet-fort-worth",
+
+  slug: "custom-laundry-storage-cabinet-fort-worth",
+
+  title: "Custom Laundry Room Storage Cabinet & Pull-Out Drawers",
+
+  city: "Fort Worth",
+
+  state: "TX",
+
+  category: "Custom Cabinetry & Storage",
+
+  description:
+    "Designed and built a custom laundry room storage cabinet surrounding a stacked washer and dryer, adding vibrant blue cabinetry, concealed storage, and convenient pull-out drawers to maximize functionality in a compact space.",
+
+  challenge:
+    "The small laundry room had limited storage space, with laundry supplies, cleaning products, towels, and other essentials competing for space around the stacked washer and dryer. The narrow area beside the appliances offered an opportunity to add vertical storage without sacrificing the room's existing layout.",
+
+  solution:
+    "Built and installed a custom floor-to-ceiling cabinet system designed to fit around the existing stacked washer and dryer. Added bold blue painted cabinetry with matching upper cabinet doors and a tall side cabinet featuring multiple black pull-out drawers for easy access to laundry supplies, cleaning products, and folded towels. Incorporated long gold-tone cabinet handles to complement the blue finish and provide a modern, distinctive look. The finished installation transforms unused vertical space into practical, organized storage while maintaining access to the washer and dryer.",
+
+  scope: "Custom Laundry Room Cabinetry & Storage Installation",
+
+  completed: "2026",
+
+  services: [
+
+    "Custom cabinet construction",
+
+    "Laundry room storage solutions",
+
+    "Built-in cabinetry",
+
+    "Cabinet installation",
+
+    "Custom pull-out drawer installation",
+
+    "Cabinet door installation",
+
+    "Cabinet hardware installation",
+
+    "Cabinet painting and finishing",
+
+    "Laundry room organization",
+
+    "Space-saving storage solutions"
+
+  ],
+
+  tags: [
+
+    "custom laundry room cabinets",
+
+    "laundry room storage",
+
+    "washer dryer cabinet",
+
+    "stacked washer dryer storage",
+
+    "custom built-in cabinets",
+
+    "pull-out storage drawers",
+
+    "blue laundry room cabinets",
+
+    "small laundry room makeover",
+
+    "custom cabinetry Fort Worth",
+
+    "laundry room organization",
+
+    "space-saving cabinets",
+
+    "Fort Worth handyman"
+
+  ],
+
+  highlights: [
+
+    "Designed a custom cabinet layout around an existing stacked washer and dryer",
+
+    "Maximized vertical storage in a compact laundry room",
+
+    "Built a tall, narrow side cabinet with multiple pull-out drawers",
+
+    "Added dedicated storage for laundry supplies, cleaning products, and towels",
+
+    "Installed upper cabinets for additional concealed storage",
+
+    "Applied a bold blue cabinet finish for a distinctive visual upgrade",
+
+    "Installed coordinating gold-tone cabinet handles",
+
+    "Improved organization while preserving access to the laundry appliances",
+
+    "Transformed previously unused space into functional built-in storage"
+
+  ],
+
+  before: "/beforeAfter/laundryTowerBefore.jpg",
+
+  after: [
+
+    "/beforeAfter/laundryTowerAfter_1.jpg",
+
+    "/beforeAfter/laundryTowerAfter_2.jpg",
+
+    "/beforeAfter/laundryTowerAfter_3.jpg",
+
+    "/beforeAfter/laundryTowerAfter_4.jpg"
+
+  ]
+
+},
+  {
 
   id: "attic-ladder-leg-repair-fort-worth",
 
