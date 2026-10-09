@@ -119,7 +119,7 @@ export const projects = [
 
   slug: "garage-fascia-rot-repair-fort-worth",
 
-  title: "Rotten Garage Fascia Board Repair & Replacement",
+  title: "Rotten Garage Fascia Repair, Replacement & Painting",
 
   city: "Fort Worth",
 
@@ -128,15 +128,15 @@ export const projects = [
   category: "Exterior Wood Repair",
 
   description:
-    "Repaired rotten and deteriorated fascia wood along a garage roofline, restoring the appearance of the exterior trim and providing a clean, durable finish. Replaced damaged sections and prepared the repaired fascia for exterior protection.",
+    "Repaired and replaced rotten fascia boards along a garage roofline, removing deteriorated wood and installing replacement sections. Repainted the repaired areas to match the existing fascia in good condition, restoring a clean, consistent appearance along the garage exterior.",
 
   challenge:
-    "The fascia board along the garage roofline had developed visible wood rot and deterioration, with sections of the wood splitting, cracking, and breaking away. The damage left dark, exposed areas along the roof edge and detracted from the appearance of the garage. The deteriorated wood needed to be addressed before the damage could spread further.",
+    "The fascia board along the garage roofline had developed significant wood rot, with sections splitting, cracking, and breaking away. The damage left exposed areas along the roof edge and detracted from the appearance of the garage. The deteriorated wood needed to be replaced, and the repaired sections needed to blend with the surrounding fascia that remained in good condition.",
 
   solution:
-    "Removed the deteriorated portions of the fascia and repaired the affected sections with replacement material. Secured the new wood in place, addressed damaged edges, and prepared the repaired area for a uniform exterior finish. The repair restored the continuity of the fascia along the garage roofline and improved the appearance of the exterior trim.",
+    "Removed the rotten and deteriorated fascia sections and installed replacement wood in the affected areas. Secured the new material and prepared the repaired surfaces for painting. Repainted the replacement sections to match the color of the existing fascia in good condition, creating a consistent finish across the garage roofline without unnecessarily replacing the surrounding sound wood.",
 
-  scope: "Garage Fascia Board Repair & Replacement",
+  scope: "Garage Fascia Repair, Wood Replacement & Painting",
 
   completed: "2026",
 
@@ -154,7 +154,11 @@ export const projects = [
 
     "Exterior trim restoration",
 
-    "Fascia replacement",
+    "Fascia board replacement",
+
+    "Exterior painting",
+
+    "Fascia color matching",
 
     "Exterior home maintenance"
 
@@ -176,9 +180,11 @@ export const projects = [
 
     "roofline trim repair",
 
-    "exterior trim repair",
+    "exterior trim painting",
 
-    "wood rot remediation",
+    "fascia painting",
+
+    "exterior wood repair",
 
     "garage exterior repair",
 
@@ -188,21 +194,21 @@ export const projects = [
 
   highlights: [
 
-    "Identified and addressed deteriorated wood along the garage roofline",
+    "Removed rotten and deteriorated fascia boards",
 
-    "Removed damaged and rotten fascia sections",
+    "Replaced damaged wood along the garage roofline",
 
-    "Replaced compromised wood with suitable repair material",
+    "Preserved the existing fascia that remained in good condition",
 
-    "Secured repaired fascia sections along the roof edge",
+    "Prepared replacement wood for exterior painting",
 
-    "Restored a cleaner, more consistent exterior trim appearance",
+    "Matched the paint color to the surrounding fascia",
 
-    "Prepared the repaired wood for exterior finishing and protection",
+    "Repainted repaired sections for a consistent appearance",
 
-    "Helped prevent existing wood deterioration from progressing",
+    "Restored the appearance of the garage roofline",
 
-    "Improved the appearance and condition of the garage exterior"
+    "Addressed localized wood rot without replacing all existing fascia"
 
   ],
 
