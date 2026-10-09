@@ -114,6 +114,111 @@ export const projects = [
   ]
 
 },
+{
+  id: "garage-fascia-rot-repair-fort-worth",
+
+  slug: "garage-fascia-rot-repair-fort-worth",
+
+  title: "Rotten Garage Fascia Board Repair & Replacement",
+
+  city: "Fort Worth",
+
+  state: "TX",
+
+  category: "Exterior Wood Repair",
+
+  description:
+    "Repaired rotten and deteriorated fascia wood along a garage roofline, restoring the appearance of the exterior trim and providing a clean, durable finish. Replaced damaged sections and prepared the repaired fascia for exterior protection.",
+
+  challenge:
+    "The fascia board along the garage roofline had developed visible wood rot and deterioration, with sections of the wood splitting, cracking, and breaking away. The damage left dark, exposed areas along the roof edge and detracted from the appearance of the garage. The deteriorated wood needed to be addressed before the damage could spread further.",
+
+  solution:
+    "Removed the deteriorated portions of the fascia and repaired the affected sections with replacement material. Secured the new wood in place, addressed damaged edges, and prepared the repaired area for a uniform exterior finish. The repair restored the continuity of the fascia along the garage roofline and improved the appearance of the exterior trim.",
+
+  scope: "Garage Fascia Board Repair & Replacement",
+
+  completed: "2026",
+
+  services: [
+
+    "Fascia board repair",
+
+    "Rotten wood replacement",
+
+    "Exterior wood repair",
+
+    "Garage roofline trim repair",
+
+    "Wood rot remediation",
+
+    "Exterior trim restoration",
+
+    "Fascia replacement",
+
+    "Exterior home maintenance"
+
+  ],
+
+  tags: [
+
+    "fascia repair Fort Worth",
+
+    "rotten fascia board repair",
+
+    "fascia board replacement",
+
+    "garage fascia repair",
+
+    "exterior wood rot repair",
+
+    "rotted wood replacement",
+
+    "roofline trim repair",
+
+    "exterior trim repair",
+
+    "wood rot remediation",
+
+    "garage exterior repair",
+
+    "Fort Worth handyman"
+
+  ],
+
+  highlights: [
+
+    "Identified and addressed deteriorated wood along the garage roofline",
+
+    "Removed damaged and rotten fascia sections",
+
+    "Replaced compromised wood with suitable repair material",
+
+    "Secured repaired fascia sections along the roof edge",
+
+    "Restored a cleaner, more consistent exterior trim appearance",
+
+    "Prepared the repaired wood for exterior finishing and protection",
+
+    "Helped prevent existing wood deterioration from progressing",
+
+    "Improved the appearance and condition of the garage exterior"
+
+  ],
+
+  before: "/beforeAfter/garageFasciaRepairBefore_1.jpg",
+
+  after: [
+
+    "/beforeAfter/garageFasciaRepairAfter_1.jpg",
+
+    "/beforeAfter/garageFasciaRepairAfter_2.jpg",
+
+    "/beforeAfter/garageFasciaRepairAfter_3.jpg"
+
+  ]
+
+},
   {
 
   id: "attic-ladder-leg-repair-fort-worth",
