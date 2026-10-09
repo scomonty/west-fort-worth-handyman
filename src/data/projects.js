@@ -115,6 +115,206 @@ export const projects = [
 
 },
 {
+  id: "pergola-repainting-restoration-fort-worth",
+
+  slug: "pergola-repainting-restoration-fort-worth",
+
+  title: "Pergola Repainting & Outdoor Wood Restoration",
+
+  city: "Fort Worth",
+
+  state: "TX",
+
+  category: "Exterior Painting",
+
+  description:
+    "Refreshed a large backyard pergola with a fresh coat of dark exterior paint, transforming the appearance of the outdoor entertaining area. Repainted the wooden posts, beams, and overhead lattice to create a consistent, modern finish that complements the home's black window frames, trim, and exterior accents.",
+
+  challenge:
+    "The existing pergola had a weathered brown finish that no longer provided the desired appearance for the backyard patio. With its large wooden posts, crossbeams, and intricate overhead lattice, the structure required careful preparation and detailed painting to achieve consistent coverage across the many exposed surfaces and hard-to-reach areas.",
+
+  solution:
+    "Prepared the existing wooden pergola surfaces for repainting and applied a dark exterior finish across the posts, support beams, and overhead lattice. Carefully worked around the numerous intersecting wood members to provide consistent coverage throughout the structure. The updated dark finish creates a cohesive look that complements the home's black architectural accents while refreshing the entire outdoor living space.",
+
+  scope: "Pergola Repainting & Exterior Wood Finishing",
+
+  completed: "2026",
+
+  services: [
+
+    "Pergola painting",
+
+    "Exterior wood painting",
+
+    "Outdoor structure repainting",
+
+    "Wood beam painting",
+
+    "Pergola post painting",
+
+    "Overhead lattice painting",
+
+    "Exterior surface preparation",
+
+    "Outdoor living space improvements",
+
+    "Exterior finish restoration"
+
+  ],
+
+  tags: [
+
+    "pergola painting Fort Worth",
+
+    "pergola repainting",
+
+    "wood pergola restoration",
+
+    "exterior wood painting",
+
+    "backyard pergola makeover",
+
+    "dark pergola finish",
+
+    "outdoor structure painting",
+
+    "patio makeover",
+
+    "pergola maintenance",
+
+    "outdoor living improvements",
+
+    "Fort Worth handyman"
+
+  ],
+
+  highlights: [
+
+    "Refreshed a large backyard pergola with a new dark finish",
+
+    "Repainted the wooden support posts and structural beams",
+
+    "Applied a consistent finish across the overhead lattice",
+
+    "Addressed detailed areas between intersecting wood members",
+
+    "Updated the pergola's appearance without replacing the existing structure",
+
+    "Complemented the home's black windows and exterior accents",
+
+    "Created a cohesive, modern look for the backyard patio",
+
+    "Revitalized the outdoor entertaining area with a fresh coat of paint"
+
+  ],
+
+  before: "/beforeAfter/pergolaRepaintingBefore_1.jpg",
+
+  after: [
+
+    "/beforeAfter/pergolaRepaintingAfter_1.jpg",
+
+    "/beforeAfter/pergolaRepaintingAfter_2.jpg",
+
+    "/beforeAfter/pergolaRepaintingAfter_3.jpg"
+
+  ]
+
+},
+{
+  id: "pergola-string-light-rehanging-fort-worth",
+
+  slug: "pergola-string-light-rehanging-fort-worth",
+
+  title: "Outdoor Pergola String Light Rehanging & Arrangement",
+
+  city: "Fort Worth",
+
+  state: "TX",
+
+  category: "Outdoor Lighting & Installation",
+
+  description:
+    "Rehung and rearranged decorative string lights beneath a large backyard pergola, improving their layout and creating a more organized outdoor lighting setup. Adjusted the light strands to complement the pergola structure and enhance the ambiance of the outdoor entertaining space.",
+
+  challenge:
+    "The existing decorative string lights beneath the backyard pergola needed to be rehung and better arranged. Multiple strands crossed the open area at different angles, creating an inconsistent layout beneath the wooden beams. The goal was to improve the overall appearance while keeping the lights positioned to illuminate the patio and outdoor dining area.",
+
+  solution:
+    "Rehung and adjusted the existing outdoor string light strands beneath the pergola, arranging them to create a more intentional lighting pattern that complemented the wooden structure. Worked around the existing beams, posts, and patio layout to improve the positioning of the lights while maintaining the decorative atmosphere of the outdoor entertaining space.",
+
+  scope: "Pergola String Light Rehanging & Arrangement",
+
+  completed: "2026",
+
+  services: [
+
+    "Outdoor string light installation",
+
+    "Decorative lighting adjustment",
+
+    "Pergola lighting",
+
+    "Outdoor lighting arrangement",
+
+    "Patio lighting installation",
+
+    "String light rehanging",
+
+    "Backyard lighting improvements",
+
+    "Outdoor living space improvements"
+
+  ],
+
+  tags: [
+
+    "pergola string lights",
+
+    "outdoor string light installation",
+
+    "string light rehanging",
+
+    "pergola lighting ideas",
+
+    "backyard lighting",
+
+    "patio lighting",
+
+    "outdoor decorative lighting",
+
+    "backyard pergola improvements",
+
+    "outdoor entertaining space",
+
+    "Fort Worth handyman"
+
+  ],
+
+  highlights: [
+
+    "Rehung existing decorative string lights beneath the pergola",
+
+    "Adjusted light strand positioning for a more organized appearance",
+
+    "Worked with the existing wooden pergola structure",
+
+    "Improved the layout of the outdoor lighting",
+
+    "Maintained the decorative ambiance of the backyard patio",
+
+    "Enhanced the outdoor dining and entertaining area",
+
+    "Made use of the existing lights rather than replacing the entire setup"
+
+  ],
+
+  before: "/beforeAfter/pergolaStringLightsBefore.jpg",
+
+  after:  "/beforeAfter/pergolaStringLightsAfter_1.jpg"
+
+},
+{
   id: "garage-fascia-rot-repair-fort-worth",
 
   slug: "garage-fascia-rot-repair-fort-worth",
